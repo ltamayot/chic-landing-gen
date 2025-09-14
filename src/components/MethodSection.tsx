@@ -95,7 +95,7 @@ const MethodSection = () => {
                 variant="secondary" 
                 size="lg" 
                 className="hover:scale-105 transform transition-all duration-300"
-                onClick={() => scrollToSection('consulta')}
+                onClick={() => window.location.href = '/medicina-tradicional-china'}
               >
                 CONSULTA GRATUITA
               </Button>
