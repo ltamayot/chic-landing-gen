@@ -23,7 +23,10 @@ const Footer = () => {
                 </button>
               </div>
               <div className="border-b border-primary-foreground/20 pb-3">
-                <button className="text-primary-foreground hover:text-accent transition-colors underline">
+                <button 
+                  onClick={() => window.location.href = '/blog'}
+                  className="text-primary-foreground hover:text-accent transition-colors underline"
+                >
                   BLOG
                 </button>
               </div>
