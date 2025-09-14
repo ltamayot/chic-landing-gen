@@ -95,7 +95,10 @@ const MethodSection = () => {
                 variant="secondary" 
                 size="lg" 
                 className="hover:scale-105 transform transition-all duration-300"
-                onClick={() => window.location.href = '/medicina-tradicional-china'}
+                onClick={() => {
+                  navigate('/medicina-tradicional-china');
+                  window.scrollTo(0, 0);
+                }}
               >
                 CONSULTA GRATUITA
               </Button>
@@ -114,7 +117,10 @@ const MethodSection = () => {
                 variant="secondary" 
                 size="lg" 
                 className="hover:scale-105 transform transition-all duration-300 bg-white text-accent hover:bg-white/90"
-                onClick={() => navigate('/medicina-funcional')}
+                onClick={() => {
+                  navigate('/medicina-funcional');
+                  window.scrollTo(0, 0);
+                }}
               >
                 CONOCER MÁS
               </Button>
