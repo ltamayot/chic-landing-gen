@@ -79,24 +79,15 @@ const MethodSection = () => {
         </div>
 
         {/* Tarjetas principales mejoradas */}
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto mb-20">
-          <div className="group bg-gradient-to-br from-primary to-primary-light rounded-3xl p-8 text-primary-foreground hover:shadow-2xl transition-all duration-500 hover:scale-105 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-xl"></div>
+        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div className="group rounded-3xl p-12 text-primary-foreground hover:shadow-2xl transition-all duration-500 hover:scale-105 relative overflow-hidden bg-gradient-to-br from-primary to-primary-light text-center">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-light opacity-90"></div>
             <div className="relative z-10">
-              <div className="flex items-center mb-6">
-                <Leaf className="w-8 h-8 mr-3 text-primary-lighter" />
-                <h3 className="text-2xl font-serif">Medicina Tradicional China</h3>
-              </div>
+              <h3 className="text-3xl font-serif mb-8">Medicina Tradicional China</h3>
               <p className="text-primary-foreground/90 mb-8 leading-relaxed text-lg">
                 Un ecosistema completo de terapias ancestrales que incluye acupuntura, 
                 ventosas, moxibustión y herbolaria para restaurar el equilibrio natural de tu cuerpo
               </p>
-              <div className="flex flex-wrap gap-2 mb-8">
-                <span className="px-3 py-1 bg-primary-lighter/20 rounded-full text-sm">Acupuntura</span>
-                <span className="px-3 py-1 bg-primary-lighter/20 rounded-full text-sm">Ventosas</span>
-                <span className="px-3 py-1 bg-primary-lighter/20 rounded-full text-sm">Moxibustión</span>
-                <span className="px-3 py-1 bg-primary-lighter/20 rounded-full text-sm">Herbolaria</span>
-              </div>
               <Button 
                 variant="secondary" 
                 size="lg" 
@@ -108,23 +99,14 @@ const MethodSection = () => {
             </div>
           </div>
 
-          <div className="group bg-gradient-to-br from-accent to-accent/80 rounded-3xl p-8 text-accent-foreground hover:shadow-2xl transition-all duration-500 hover:scale-105 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-xl"></div>
+          <div className="group rounded-3xl p-12 text-accent-foreground hover:shadow-2xl transition-all duration-500 hover:scale-105 relative overflow-hidden bg-gradient-to-br from-accent to-accent/80 text-center">
+            <div className="absolute inset-0 bg-gradient-to-br from-accent to-accent/80 opacity-90"></div>
             <div className="relative z-10">
-              <div className="flex items-center mb-6">
-                <Brain className="w-8 h-8 mr-3 text-white" />
-                <h3 className="text-2xl font-serif">Medicina Funcional</h3>
-              </div>
+              <h3 className="text-3xl font-serif mb-8">Medicina Funcional</h3>
               <p className="text-accent-foreground/90 mb-8 leading-relaxed text-lg">
                 Análisis profundo de la función corporal, equilibrio hormonal y 
                 optimización metabólica para un tratamiento personalizado basado en evidencia científica
               </p>
-              <div className="flex flex-wrap gap-2 mb-8">
-                <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Análisis Hormonal</span>
-                <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Nutrición</span>
-                <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Metabolismo</span>
-                <span className="px-3 py-1 bg-white/20 rounded-full text-sm">Laboratorios</span>
-              </div>
               <Button 
                 variant="secondary" 
                 size="lg" 
@@ -133,84 +115,6 @@ const MethodSection = () => {
               >
                 CONSULTA GRATUITA
               </Button>
-            </div>
-          </div>
-        </div>
-
-        {/* Features incluidas */}
-        <div className="bg-sage rounded-3xl p-8 md:p-12 mb-16">
-          <h3 className="text-3xl font-serif text-center mb-8 text-foreground">
-            ¿Qué Incluye Tu Tratamiento?
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            {features.map((feature, index) => (
-              <div key={index} className="flex items-center gap-3">
-                <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-foreground">{feature}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Sección de comparativa mejorada */}
-        <div className="bg-gradient-to-r from-sage to-sage-dark rounded-3xl p-8 md:p-12">
-          <h3 className="text-3xl font-serif text-center mb-12 text-foreground">
-            Comparativa de Enfoques Médicos
-          </h3>
-          
-          <div className="grid lg:grid-cols-2 gap-8">
-            <div className="bg-primary/10 rounded-2xl p-8 border border-primary/20">
-              <div className="flex items-center mb-6">
-                <Heart className="w-6 h-6 text-primary mr-3" />
-                <h4 className="text-xl font-semibold text-primary">
-                  MEDICINA INTEGRATIVA SAORI
-                </h4>
-              </div>
-              <div className="space-y-4 text-foreground">
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p>Orientado en la salud reconociendo a cada individuo en su complejidad única</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p>Enfoque holístico, considerando todo el cuerpo y la mente como parte del equilibrio energético</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p>Diagnóstico basado en los desequilibrios fisiológicos y energéticos, no únicamente en los síntomas</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p>Tratamiento preventivo y de optimización de la salud general</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-muted/50 rounded-2xl p-8 border border-muted">
-              <div className="flex items-center mb-6">
-                <Users className="w-6 h-6 text-muted-foreground mr-3" />
-                <h4 className="text-xl font-semibold text-muted-foreground">
-                  MEDICINA CONVENCIONAL
-                </h4>
-              </div>
-              <div className="space-y-4 text-muted-foreground">
-                <div className="flex items-start gap-3">
-                  <div className="w-5 h-5 border border-muted-foreground rounded-full mt-0.5 flex-shrink-0"></div>
-                  <p>Orientado a la enfermedad y tratamiento de síntomas</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-5 h-5 border border-muted-foreground rounded-full mt-0.5 flex-shrink-0"></div>
-                  <p>Enfoque especializado por sistemas o partes del cuerpo</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-5 h-5 border border-muted-foreground rounded-full mt-0.5 flex-shrink-0"></div>
-                  <p>Diagnóstico basado principalmente en los síntomas visibles</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-5 h-5 border border-muted-foreground rounded-full mt-0.5 flex-shrink-0"></div>
-                  <p>Tratamiento reactivo cuando ya existe la enfermedad</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

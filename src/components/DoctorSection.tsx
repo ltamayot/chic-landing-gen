@@ -39,7 +39,18 @@ const DoctorSection = () => {
   return (
     <section id="doctora" className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
+        {/* Título de sección */}
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-6 text-foreground">
+            Dra. Sara Tamayo
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Especialista en medicina integrativa con más de 10 años de experiencia 
+            combinando técnicas ancestrales chinas con medicina occidental moderna
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-start">
           {/* Imagen y badge de certificación */}
           <div className="relative">
             <div className="bg-sage rounded-3xl p-8 relative">

@@ -26,6 +26,27 @@ const TestimonialsSection = () => {
       initials: "CD",
       text: "Como pareja, encontramos en Saori la solución a nuestros problemas de fertilidad. El enfoque integral consideró tanto mi salud como la de mi esposo, y ahora somos padres felices.",
       rating: 5
+    },
+    {
+      name: "María Elena García",
+      location: "Medellín, Colombia",
+      initials: "MG",
+      text: "Sufría de migrañas crónicas durante años. El tratamiento con acupuntura y medicina funcional me cambió la vida. Ahora puedo disfrutar de días sin dolor y con energía renovada.",
+      rating: 5
+    },
+    {
+      name: "Andrés Morales",
+      location: "Cali, Colombia",
+      initials: "AM",
+      text: "Problemas digestivos me tenían limitado en mi trabajo y vida social. El enfoque integrativo de la Dra. Tamayo identificó las causas raíz y ahora tengo una salud digestiva óptima.",
+      rating: 5
+    },
+    {
+      name: "Lucía Fernández",
+      location: "Barranquilla, Colombia",
+      initials: "LF",
+      text: "El estrés y la ansiedad controlaban mi vida. A través del Método Saori, encontré equilibrio emocional y herramientas naturales para manejar el estrés diario de forma efectiva.",
+      rating: 5
     }
   ];
 
@@ -64,10 +85,13 @@ const TestimonialsSection = () => {
               >
                 {/* Badge con color único */}
                 <div className="flex justify-end mb-4">
-                  <div className={`w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold ${
-                    index === 0 ? 'bg-green-500' : 
-                    index === 1 ? 'bg-green-600' : 'bg-green-700'
-                  }`}>
+                <div className={`w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold ${
+                  index === 0 ? 'bg-green-500' : 
+                  index === 1 ? 'bg-green-600' : 
+                  index === 2 ? 'bg-green-700' :
+                  index === 3 ? 'bg-green-500' :
+                  index === 4 ? 'bg-green-600' : 'bg-green-700'
+                }`}>
                     {testimonial.initials}
                   </div>
                 </div>
@@ -90,7 +114,10 @@ const TestimonialsSection = () => {
                 <div className="flex items-center gap-3">
                   <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-semibold ${
                     index === 0 ? 'bg-green-500' : 
-                    index === 1 ? 'bg-green-600' : 'bg-green-700'
+                    index === 1 ? 'bg-green-600' : 
+                    index === 2 ? 'bg-green-700' :
+                    index === 3 ? 'bg-green-500' :
+                    index === 4 ? 'bg-green-600' : 'bg-green-700'
                   }`}>
                     {testimonial.initials}
                   </div>
