@@ -1,6 +1,5 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
-import ConsultationSection from "@/components/ConsultationSection";
 import BookingSection from "@/components/BookingSection";
 import Footer from "@/components/Footer";
 
