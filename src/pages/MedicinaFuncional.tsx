@@ -37,8 +37,8 @@ const MedicinaFuncional = () => {
                     </p>
                   </div>
                   <div className="flex justify-center">
-                    <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center">
-                      <span className="text-2xl">🔍</span>
+                    <div className="text-6xl opacity-20">
+                      🔍
                     </div>
                   </div>
                 </div>
@@ -48,8 +48,8 @@ const MedicinaFuncional = () => {
               <div className="bg-background rounded-3xl p-8 md:p-12 shadow-lg">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div className="flex justify-center md:order-1">
-                    <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center">
-                      <span className="text-2xl">⚖️</span>
+                    <div className="text-6xl opacity-20">
+                      ⚖️
                     </div>
                   </div>
                   <div className="md:order-2">
@@ -79,8 +79,8 @@ const MedicinaFuncional = () => {
                     </p>
                   </div>
                   <div className="flex justify-center">
-                    <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center">
-                      <span className="text-2xl">🔄</span>
+                    <div className="text-6xl opacity-20">
+                      🔄
                     </div>
                   </div>
                 </div>
@@ -107,8 +107,8 @@ const MedicinaFuncional = () => {
             <div className="relative max-w-6xl mx-auto">
               {/* Central icon placeholder */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-                <div className="w-32 h-32 bg-background rounded-3xl shadow-lg flex items-center justify-center border-4 border-primary/20">
-                  <span className="text-4xl">🌳</span>
+                <div className="text-8xl opacity-20">
+                  🌳
                 </div>
               </div>
 
@@ -170,8 +170,8 @@ const MedicinaFuncional = () => {
             {/* Four pillars grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               <div className="text-center">
-                <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl">📊</span>
+                <div className="text-4xl mb-6 opacity-20">
+                  📊
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground">
                   Análisis de laboratorio avanzados que revelan desequilibrios en sistemas corporales
@@ -179,8 +179,8 @@ const MedicinaFuncional = () => {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl">🧬</span>
+                <div className="text-4xl mb-6 opacity-20">
+                  🧬
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground">
                   Evaluación integral que considera factores genéticos, ambientales y de estilo de vida.
@@ -188,8 +188,8 @@ const MedicinaFuncional = () => {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl">🎯</span>
+                <div className="text-4xl mb-6 opacity-20">
+                  🎯
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground">
                   Tratamientos personalizados basados en la respuesta individual de cada paciente.
@@ -197,8 +197,8 @@ const MedicinaFuncional = () => {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl">🛡️</span>
+                <div className="text-4xl mb-6 opacity-20">
+                  🛡️
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground">
                   Enfoque preventivo que identifica y corrige desequilibrios antes de que se conviertan en enfermedad.
@@ -208,7 +208,6 @@ const MedicinaFuncional = () => {
           </div>
         </section>
 
-        <ConsultationSection />
         <BookingSection />
       </main>
       <Footer />
