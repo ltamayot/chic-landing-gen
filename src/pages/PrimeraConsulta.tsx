@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
 
 const IntakeSection = () => {
   return (
@@ -23,9 +24,9 @@ const IntakeSection = () => {
               encourage you to share any labs or any blood work that may be relevant 
               during your initial consultation.
             </p>
-            <button className="bg-foreground text-background px-8 py-3 text-sm font-medium tracking-wider uppercase hover:bg-foreground/90 transition-colors">
+            <Button variant="primary" size="lg">
               SCHEDULE YOUR FIRST VISIT
-            </button>
+            </Button>
           </div>
           
           {/* Right image placeholder */}
@@ -124,9 +125,9 @@ const PlanSection = () => {
               nutritional and lifestyle advice and a realistic assessment of how we can help 
               you.
             </p>
-            <button className="bg-foreground text-background px-8 py-3 text-sm font-medium tracking-wider uppercase hover:bg-foreground/90 transition-colors">
+            <Button variant="primary" size="lg">
               SCHEDULE YOUR FIRST VISIT
-            </button>
+            </Button>
           </div>
         </div>
       </div>

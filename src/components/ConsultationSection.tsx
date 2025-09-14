@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
-import patientImage from "@/assets/patient-lifestyle.jpg";
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import patientImage from "@/assets/patient-lifestyle.jpg";
 
 const ConsultationSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="consulta" className="py-20 bg-sage">
       <div className="container mx-auto px-6">
@@ -27,7 +30,15 @@ const ConsultationSection = () => {
               </p>
             </div>
 
-            <Button variant="primary" size="lg" className="group">
+            <Button 
+              variant="primary" 
+              size="lg" 
+              className="group"
+              onClick={() => {
+                navigate('/primera-consulta');
+                window.scrollTo(0, 0);
+              }}
+            >
               YOUR FIRST VISIT
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
