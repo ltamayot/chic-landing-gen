@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Heart, Brain, Leaf, Target, CheckCircle, Users } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const MethodSection = () => {
+  const navigate = useNavigate();
+  
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -111,9 +114,9 @@ const MethodSection = () => {
                 variant="secondary" 
                 size="lg" 
                 className="hover:scale-105 transform transition-all duration-300 bg-white text-accent hover:bg-white/90"
-                onClick={() => scrollToSection('consulta')}
+                onClick={() => navigate('/medicina-funcional')}
               >
-                CONSULTA GRATUITA
+                CONOCER MÁS
               </Button>
             </div>
           </div>
