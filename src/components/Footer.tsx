@@ -24,7 +24,7 @@ const Footer = () => {
               </div>
               <div className="border-b border-primary-foreground/20 pb-3">
                 <button className="text-primary-foreground hover:text-accent transition-colors underline">
-                  NUESTRO EQUIPO
+                  BLOG
                 </button>
               </div>
             </div>
