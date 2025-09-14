@@ -37,7 +37,7 @@ const DoctorSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section id="doctora" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
           {/* Imagen y badge de certificación */}

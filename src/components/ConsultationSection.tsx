@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 const ConsultationSection = () => {
   return (
-    <section className="py-20 bg-sage">
+    <section id="consulta" className="py-20 bg-sage">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
           {/* Contenido de texto */}
