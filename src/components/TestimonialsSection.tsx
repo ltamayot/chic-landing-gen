@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
 const TestimonialsSection = () => {
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [currentGroup, setCurrentGroup] = useState(0);
 
   const testimonials = [
     {
@@ -50,12 +50,20 @@ const TestimonialsSection = () => {
     }
   ];
 
-  const nextTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+  const testimonialsPerGroup = 3;
+  const totalGroups = Math.ceil(testimonials.length / testimonialsPerGroup);
+  
+  const nextGroup = () => {
+    setCurrentGroup((prev) => (prev + 1) % totalGroups);
   };
 
-  const prevTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  const prevGroup = () => {
+    setCurrentGroup((prev) => (prev - 1 + totalGroups) % totalGroups);
+  };
+
+  const getCurrentTestimonials = () => {
+    const startIndex = currentGroup * testimonialsPerGroup;
+    return testimonials.slice(startIndex, startIndex + testimonialsPerGroup);
   };
 
   return (
@@ -72,62 +80,61 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Testimoniales */}
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
-            {testimonials.map((testimonial, index) => (
-              <div 
-                key={index}
-                className={`bg-card rounded-2xl p-6 transition-all duration-300 ${
-                  index === currentTestimonial 
-                    ? 'ring-2 ring-primary shadow-lg scale-105' 
-                    : 'opacity-70 hover:opacity-100'
-                }`}
-              >
-                {/* Badge con color único */}
-                <div className="flex justify-end mb-4">
-                <div className={`w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold ${
-                  index === 0 ? 'bg-green-500' : 
-                  index === 1 ? 'bg-green-600' : 
-                  index === 2 ? 'bg-green-700' :
-                  index === 3 ? 'bg-green-500' :
-                  index === 4 ? 'bg-green-600' : 'bg-green-700'
-                }`}>
-                    {testimonial.initials}
+            {getCurrentTestimonials().map((testimonial, index) => {
+              const originalIndex = currentGroup * testimonialsPerGroup + index;
+              return (
+                <div 
+                  key={originalIndex}
+                  className="bg-card rounded-2xl p-6 transition-all duration-300 hover:shadow-lg hover:scale-105"
+                >
+                  {/* Badge con color único */}
+                  <div className="flex justify-end mb-4">
+                    <div className={`w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold ${
+                      originalIndex === 0 ? 'bg-green-500' : 
+                      originalIndex === 1 ? 'bg-green-600' : 
+                      originalIndex === 2 ? 'bg-green-700' :
+                      originalIndex === 3 ? 'bg-green-500' :
+                      originalIndex === 4 ? 'bg-green-600' : 'bg-green-700'
+                    }`}>
+                      {testimonial.initials}
+                    </div>
+                  </div>
+
+                  {/* Testimonial */}
+                  <div className="border-l-4 border-accent pl-4 mb-6">
+                    <p className="text-foreground italic leading-relaxed">
+                      "{testimonial.text}"
+                    </p>
+                  </div>
+
+                  {/* Rating */}
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+
+                  {/* Author info */}
+                  <div className="flex items-center gap-3">
+                    <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-semibold ${
+                      originalIndex === 0 ? 'bg-green-500' : 
+                      originalIndex === 1 ? 'bg-green-600' : 
+                      originalIndex === 2 ? 'bg-green-700' :
+                      originalIndex === 3 ? 'bg-green-500' :
+                      originalIndex === 4 ? 'bg-green-600' : 'bg-green-700'
+                    }`}>
+                      {testimonial.initials}
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground">{testimonial.name}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                    </div>
                   </div>
                 </div>
-
-                {/* Testimonial */}
-                <div className="border-l-4 border-accent pl-4 mb-6">
-                  <p className="text-foreground italic leading-relaxed">
-                    "{testimonial.text}"
-                  </p>
-                </div>
-
-                {/* Rating */}
-                <div className="flex gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-
-                {/* Author info */}
-                <div className="flex items-center gap-3">
-                  <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-semibold ${
-                    index === 0 ? 'bg-green-500' : 
-                    index === 1 ? 'bg-green-600' : 
-                    index === 2 ? 'bg-green-700' :
-                    index === 3 ? 'bg-green-500' :
-                    index === 4 ? 'bg-green-600' : 'bg-green-700'
-                  }`}>
-                    {testimonial.initials}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.location}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           {/* Navigation */}
@@ -135,7 +142,7 @@ const TestimonialsSection = () => {
             <Button
               variant="ghost"
               size="icon"
-              onClick={prevTestimonial}
+              onClick={prevGroup}
               className="rounded-full border border-primary/20 hover:bg-primary hover:text-primary-foreground"
             >
               <ChevronLeft className="w-5 h-5" />
@@ -143,12 +150,12 @@ const TestimonialsSection = () => {
 
             {/* Dots indicator */}
             <div className="flex gap-2">
-              {testimonials.map((_, index) => (
+              {Array.from({ length: totalGroups }).map((_, index) => (
                 <button
                   key={index}
-                  onClick={() => setCurrentTestimonial(index)}
+                  onClick={() => setCurrentGroup(index)}
                   className={`w-3 h-3 rounded-full transition-colors ${
-                    index === currentTestimonial ? 'bg-primary' : 'bg-primary/20'
+                    index === currentGroup ? 'bg-primary' : 'bg-primary/20'
                   }`}
                 />
               ))}
@@ -157,7 +164,7 @@ const TestimonialsSection = () => {
             <Button
               variant="ghost"
               size="icon"
-              onClick={nextTestimonial}
+              onClick={nextGroup}
               className="rounded-full border border-primary/20 hover:bg-primary hover:text-primary-foreground"
             >
               <ChevronRight className="w-5 h-5" />
