@@ -292,7 +292,7 @@ const BlogPost = () => {
             {/* Content */}
             <div className="flex-1 max-w-none">
                 <div 
-                className="max-w-[700px] mx-auto text-justify"
+                className="text-justify"
                 style={{
                   fontFamily: 'Georgia, "Times New Roman", serif',
                   fontSize: '17px',
