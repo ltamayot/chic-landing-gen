@@ -292,15 +292,21 @@ const BlogPost = () => {
             {/* Content */}
             <div className="flex-1 max-w-none">
                 <div 
-                className="prose prose-lg max-w-none font-serif
-                  prose-headings:text-foreground prose-headings:font-semibold prose-headings:tracking-tight prose-headings:font-serif
-                  prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-8 prose-h2:leading-tight prose-h2:font-medium
-                  prose-p:text-foreground prose-p:leading-[1.75] prose-p:mb-6 prose-p:text-lg prose-p:font-serif
-                  prose-ul:text-foreground prose-li:mb-3 prose-li:text-lg prose-li:leading-[1.75] prose-li:font-serif
-                  prose-strong:text-foreground prose-strong:font-semibold
-                  [&>p:first-of-type]:text-lg [&>p:first-of-type]:leading-[1.75] [&>p:first-of-type]:mb-6
-                  [&>p:first-of-type]:text-foreground [&>p:first-of-type]:font-serif"
-                dangerouslySetInnerHTML={{ __html: currentPost.content }}
+                className="max-w-[700px] mx-auto text-justify"
+                style={{
+                  fontFamily: 'Georgia, "Times New Roman", serif',
+                  fontSize: '17px',
+                  lineHeight: '1.6',
+                  color: '#333333'
+                }}
+                dangerouslySetInnerHTML={{ 
+                  __html: currentPost.content
+                    .replace(/<p>/g, '<p style="margin-bottom: 1.5rem; font-size: 17px; line-height: 1.6; color: #333333;">')
+                    .replace(/<h2>/g, '<h2 style="font-size: 21px; font-weight: bold; margin-top: 24px; margin-bottom: 16px; color: #333333; font-family: Georgia, \'Times New Roman\', serif;">')
+                    .replace(/<ul>/g, '<ul style="margin-bottom: 1.5rem; color: #333333;">')
+                    .replace(/<li>/g, '<li style="margin-bottom: 8px; font-size: 17px; line-height: 1.6; color: #333333;">')
+                    .replace(/<strong>/g, '<strong style="font-weight: bold; color: #333333;">')
+                }}
               />
             </div>
 
