@@ -35,6 +35,9 @@ All colors MUST be HSL.
     --sage: 120 15% 85%; /* Verde suave para fondos */
     --sage-dark: 120 20% 75%;
 
+    --hero-green: 140 25% 30%; /* Verde para hero del blog */
+    --hero-green-foreground: 0 0% 98%;
+
     --card-gray: 0 0% 45%; /* Gris para tarjetas de servicios */
     --card-gray-foreground: 0 0% 98%;
 

@@ -59,6 +59,10 @@ export default {
           DEFAULT: "hsl(var(--sage))",
           dark: "hsl(var(--sage-dark))",
         },
+        "hero-green": {
+          DEFAULT: "hsl(var(--hero-green))",
+          foreground: "hsl(var(--hero-green-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

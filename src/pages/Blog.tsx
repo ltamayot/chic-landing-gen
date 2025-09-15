@@ -206,7 +206,7 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Header with Hamburger Menu Only */}
+      {/* Header with Desktop Navigation and Mobile Hamburger */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border/20 shadow-sm">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
@@ -223,9 +223,30 @@ const Blog = () => {
               </span>
             </button>
 
-            {/* Hamburger Menu Button */}
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center gap-8">
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className="text-foreground hover:text-primary transition-colors font-medium"
+                >
+                  {item.name}
+                </button>
+              ))}
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="font-medium tracking-wide"
+                onClick={() => scrollToSection('contacto')}
+              >
+                AGENDAR CITA
+              </Button>
+            </div>
+
+            {/* Mobile Hamburger Menu Button */}
             <button
-              className="p-2"
+              className="p-2 md:hidden"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? (
@@ -236,9 +257,9 @@ const Blog = () => {
             </button>
           </div>
 
-          {/* Menu Dropdown */}
+          {/* Mobile Menu Dropdown */}
           {isMobileMenuOpen && (
-            <div className="absolute top-full left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-border/20 shadow-lg">
+            <div className="absolute top-full left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-border/20 shadow-lg md:hidden">
               <div className="flex flex-col p-6 space-y-4 max-w-sm mx-auto sm:max-w-md lg:max-w-lg">
                 {navItems.map((item) => (
                   <button
@@ -287,19 +308,21 @@ const Blog = () => {
       </nav>
       
       {/* Hero Section */}
-      <section className="relative bg-background pt-28 pb-16">
+      <section className="relative bg-hero-green pt-28 pb-16">
         <div className="container mx-auto px-6">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-8 text-center leading-[1.1] tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-hero-green-foreground mb-8 text-center leading-[1.1] tracking-tight">
             Blog de Medicina Integrativa
           </h1>
-          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-hero-green-foreground/90 text-center max-w-3xl mx-auto leading-relaxed">
             Descubre artículos especializados sobre medicina integrativa, medicina funcional y medicina tradicional china
           </p>
         </div>
+        {/* Divider line */}
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-hero-green-foreground/30 to-transparent"></div>
       </section>
 
       {/* Featured Blog Section */}
-      <section className="py-16 bg-background">
+      <section className="relative py-16 bg-background">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Featured Content */}
@@ -348,10 +371,12 @@ const Blog = () => {
             </div>
           </div>
         </div>
+        {/* Divider line */}
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
       </section>
 
       {/* Blog Grid Section */}
-      <section className="py-16 bg-muted/30">
+      <section className="relative py-16 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-light text-foreground mb-4">
@@ -419,6 +444,8 @@ const Blog = () => {
             </div>
           )}
         </div>
+        {/* Divider line */}
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
       </section>
 
       <Footer />
