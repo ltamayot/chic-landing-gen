@@ -3,7 +3,8 @@ import BookingSection from "@/components/BookingSection";
 import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Calendar, User } from "lucide-react";
+import { Calendar, User, Menu, X } from "lucide-react";
+import { useState } from "react";
 
 import blogHeroImage from "@/assets/blog-hero.jpg";
 import blogTcmImage from "@/assets/blog-tcm.jpg";
@@ -15,6 +16,7 @@ const BlogPost = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
   const location = useLocation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
     { name: "Servicios", id: "servicios" },
@@ -48,6 +50,7 @@ const BlogPost = () => {
         });
       }
     }
+    setIsMobileMenuOpen(false);
   };
 
   const blogPosts = {

@@ -1,96 +1,93 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Phone, Mail, MapPin } from "lucide-react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const scrollToSection = (id: string) => {
+    if (location.pathname !== '/') {
+      navigate('/', { replace: true });
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }
+  };
+
   return (
     <footer className="bg-primary text-primary-foreground py-16">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-3 gap-12">
-          {/* Nuestra Filosofía */}
-          <div>
-            <h3 className="text-xl font-semibold mb-6 text-accent uppercase tracking-wider">
-              NUESTRA FILOSOFÍA
-            </h3>
-            <p className="text-primary-foreground/90 mb-8 leading-relaxed">
-              En Saori ayudamos a nuestros pacientes a alcanzar su máximo potencial tomando su 
-              salud en sus propias manos.
-            </p>
-            <div className="space-y-3">
-              <div className="border-b border-primary-foreground/20 pb-3">
-                <button 
-                  onClick={() => { window.location.href = '/'; setTimeout(() => document.getElementById('metodo')?.scrollIntoView({ behavior: 'smooth' }), 100); }}
-                  className="text-primary-foreground hover:text-accent transition-colors underline"
-                >
-                  NUESTRO MÉTODO
-                </button>
-              </div>
-              <div className="border-b border-primary-foreground/20 pb-3">
-                <a 
-                  href="/blog"
-                  className="text-primary-foreground hover:text-accent transition-colors underline"
-                >
-                  BLOG
-                </a>
-              </div>
+        <div className="grid md:grid-cols-2 gap-12">
+          {/* Left Section */}
+          <div className="space-y-8">
+            {/* SAORI Title */}
+            <div>
+              <h3 className="text-3xl font-serif font-semibold mb-4 text-accent tracking-wide">
+                SAORI
+              </h3>
+            </div>
+
+            {/* Philosophy Section */}
+            <div>
+              <h4 className="text-xl font-semibold mb-4 text-accent uppercase tracking-wider">
+                NUESTRA FILOSOFÍA
+              </h4>
+              <p className="text-primary-foreground mb-6 leading-relaxed text-lg">
+                En Saori ayudamos a nuestros pacientes a alcanzar su máximo potencial tomando su salud en sus propias manos.
+              </p>
+            </div>
+
+            {/* Links Section */}
+            <div className="flex gap-8">
+              <button 
+                onClick={() => scrollToSection('metodo')}
+                className="text-primary-foreground hover:text-accent transition-colors text-lg font-medium"
+              >
+                NUESTRO MÉTODO
+              </button>
+              <a 
+                href="/blog"
+                className="text-primary-foreground hover:text-accent transition-colors text-lg font-medium"
+              >
+                BLOG
+              </a>
             </div>
           </div>
 
-          {/* Contacto */}
-          <div>
-            <h3 className="text-xl font-semibold mb-6 text-accent uppercase tracking-wider">
+          {/* Right Section - Contact Info in Box */}
+          <div className="border border-primary-foreground/30 rounded-lg p-8">
+            <h4 className="text-xl font-semibold mb-6 text-accent uppercase tracking-wider">
               CONTACTO
-            </h3>
+            </h4>
             <div className="space-y-4">
-              <div>
-                <p className="text-accent text-sm font-medium mb-1">📞 TELÉFONO:</p>
-                <p className="text-primary-foreground">+57 300 123 4567</p>
+              <div className="flex items-center gap-3">
+                <Phone className="h-5 w-5 text-accent" />
+                <span className="text-primary-foreground text-lg">+57 300 123 4567</span>
               </div>
-              <div>
-                <p className="text-accent text-sm font-medium mb-1">✉️ EMAIL:</p>
-                <p className="text-primary-foreground">info@saori.com</p>
+              <div className="flex items-center gap-3">
+                <Mail className="h-5 w-5 text-accent" />
+                <span className="text-primary-foreground text-lg">info@saori.com</span>
               </div>
-              <div>
-                <p className="text-accent text-sm font-medium mb-1">📍 UBICACIÓN:</p>
-                <p className="text-primary-foreground">
-                  Bogotá, Colombia
-                  <br />
-                  Calle 123 #45-67, Local 8
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Newsletter */}
-          <div>
-            <h3 className="text-xl font-semibold mb-6 text-accent uppercase tracking-wider">
-              NEWSLETTER SAORI
-            </h3>
-            <p className="text-primary-foreground/90 mb-6 leading-relaxed">
-              Suscríbete a nuestros boletines cuidadosamente seleccionados. Ingresa tu email y 
-              cuéntanos qué te interesa.
-            </p>
-            <div className="space-y-4">
-              <Select>
-                <SelectTrigger className="bg-primary-light border-primary-foreground/20 text-primary-foreground">
-                  <SelectValue placeholder="Estoy interesado en:*" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="fertility">Fertilidad</SelectItem>
-                  <SelectItem value="functional">Medicina Funcional</SelectItem>
-                  <SelectItem value="traditional">Medicina Tradicional China</SelectItem>
-                  <SelectItem value="all">Todos los servicios</SelectItem>
-                </SelectContent>
-              </Select>
-              
-              <div className="flex gap-2">
-                <Input 
-                  placeholder="Email*" 
-                  className="bg-primary-light border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/60"
-                />
-                <Button variant="cta" className="px-6">
-                  SUSCRIBIR
-                </Button>
+              <div className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 text-accent mt-1" />
+                <div className="text-primary-foreground text-lg">
+                  <div>Bogotá, Colombia</div>
+                  <div>Calle 123 #45-67, Local 8</div>
+                </div>
               </div>
             </div>
           </div>
@@ -101,6 +98,14 @@ const Footer = () => {
           <p className="text-primary-foreground/70 text-sm">
             © 2024 Saori. Todos los derechos reservados.
           </p>
+          <div className="mt-2">
+            <a 
+              href="/terminos-condiciones"
+              className="text-primary-foreground/70 hover:text-accent transition-colors text-sm underline"
+            >
+              Términos y Condiciones
+            </a>
+          </div>
         </div>
       </div>
     </footer>

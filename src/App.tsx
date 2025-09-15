@@ -9,6 +9,7 @@ import MedicinaTradicionalChina from "./pages/MedicinaTradicionalChina";
 import PrimeraConsulta from "./pages/PrimeraConsulta";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import TerminosCondiciones from "./pages/TerminosCondiciones";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,7 +24,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/medicina-funcional" element={<MedicinaFuncional />} />
           <Route path="/medicina-tradicional-china" element={<MedicinaTradicionalChina />} />
-          <Route path="/primera-consulta" element={<PrimeraConsulta />} />
+          <Route path="/terminos-condiciones" element={<TerminosCondiciones />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
