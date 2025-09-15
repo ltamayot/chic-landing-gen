@@ -219,55 +219,66 @@ const Blog = () => {
       </nav>
       
       {/* Hero Section */}
-      <section className="relative py-32 bg-background overflow-hidden">
+      <section className="relative py-24 md:py-32 bg-background">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <Badge className="mb-8 bg-accent text-accent-foreground text-sm font-medium tracking-wider">
-              {featuredBlog.category}
-            </Badge>
+          <div className="max-w-4xl mx-auto text-center">
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-8 leading-tight text-foreground">
+            {/* Category Badge */}
+            <div className="mb-8">
+              <Badge className="bg-accent/20 text-accent-foreground border-0 rounded-full px-4 py-2 text-sm font-medium tracking-wide">
+                {featuredBlog.category}
+              </Badge>
+            </div>
+            
+            {/* Title */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6 leading-[1.1] text-foreground tracking-tight">
               {featuredBlog.title}
             </h1>
             
-            <div className="flex items-center justify-center gap-6 mb-8 text-muted-foreground">
+            {/* Author and Date */}
+            <div className="flex items-center justify-center gap-6 mb-8 text-muted-foreground/80">
               <div className="flex items-center gap-2">
-                <User className="h-4 w-4" />
-                <span className="text-sm">{featuredBlog.author}</span>
+                <div className="text-accent">✍</div>
+                <span className="text-sm font-medium">{featuredBlog.author}</span>
               </div>
               <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4" />
+                <div className="text-accent">📅</div>
                 <span className="text-sm">{featuredBlog.date}</span>
               </div>
             </div>
             
-            <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-2xl mx-auto">
+            {/* Description */}
+            <p className="text-lg md:text-xl text-muted-foreground/90 mb-12 leading-relaxed max-w-[700px] mx-auto font-light">
               {featuredBlog.excerpt}
             </p>
-          </div>
 
-          {/* Featured Image */}
-          <div className="relative max-w-3xl mx-auto mb-12">
-            <div className="relative overflow-hidden rounded-3xl shadow-2xl bg-gradient-to-br from-primary/10 to-primary/5 p-2">
-              <img 
-                src={featuredBlog.image} 
-                alt={featuredBlog.title}
-                className="w-full h-[400px] md:h-[500px] object-cover rounded-2xl"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl" />
+            {/* CTA Button */}
+            <div className="mb-16">
+              <Button 
+                variant="cta" 
+                size="lg"
+                onClick={() => handleBlogClick(featuredBlog.slug)}
+                className="group px-8 py-4 text-base font-medium"
+              >
+                LEER ARTÍCULO
+                <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
             </div>
-          </div>
 
-          <div className="text-center">
-            <Button 
-              variant="cta" 
-              size="lg"
-              onClick={() => handleBlogClick(featuredBlog.slug)}
-              className="group"
-            >
-              LEER ARTÍCULO
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            {/* Featured Image */}
+            <div className="relative max-w-4xl mx-auto">
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-white p-3">
+                <div className="aspect-video overflow-hidden rounded-xl">
+                  <img 
+                    src={featuredBlog.image} 
+                    alt={featuredBlog.title}
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent rounded-2xl pointer-events-none" />
+              </div>
+            </div>
+
           </div>
         </div>
         
