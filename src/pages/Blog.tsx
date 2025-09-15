@@ -206,7 +206,7 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Mobile-First Header */}
+      {/* Header with Hamburger Menu Only */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border/20 shadow-sm">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
@@ -223,7 +223,7 @@ const Blog = () => {
               </span>
             </button>
 
-            {/* Mobile Menu Button */}
+            {/* Hamburger Menu Button */}
             <button
               className="p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -236,10 +236,10 @@ const Blog = () => {
             </button>
           </div>
 
-          {/* Mobile Menu */}
+          {/* Menu Dropdown */}
           {isMobileMenuOpen && (
             <div className="absolute top-full left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-border/20 shadow-lg">
-              <div className="flex flex-col p-6 space-y-4">
+              <div className="flex flex-col p-6 space-y-4 max-w-sm mx-auto sm:max-w-md lg:max-w-lg">
                 {navItems.map((item) => (
                   <button
                     key={item.id}
@@ -250,8 +250,8 @@ const Blog = () => {
                   </button>
                 ))}
                 
-                {/* Social Icons - Mobile */}
-                <div className="flex items-center gap-4 py-2">
+                {/* Social Icons */}
+                <div className="flex items-center gap-4 py-2 justify-center sm:justify-start">
                   <a 
                     href="#" 
                     className="p-2 rounded-full text-foreground hover:text-primary hover:bg-primary/10 transition-colors"
@@ -275,7 +275,7 @@ const Blog = () => {
                 <Button 
                   variant="outline" 
                   size="sm" 
-                  className="mt-4 font-medium tracking-wide self-start"
+                  className="mt-4 font-medium tracking-wide self-center sm:self-start"
                   onClick={() => scrollToSection('contacto')}
                 >
                   AGENDAR CITA
