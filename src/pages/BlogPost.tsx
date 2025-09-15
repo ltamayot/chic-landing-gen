@@ -1,10 +1,8 @@
 import { useParams, Navigate } from "react-router-dom";
-import Navigation from "@/components/Navigation";
 import BookingSection from "@/components/BookingSection";
 import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, User, Share2, Facebook, Twitter } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Calendar, User } from "lucide-react";
 
 import blogHeroImage from "@/assets/blog-hero.jpg";
 import blogTcmImage from "@/assets/blog-tcm.jpg";
@@ -126,46 +124,61 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen">
-      <Navigation />
+      {/* Fixed White Header */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border/20 shadow-sm">
+        <div className="container mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            {/* Logo */}
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                <div className="w-3 h-3 bg-secondary rounded-full"></div>
+              </div>
+              <span className="text-2xl font-serif font-semibold tracking-wide text-primary">
+                SAORI
+              </span>
+            </div>
+
+            {/* Desktop Navigation Items */}
+            <div className="hidden lg:flex items-center gap-8">
+              <button className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary">
+                Servicios
+              </button>
+              <button className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary">
+                Método Saori
+              </button>
+              <button className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary">
+                Dra Sara Tamayo
+              </button>
+              <button className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary">
+                Primera Consulta
+              </button>
+              <button className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary">
+                Testimonios
+              </button>
+              <button className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary">
+                Contacto
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
       
       {/* Hero Section */}
-      <section className="relative">
-        {/* Breadcrumb and Meta Info */}
-        <div className="bg-background pt-24 pb-8">
-          <div className="container mx-auto px-6">
-            <div className="text-center">
-              <Badge className={`mb-4 ${getCategoryColor(currentPost.category)}`}>
-                BLOG / {currentPost.category.toUpperCase()}
-              </Badge>
-              
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-6 max-w-4xl mx-auto leading-tight">
-                {currentPost.title}
-              </h1>
-              
-              <div className="flex items-center justify-center gap-6 mb-8 text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <User className="h-4 w-4" />
-                  <span className="text-sm font-medium">{currentPost.author}</span>
+      <section className="relative bg-background pt-28 pb-16">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-8 leading-[1.1] tracking-tight">
+              {currentPost.title}
+            </h1>
+            
+            <div className="flex items-center gap-4 mb-8">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-muted rounded-full flex items-center justify-center">
+                  <User className="h-5 w-5 text-muted-foreground" />
                 </div>
-                <div className="h-4 w-px bg-border" />
-                <div className="flex items-center gap-2">
-                  <Calendar className="h-4 w-4" />
-                  <span className="text-sm">{currentPost.date}</span>
-                </div>
-              </div>
-              
-              <div className="flex items-center justify-center gap-4">
-                <span className="text-sm text-muted-foreground font-medium">COMPARTIR EN</span>
-                <div className="flex gap-2">
-                  <Button variant="outline" size="sm" className="h-8 w-8 p-0">
-                    <Facebook className="h-4 w-4" />
-                  </Button>
-                  <Button variant="outline" size="sm" className="h-8 w-8 p-0">
-                    <Twitter className="h-4 w-4" />
-                  </Button>
-                  <Button variant="outline" size="sm" className="h-8 w-8 p-0">
-                    <Share2 className="h-4 w-4" />
-                  </Button>
+                <div>
+                  <div className="text-sm font-medium text-foreground">{currentPost.author}</div>
+                  <div className="text-sm text-muted-foreground">{currentPost.date}</div>
                 </div>
               </div>
             </div>
@@ -173,26 +186,32 @@ const BlogPost = () => {
         </div>
         
         {/* Featured Image */}
-        <div className="relative h-96 md:h-[500px] overflow-hidden">
-          <img 
-            src={currentPost.image} 
-            alt={currentPost.title}
-            className="w-full h-full object-cover"
-          />
+        <div className="container mx-auto px-6 mt-12">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative aspect-video overflow-hidden rounded-lg">
+              <img 
+                src={currentPost.image} 
+                alt={currentPost.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Content Section */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-2xl mx-auto">
             <div 
-              className="prose prose-lg max-w-none text-foreground
-                prose-headings:text-foreground prose-headings:font-medium
-                prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6
-                prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-6
-                prose-ul:text-muted-foreground prose-li:mb-2
-                prose-strong:text-foreground prose-strong:font-medium"
+              className="prose prose-xl max-w-none
+                prose-headings:text-foreground prose-headings:font-semibold prose-headings:tracking-tight
+                prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-8 prose-h2:leading-tight
+                prose-p:text-foreground prose-p:leading-relaxed prose-p:mb-6 prose-p:text-lg
+                prose-ul:text-foreground prose-li:mb-3 prose-li:text-lg prose-li:leading-relaxed
+                prose-strong:text-foreground prose-strong:font-semibold
+                [&>p:first-of-type]:text-xl [&>p:first-of-type]:leading-relaxed [&>p:first-of-type]:mb-8
+                [&>p:first-of-type]:text-muted-foreground"
               dangerouslySetInnerHTML={{ __html: currentPost.content }}
             />
           </div>
