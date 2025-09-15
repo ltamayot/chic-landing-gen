@@ -219,55 +219,55 @@ const Blog = () => {
       </nav>
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        <div className="container mx-auto px-6 flex items-center justify-center">
-          <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl">
-            {/* Content Side */}
-            <div className="flex-1 text-center lg:text-left">
-              <Badge className="mb-6 bg-accent text-accent-foreground text-sm font-medium tracking-wider">
-                {featuredBlog.category}
-              </Badge>
-              
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-light mb-8 leading-tight text-foreground">
-                {featuredBlog.title}
-              </h1>
-              
-              <div className="flex items-center justify-center lg:justify-start gap-6 mb-8 text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <User className="h-4 w-4" />
-                  <span className="text-sm">{featuredBlog.author}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Calendar className="h-4 w-4" />
-                  <span className="text-sm">{featuredBlog.date}</span>
-                </div>
+      <section className="relative py-32 bg-background overflow-hidden">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <Badge className="mb-8 bg-accent text-accent-foreground text-sm font-medium tracking-wider">
+              {featuredBlog.category}
+            </Badge>
+            
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-8 leading-tight text-foreground">
+              {featuredBlog.title}
+            </h1>
+            
+            <div className="flex items-center justify-center gap-6 mb-8 text-muted-foreground">
+              <div className="flex items-center gap-2">
+                <User className="h-4 w-4" />
+                <span className="text-sm">{featuredBlog.author}</span>
               </div>
-              
-              <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
-                {featuredBlog.excerpt}
-              </p>
-              
-              <Button 
-                variant="cta" 
-                size="lg"
-                onClick={() => handleBlogClick(featuredBlog.slug)}
-                className="group"
-              >
-                LEER ARTÍCULO
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <div className="flex items-center gap-2">
+                <Calendar className="h-4 w-4" />
+                <span className="text-sm">{featuredBlog.date}</span>
+              </div>
             </div>
+            
+            <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-2xl mx-auto">
+              {featuredBlog.excerpt}
+            </p>
+          </div>
 
-            {/* Image Side with Green Box */}
-            <div className="flex-1 flex justify-center">
-              <div className="relative p-8 bg-primary rounded-3xl shadow-2xl max-w-md">
-                <img 
-                  src={featuredBlog.image} 
-                  alt={featuredBlog.title}
-                  className="w-full h-80 object-cover rounded-2xl shadow-lg"
-                />
-              </div>
+          {/* Featured Image */}
+          <div className="relative max-w-3xl mx-auto mb-12">
+            <div className="relative overflow-hidden rounded-3xl shadow-2xl bg-gradient-to-br from-primary/10 to-primary/5 p-2">
+              <img 
+                src={featuredBlog.image} 
+                alt={featuredBlog.title}
+                className="w-full h-[400px] md:h-[500px] object-cover rounded-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl" />
             </div>
+          </div>
+
+          <div className="text-center">
+            <Button 
+              variant="cta" 
+              size="lg"
+              onClick={() => handleBlogClick(featuredBlog.slug)}
+              className="group"
+            >
+              LEER ARTÍCULO
+              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
           </div>
         </div>
         
