@@ -274,41 +274,6 @@ const Blog = () => {
 
           </div>
         </div>
-        
-        <div className="relative z-10 container mx-auto px-6 text-center text-white">
-          <Badge className="mb-6 bg-accent text-accent-foreground text-sm font-medium tracking-wider">
-            {featuredBlog.category}
-          </Badge>
-          
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-light mb-8 leading-tight max-w-4xl mx-auto">
-            {featuredBlog.title}
-          </h1>
-          
-          <div className="flex items-center justify-center gap-6 mb-8 text-white/90">
-            <div className="flex items-center gap-2">
-              <User className="h-4 w-4" />
-              <span className="text-sm">{featuredBlog.author}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Calendar className="h-4 w-4" />
-              <span className="text-sm">{featuredBlog.date}</span>
-            </div>
-          </div>
-          
-          <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
-            {featuredBlog.excerpt}
-          </p>
-          
-          <Button 
-            variant="cta" 
-            size="lg"
-            onClick={() => handleBlogClick(featuredBlog.slug)}
-            className="group"
-          >
-            LEER ARTÍCULO
-            <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-          </Button>
-        </div>
       </section>
 
       {/* Blog Grid Section */}
