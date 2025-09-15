@@ -1,7 +1,8 @@
-import { useParams, Navigate } from "react-router-dom";
+import { useParams, Navigate, useNavigate, useLocation } from "react-router-dom";
 import BookingSection from "@/components/BookingSection";
 import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Calendar, User } from "lucide-react";
 
 import blogHeroImage from "@/assets/blog-hero.jpg";
@@ -12,6 +13,42 @@ import blogWellnessImage from "@/assets/blog-wellness.jpg";
 
 const BlogPost = () => {
   const { slug } = useParams();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const navItems = [
+    { name: "Servicios", id: "servicios" },
+    { name: "Método Saori", id: "metodo" }, 
+    { name: "Dra Sara Tamayo", id: "doctora" },
+    { name: "Primera Consulta", id: "consulta" },
+    { name: "Testimonios", id: "testimonios" },
+    { name: "Contacto", id: "contacto" }
+  ];
+
+  const scrollToSection = (id: string) => {
+    // If we're not on the home page, navigate there first
+    if (location.pathname !== '/') {
+      navigate('/', { replace: true });
+      // Wait a bit for navigation to complete, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }
+  };
 
   const blogPosts = {
     "medicina-integrativa-futuro-cuidado-salud": {
@@ -140,24 +177,15 @@ const BlogPost = () => {
 
             {/* Desktop Navigation Items */}
             <div className="hidden lg:flex items-center gap-8">
-              <button className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary">
-                Servicios
-              </button>
-              <button className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary">
-                Método Saori
-              </button>
-              <button className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary">
-                Dra Sara Tamayo
-              </button>
-              <button className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary">
-                Primera Consulta
-              </button>
-              <button className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary">
-                Testimonios
-              </button>
-              <button className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary">
-                Contacto
-              </button>
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary"
+                >
+                  {item.name}
+                </button>
+              ))}
             </div>
 
             {/* Social Icons - Desktop */}
@@ -181,6 +209,16 @@ const BlogPost = () => {
                 </svg>
               </a>
             </div>
+
+            {/* CTA Button - Desktop */}
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="hidden lg:flex font-medium tracking-wide"
+              onClick={() => scrollToSection('contacto')}
+            >
+              AGENDAR CITA
+            </Button>
           </div>
         </div>
       </nav>
@@ -251,14 +289,14 @@ const BlogPost = () => {
             {/* Content */}
             <div className="flex-1 max-w-none">
               <div 
-                className="prose prose-xl max-w-none
-                  prose-headings:text-foreground prose-headings:font-semibold prose-headings:tracking-tight
-                  prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-8 prose-h2:leading-tight
-                  prose-p:text-foreground prose-p:leading-relaxed prose-p:mb-6 prose-p:text-lg
-                  prose-ul:text-foreground prose-li:mb-3 prose-li:text-lg prose-li:leading-relaxed
+                className="prose prose-2xl max-w-none font-serif
+                  prose-headings:text-foreground prose-headings:font-semibold prose-headings:tracking-tight prose-headings:font-serif
+                  prose-h2:text-4xl prose-h2:mt-20 prose-h2:mb-10 prose-h2:leading-tight prose-h2:font-medium
+                  prose-p:text-foreground prose-p:leading-[1.75] prose-p:mb-8 prose-p:text-xl prose-p:font-serif
+                  prose-ul:text-foreground prose-li:mb-4 prose-li:text-xl prose-li:leading-[1.75] prose-li:font-serif
                   prose-strong:text-foreground prose-strong:font-semibold
-                  [&>p:first-of-type]:text-xl [&>p:first-of-type]:leading-relaxed [&>p:first-of-type]:mb-8
-                  [&>p:first-of-type]:text-muted-foreground"
+                  [&>p:first-of-type]:text-2xl [&>p:first-of-type]:leading-[1.7] [&>p:first-of-type]:mb-10
+                  [&>p:first-of-type]:text-muted-foreground [&>p:first-of-type]:font-light [&>p:first-of-type]:italic"
                 dangerouslySetInnerHTML={{ __html: currentPost.content }}
               />
             </div>
