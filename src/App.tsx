@@ -25,6 +25,7 @@ const App = () => (
           <Route path="/medicina-funcional" element={<MedicinaFuncional />} />
           <Route path="/medicina-tradicional-china" element={<MedicinaTradicionalChina />} />
           <Route path="/terminos-condiciones" element={<TerminosCondiciones />} />
+          <Route path="/primera-consulta" element={<PrimeraConsulta />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
