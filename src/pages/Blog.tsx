@@ -223,13 +223,6 @@ const Blog = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             
-            {/* Category Badge */}
-            <div className="mb-8">
-              <Badge className="bg-accent/20 text-accent-foreground border-0 rounded-full px-4 py-2 text-sm font-medium tracking-wide">
-                {featuredBlog.category}
-              </Badge>
-            </div>
-            
             {/* Title */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6 leading-[1.1] text-foreground tracking-tight">
               {featuredBlog.title}
