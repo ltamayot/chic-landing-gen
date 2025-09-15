@@ -166,12 +166,12 @@ const BlogPost = () => {
       {/* Hero Section */}
       <section className="relative bg-background pt-28 pb-16">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-2xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-8 leading-[1.1] tracking-tight">
               {currentPost.title}
             </h1>
             
-            <div className="flex items-center gap-4 mb-8">
+            <div className="flex items-center justify-center gap-4 mb-8">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-muted rounded-full flex items-center justify-center">
                   <User className="h-5 w-5 text-muted-foreground" />
@@ -187,7 +187,7 @@ const BlogPost = () => {
         
         {/* Featured Image */}
         <div className="container mx-auto px-6 mt-12">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-2xl mx-auto">
             <div className="relative aspect-video overflow-hidden rounded-lg">
               <img 
                 src={currentPost.image} 
@@ -195,6 +195,8 @@ const BlogPost = () => {
                 className="w-full h-full object-cover"
               />
             </div>
+            {/* Divider line below image */}
+            <div className="w-full h-px bg-border mt-8"></div>
           </div>
         </div>
       </section>
