@@ -174,15 +174,101 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen">
-      <Navigation />
+      {/* Navigation with white background */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/20 shadow-lg">
+        <div className="container mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            {/* Logo */}
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                <div className="w-3 h-3 bg-secondary rounded-full"></div>
+              </div>
+              <span className="text-2xl font-serif font-semibold tracking-wide text-primary">
+                SAORI
+              </span>
+            </div>
+
+            {/* Desktop Navigation Items */}
+            <div className="hidden lg:flex items-center gap-8">
+              <button className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary">
+                Servicios
+              </button>
+              <button className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary">
+                Método Saori
+              </button>
+              <button className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary">
+                Dra Sara Tamayo
+              </button>
+              <button className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary">
+                Primera Consulta
+              </button>
+              <button className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary">
+                Testimonios
+              </button>
+              <button className="font-medium transition-colors duration-200 hover:scale-105 transform text-foreground hover:text-primary">
+                Contacto
+              </button>
+            </div>
+
+            {/* CTA Button */}
+            <Button variant="outline" size="sm" className="hidden lg:flex font-medium tracking-wide">
+              AGENDAR CITA
+            </Button>
+          </div>
+        </div>
+      </nav>
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${featuredBlog.image})` }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <div className="container mx-auto px-6 flex items-center justify-center">
+          <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl">
+            {/* Content Side */}
+            <div className="flex-1 text-center lg:text-left">
+              <Badge className="mb-6 bg-accent text-accent-foreground text-sm font-medium tracking-wider">
+                {featuredBlog.category}
+              </Badge>
+              
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-light mb-8 leading-tight text-foreground">
+                {featuredBlog.title}
+              </h1>
+              
+              <div className="flex items-center justify-center lg:justify-start gap-6 mb-8 text-muted-foreground">
+                <div className="flex items-center gap-2">
+                  <User className="h-4 w-4" />
+                  <span className="text-sm">{featuredBlog.author}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Calendar className="h-4 w-4" />
+                  <span className="text-sm">{featuredBlog.date}</span>
+                </div>
+              </div>
+              
+              <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
+                {featuredBlog.excerpt}
+              </p>
+              
+              <Button 
+                variant="cta" 
+                size="lg"
+                onClick={() => handleBlogClick(featuredBlog.slug)}
+                className="group"
+              >
+                LEER ARTÍCULO
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </div>
+
+            {/* Image Side with Green Box */}
+            <div className="flex-1 flex justify-center">
+              <div className="relative p-8 bg-primary rounded-3xl shadow-2xl max-w-md">
+                <img 
+                  src={featuredBlog.image} 
+                  alt={featuredBlog.title}
+                  className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
         </div>
         
         <div className="relative z-10 container mx-auto px-6 text-center text-white">
