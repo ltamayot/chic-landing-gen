@@ -18,17 +18,20 @@ const Footer = () => {
             </p>
             <div className="space-y-3">
               <div className="border-b border-primary-foreground/20 pb-3">
-                <button className="text-primary-foreground hover:text-accent transition-colors underline">
+                <button 
+                  onClick={() => { window.location.href = '/'; setTimeout(() => document.getElementById('metodo')?.scrollIntoView({ behavior: 'smooth' }), 100); }}
+                  className="text-primary-foreground hover:text-accent transition-colors underline"
+                >
                   NUESTRO MÉTODO
                 </button>
               </div>
               <div className="border-b border-primary-foreground/20 pb-3">
-                <button 
-                  onClick={() => window.location.href = '/blog'}
+                <a 
+                  href="/blog"
                   className="text-primary-foreground hover:text-accent transition-colors underline"
                 >
                   BLOG
-                </button>
+                </a>
               </div>
             </div>
           </div>

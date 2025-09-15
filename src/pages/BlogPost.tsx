@@ -166,14 +166,17 @@ const BlogPost = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <div className="flex items-center gap-2">
+            <button 
+              onClick={() => scrollToSection('hero')}
+              className="flex items-center gap-2"
+            >
               <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                 <div className="w-3 h-3 bg-secondary rounded-full"></div>
               </div>
               <span className="text-2xl font-serif font-semibold tracking-wide text-primary">
                 SAORI
               </span>
-            </div>
+            </button>
 
             {/* Desktop Navigation Items */}
             <div className="hidden lg:flex items-center gap-8">
@@ -270,7 +273,7 @@ const BlogPost = () => {
                 />
               </div>
               {/* Divider line below image */}
-              <div className="w-full h-0.5 bg-muted-foreground/30 mt-8"></div>
+              <div className="w-full h-1 bg-gray-400 mt-8"></div>
             </div>
 
             {/* Right spacer - aligns with social icons */}
@@ -288,15 +291,15 @@ const BlogPost = () => {
             
             {/* Content */}
             <div className="flex-1 max-w-none">
-              <div 
-                className="prose prose-2xl max-w-none font-serif
+                <div 
+                className="prose prose-lg max-w-none font-serif
                   prose-headings:text-foreground prose-headings:font-semibold prose-headings:tracking-tight prose-headings:font-serif
-                  prose-h2:text-4xl prose-h2:mt-20 prose-h2:mb-10 prose-h2:leading-tight prose-h2:font-medium
-                  prose-p:text-foreground prose-p:leading-[1.75] prose-p:mb-8 prose-p:text-xl prose-p:font-serif
-                  prose-ul:text-foreground prose-li:mb-4 prose-li:text-xl prose-li:leading-[1.75] prose-li:font-serif
+                  prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-8 prose-h2:leading-tight prose-h2:font-medium
+                  prose-p:text-foreground prose-p:leading-[1.75] prose-p:mb-6 prose-p:text-lg prose-p:font-serif
+                  prose-ul:text-foreground prose-li:mb-3 prose-li:text-lg prose-li:leading-[1.75] prose-li:font-serif
                   prose-strong:text-foreground prose-strong:font-semibold
-                  [&>p:first-of-type]:text-2xl [&>p:first-of-type]:leading-[1.7] [&>p:first-of-type]:mb-10
-                  [&>p:first-of-type]:text-muted-foreground [&>p:first-of-type]:font-light [&>p:first-of-type]:italic"
+                  [&>p:first-of-type]:text-lg [&>p:first-of-type]:leading-[1.75] [&>p:first-of-type]:mb-6
+                  [&>p:first-of-type]:text-foreground [&>p:first-of-type]:font-serif"
                 dangerouslySetInnerHTML={{ __html: currentPost.content }}
               />
             </div>
