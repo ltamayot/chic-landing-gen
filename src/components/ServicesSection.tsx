@@ -5,23 +5,23 @@ const ServicesSection = () => {
 
   const services = [
     {
-      title: "MEDICINA\nTRADICIONAL\nCHINA",
-      description: "Terapias ancestrales que incluyen acupuntura, ventosas, moxibustión y herbolaria para restaurar el equilibrio energético del cuerpo de manera natural y efectiva.",
+      title: "SALUD\nDE\nLA\nMUJER",
+      description: "Síndrome premenstrual, Ciclos irregulares o dolorosos, Endometriosis y Sindrome de ovarios poliquiticos, Apoyo en fertilidad, Menopausia, entre otros.",
       image: "🌿"
     },
     {
-      title: "MEDICINA\nFUNCIONAL",
-      description: "Análisis profundo de la función corporal, equilibrio hormonal y optimización metabólica para un tratamiento personalizado basado en las causas raíz.",
+      title: "MEDICINA\nINTERNA",
+      description: "Trastornos digestivos, Problemas metabólicos, Fatiga crónica, Enfermedades autoinmunes, Entre otros.",
       image: "🔬"
     },
     {
-      title: "COMPARATIVA DE\nMÉTODOS",
-      description: "Conoce las diferencias entre el enfoque holístico integrativo y la medicina convencional para tomar decisiones informadas sobre tu salud.",
+      title: "SALUD\nMENTAL",
+      description: "Ansiedad, estrés crónico, Depresión, Insomnio, Apoyo en regulación emocional, entre otros.",
       image: "⚖️"
     },
     {
-      title: "TERAPIAS\nCOMPLEMENTARIAS",
-      description: "Técnicas adicionales como masaje terapéutico, auriculoterapia y reflexología que potencian los resultados de tu tratamiento principal.",
+      title: "Dolor",
+      description: "Dolor crónico (espalda, cuello, articulaciones), Migrañas y cefaleas, Dolor musculoesquelético, fibromialgia, entre otros.",
       image: "✨"
     },
   ];
@@ -35,7 +35,7 @@ const ServicesSection = () => {
             Nuestros Servicios
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Descubre nuestro enfoque integral que combina lo mejor de ambos mundos médicos
+            Descubre nuestro enfoque personalizado
           </p>
         </div>
 

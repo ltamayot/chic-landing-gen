@@ -80,13 +80,13 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-accent" />
-                <span className="text-primary-foreground text-lg">info@saori.com</span>
+                <span className="text-primary-foreground text-lg">s@saori.com</span>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent mt-1" />
                 <div className="text-primary-foreground text-lg">
                   <div>Bogotá, Colombia</div>
-                  <div>Calle 123 #45-67, Local 8</div>
+                  <div>Calle 72a  #20a-22 </div>
                 </div>
               </div>
             </div>
@@ -96,7 +96,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center">
           <p className="text-primary-foreground/70 text-sm">
-            © 2024 Saori. Todos los derechos reservados.
+            © 2025 Saori. Todos los derechos reservados.
           </p>
           <div className="mt-2">
             <a 

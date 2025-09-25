@@ -30,9 +30,7 @@ const MedicinaTradicionalChina = () => {
                       Acupuntura
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Técnica milenaria que utiliza agujas finas para estimular puntos específicos 
-                      del cuerpo, equilibrando el flujo de energía vital (Qi) y promoviendo la 
-                      sanación natural del organismo.
+                       Técnica milenaria que utiliza agujas finas para estimular puntos específicos del cuerpo, equilibrando el flujo de energía vital (Qi) y promoviendo la sanación natural del organismo.
                     </p>
                   </div>
                   <div className="flex justify-center">
@@ -57,12 +55,10 @@ const MedicinaTradicionalChina = () => {
                   </div>
                   <div className="md:order-2">
                     <h3 className="text-2xl md:text-3xl font-serif mb-4 text-foreground">
-                      Herbolaria China
+                      Acupuntura Estética
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Utilización de plantas medicinales chinas según fórmulas tradicionales 
-                      para tratar desequilibrios específicos y fortalecer la constitución 
-                      individual de cada paciente.
+                      Es una técnica que combina la acupuntura tradicional con un enfoque especial en mejorar la circulación en el rostro y cuello, estimular la producción de colágeno, reducir líneas finas, dar volumen y tono, y unificar el brillo natural de la piel.
                     </p>
                   </div>
                 </div>
@@ -76,9 +72,7 @@ const MedicinaTradicionalChina = () => {
                       Terapia de Ventosas
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Técnica terapéutica que utiliza copas de cristal para crear vacío sobre 
-                      la piel, mejorando la circulación sanguínea y eliminando toxinas del 
-                      organismo de manera natural.
+                      Técnica terapéutica que utiliza copas de cristal para crear vacío sobre la piel permitiendo aliviar dolores, mejorar la circulación sanguínea, eliminar toxinas y estimular la respuesta inmunológica.
                     </p>
                   </div>
                   <div className="flex justify-center">
@@ -106,9 +100,7 @@ const MedicinaTradicionalChina = () => {
                       Moxibustión
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Aplicación de calor mediante la combustión de artemisa sobre puntos 
-                      de acupuntura específicos para tonificar la energía vital y fortalecer 
-                      el sistema inmunológico.
+                      Aplicación de calor mediante la combustión de artemisa sobre puntos de acupuntura específicos para tonificar la energía vital y fortalecer el sistema inmunológico. Aporta beneficios en fertilidad, dolor articular y energía.
                     </p>
                   </div>
                 </div>
@@ -122,9 +114,7 @@ const MedicinaTradicionalChina = () => {
                       Diagnóstico Tradicional
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Evaluación integral mediante observación de la lengua, palpación del 
-                      pulso y análisis constitucional para identificar patrones de desequilibrio 
-                      según la medicina tradicional china.
+                      Evaluación integral mediante observación de la lengua, palpación del pulso y análisis constitucional para identificar patrones de desequilibrio según la medicina tradicional china.
                     </p>
                   </div>
                   <div className="flex justify-center">
@@ -148,9 +138,7 @@ const MedicinaTradicionalChina = () => {
                 Llegando a la raíz de tus síntomas
               </h2>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-16">
-                La medicina tradicional china considera el cuerpo como un sistema integrado donde 
-                todo está interconectado. Explora cómo esta antigua sabiduría puede ayudarte a 
-                restaurar tu equilibrio natural:
+                Cada punto actúa como una puerta, enviando información energética a través de la fascia hacia el interior del cuerpo:
               </p>
             </div>
 
@@ -169,37 +157,33 @@ const MedicinaTradicionalChina = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-16 pb-16">
                 {/* Top Left */}
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Equilibra la Energía</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Favorece la sanación </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Restableciendo el flujo armonioso del Qi (energía vital) a través 
-                    de los meridianos del cuerpo para restaurar el equilibrio natural.
+                    ofrece un estímulo eléctrico que restaura la homeostasis y el equilibrio.
                   </p>
                 </div>
 
                 {/* Top Right */}
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Fortalece la Constitución</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Libera bloqueos</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Tonificando los órganos internos y sistemas corporales según 
-                    los principios del Yin y Yang para mejorar la vitalidad general.
+                    desbloquea áreas de Qi estancado, estimulando la función de los órganos y promoviendo la salud.
                   </p>
                 </div>
 
                 {/* Bottom Left */}
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Previene Enfermedades</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Disminuye el dolor</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Identificando y corrigiendo desequilibrios sutiles antes de que 
-                    se manifiesten como síntomas o enfermedades aparentes.
+                    actúa como analgésico natural interrumpiendo las señales de dolor.
                   </p>
                 </div>
 
                 {/* Bottom Right */}
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Armoniza Mente y Cuerpo</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Reduce la inflamación</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Integrando aspectos emocionales y físicos del bienestar para 
-                    lograr un estado de salud holística y sostenible.
+                    disminuye los marcadores proinflamatorios en el cuerpo.
                   </p>
                 </div>
               </div>
@@ -215,8 +199,7 @@ const MedicinaTradicionalChina = () => {
                 La ciencia detrás de la medicina china
               </h2>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-16">
-                Aunque milenaria, la medicina tradicional china encuentra cada vez más respaldo 
-                en la investigación científica moderna, validando sus principios terapéuticos.
+                La acupuntura se originó en China hace aproximadamente 3,500 años. Hoy en día, la ciencia puede explicar su efectividad.
               </p>
             </div>
 
@@ -229,7 +212,7 @@ const MedicinaTradicionalChina = () => {
                   </div>
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground">
-                  Estudios clínicos que demuestran la efectividad de la acupuntura en el manejo del dolor
+                  Las ecografías Doppler muestran que la acupuntura mejora el flujo sanguíneo (circulación)
                 </h3>
               </div>
 
@@ -240,7 +223,7 @@ const MedicinaTradicionalChina = () => {
                   </div>
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground">
-                  Investigación en fitoquímica que valida las propiedades medicinales de las hierbas chinas
+                  Las imágenes RMN (resonancia magnética) demuestran cambios visibles en el cerebro.
                 </h3>
               </div>
 
@@ -251,7 +234,7 @@ const MedicinaTradicionalChina = () => {
                   </div>
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground">
-                  Neuroimágenes que muestran cómo la acupuntura modula la actividad cerebral
+                  Termografías (imágenes TDM) revelan que la acupuntura reduce la inflamación
                 </h3>
               </div>
 
@@ -262,7 +245,7 @@ const MedicinaTradicionalChina = () => {
                   </div>
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground">
-                  Evidencia de modulación del sistema inmunológico a través de técnicas tradicionales
+                  El tejido conectivo se enrolla alrededor de las agujas, aumentando la conductividad eléctrica.
                 </h3>
               </div>
             </div>

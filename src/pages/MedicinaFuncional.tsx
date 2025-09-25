@@ -30,9 +30,7 @@ const MedicinaFuncional = () => {
                       Análisis Funcional
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Evaluamos cómo funcionan todos los sistemas de tu cuerpo en conjunto, 
-                      identificando desequilibrios que pueden estar causando tus síntomas 
-                      a través de análisis avanzados.
+                      Historia clínica detallada, Exámenes de microbioma, marcadores de inflamación, hormonas, metabolismo y deficiencias nutricionales.
                     </p>
                   </div>
                   <div className="flex justify-center">
@@ -53,12 +51,10 @@ const MedicinaFuncional = () => {
                   </div>
                   <div className="md:order-2">
                     <h3 className="text-2xl md:text-3xl font-serif mb-4 text-foreground">
-                      Equilibrio Hormonal
+                      Nutrición terapéutica
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Restauramos el equilibrio hormonal natural de tu cuerpo para 
-                      mejorar la energía, el estado de ánimo y la función metabólica 
-                      mediante tratamientos personalizados.
+                      Planes alimenticios personalizados enfocados en restaurar la función digestiva, modular la inflamación y balancear el metabolismo.
                     </p>
                   </div>
                 </div>
@@ -69,12 +65,10 @@ const MedicinaFuncional = () => {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div>
                     <h3 className="text-2xl md:text-3xl font-serif mb-4 text-foreground">
-                      Optimización Metabólica
+                      Intervenciones personalizadas
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Optimizamos tu metabolismo para mejorar la digestión, la 
-                      absorción de nutrientes y la producción de energía celular, 
-                      creando un sistema más eficiente.
+                      Combinamos suplementación y fitoterapia basadas en evidencia con intervenciones mente-cuerpo y recomendaciones de estilo de vida.
                     </p>
                   </div>
                   <div className="flex justify-center">
@@ -93,12 +87,10 @@ const MedicinaFuncional = () => {
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-serif mb-8 text-foreground">
-                Llegando a la raíz de tus síntomas
+                Con la medicina funcional, podras…  
               </h2>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-16">
-                Como un árbol que necesita raíces fuertes para crecer saludable, la medicina funcional 
-                busca las causas fundamentales de tus síntomas para restaurar tu salud desde la base. 
-                Explora algunas de las formas en que funciona la medicina funcional a continuación:
+                Como un árbol que necesita raíces fuertes para crecer saludable, la medicina funcional busca las causas fundamentales de tus síntomas para restaurar tu salud desde la base. Explora algunas de las formas en que funciona la medicina funcional a continuación:
               </p>
             </div>
 
@@ -115,37 +107,33 @@ const MedicinaFuncional = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-16 pb-16">
                 {/* Top Left */}
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Promueve la Sanación</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Optimiza tu salud física, mental y espiritual</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Ofreciendo un análisis profundo del funcionamiento corporal para 
-                    restaurar la homeostasis y el equilibrio natural.
+                    Exploramos a fondo cómo funciona tu cuerpo para que recuperes tu equilibrio, fortalezcas tu energía y te sientas en plenitud
                   </p>
                 </div>
 
                 {/* Top Right */}
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Disminuye el Dolor</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Corrige las disfunciones mediante un enfoque holístico e integrativo</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Actuando como un analgésico natural, la medicina funcional 
-                    interrumpe las señales de dolor desde su origen.
+                    Un plan que combina alimentación, suplementación y prácticas mente-cuerpo para restablecer la armonía interna.
                   </p>
                 </div>
 
                 {/* Bottom Left */}
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Libera Bloqueos</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Funciona al máximo, cada día</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Identificando y liberando áreas de disfunción que estimulan 
-                    la función orgánica y promueven la salud integral.
+                    Identificando y liberando áreas de disfunción que estimulan  y promueven la salud integral.
                   </p>
                 </div>
 
                 {/* Bottom Right */}
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Reduce la Inflamación</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Restaura el equilibrio de tu cuerpo</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Reduciendo los marcadores proinflamatorios y restaurando el 
-                    equilibrio natural del sistema inmunológico.
+                    Recupera la energía y vitalidad para que cada sistema funcione en armonía.
                   </p>
                 </div>
               </div>
@@ -173,7 +161,7 @@ const MedicinaFuncional = () => {
                   📊
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground">
-                  Análisis de laboratorio avanzados que revelan desequilibrios en sistemas corporales
+                  Exámenes  avanzados que pueden detectar deficiencias nutricionales, desequilibrios hormonales y marcadores de inflamación invisibles en chequeos rutinarios.
                 </h3>
               </div>
 
@@ -182,7 +170,7 @@ const MedicinaFuncional = () => {
                   🧬
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground">
-                  Evaluación integral que considera factores genéticos, ambientales y de estilo de vida.
+                  La genética, el entorno y los hábitos de vida de cada persona guían el diseño del tratamiento.
                 </h3>
               </div>
 
@@ -191,7 +179,7 @@ const MedicinaFuncional = () => {
                   🎯
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground">
-                  Tratamientos personalizados basados en la respuesta individual de cada paciente.
+                  Utiliza investigación clínica para sustentar cambios en nutrición, suplementación y medicina preventiva.
                 </h3>
               </div>
 
@@ -200,7 +188,7 @@ const MedicinaFuncional = () => {
                   🛡️
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground">
-                  Enfoque preventivo que identifica y corrige desequilibrios antes de que se conviertan en enfermedad.
+                  Prevención de enfermedades crónicas y equilibrio cuerpo-mente.
                 </h3>
               </div>
             </div>

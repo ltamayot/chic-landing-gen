@@ -7,45 +7,45 @@ const TestimonialsSection = () => {
 
   const testimonials = [
     {
-      name: "Sofía Mendoza",
+      name: "Juliana Cely",
       location: "Bucaramanga, Colombia",
-      initials: "SM",
-      text: "Después de 3 años intentando concebir, el Método Saori me ayudó a quedar embarazada en solo 6 meses. La combinación de acupuntura y medicina funcional fue la clave para mi fertilidad.",
+      initials: "JC",
+      text: "Llevaba meses experimentando algunas molestias en mi salud y deseaba encontrar respuestas a esos malestares o una mejoria. En Saori, encontré un apoyo fundamental en mi proceso de sanación. Descubrí una manera diferente de comprender, escuchar y sentir mi salud y existencia. Aprendí a nutrirme, a ser compasiva y paciente conmigo misma y mi salud. Sin duda, Saori juega un papel crucial en mi bienestar. Agradezco a la Dra. Sara por ser un ángel en mi camino hacia la salud",
       rating: 5
     },
     {
       name: "Valentina Ruiz", 
       location: "Pereira, Colombia",
       initials: "VR",
-      text: "La Dra. Tamayo me ayudó con mi síndrome de ovario poliquístico. Su tratamiento holístico no solo mejoró mi fertilidad, sino que también reguló mi ciclo menstrual de manera natural.",
+      text: "Mi experiencia en el Saori con la Dra. Sara fué transformadora. Su enfoque personalizado combinando la medicina funcional y oriental me permitieron comprender mi cuerpo profundamente y regular mi sistema Hormonal. Recomiendo Saori a quienes buscan una atención médica personalizada y holística.",
       rating: 5
     },
     {
-      name: "Carmen y Diego",
+      name: "David Diaz",
       location: "Manizales, Colombia", 
-      initials: "CD",
-      text: "Como pareja, encontramos en Saori la solución a nuestros problemas de fertilidad. El enfoque integral consideró tanto mi salud como la de mi esposo, y ahora somos padres felices.",
+      initials: "DD",
+      text: "Nunca había probado un enfoque de medicina china y medicina funcional antes, siento que me ha ayudado mucho a ser más consciente de mi alimentación, y lo más importante, el proceso en Saori me ha ayudado mucho mejorar mi calidad de sueño y ansiedad.",
       rating: 5
     },
     {
       name: "María Elena García",
       location: "Medellín, Colombia",
       initials: "MG",
-      text: "Sufría de migrañas crónicas durante años. El tratamiento con acupuntura y medicina funcional me cambió la vida. Ahora puedo disfrutar de días sin dolor y con energía renovada.",
+      text: "Me acerqué a Saori por ansiedad y dificultades para dormir. Desde la primera cita sentí un cambio y un acompañamiento profundo. Con las terapias de acupuntura, mi descanso ha mejorado y mi mente está más tranquila.",
       rating: 5
     },
     {
-      name: "Andrés Morales",
+      name: "Maria Paula Pinilla",
       location: "Cali, Colombia",
-      initials: "AM",
-      text: "Problemas digestivos me tenían limitado en mi trabajo y vida social. El enfoque integrativo de la Dra. Tamayo identificó las causas raíz y ahora tengo una salud digestiva óptima.",
+      initials: "MP",
+      text: "La Dra. Sara se tomó el tiempo de escucharme y personalizar mi tratamiento. Mis síntomas han mejorado y he aprendido a conocer mi cuerpo y a nutrirme mejor..",
       rating: 5
     },
     {
-      name: "Lucía Fernández",
+      name: "Andres Morales",
       location: "Barranquilla, Colombia",
-      initials: "LF",
-      text: "El estrés y la ansiedad controlaban mi vida. A través del Método Saori, encontré equilibrio emocional y herramientas naturales para manejar el estrés diario de forma efectiva.",
+      initials: "AM",
+      text: " Tenía problemas digestivos y todo lo que comía me sentaba mal. En Saori identificaron la causa de mis síntomas y, a lo largo de cada fase del tratamiento, fui trabajando las raíces del problema. Ahora me siento muy bien, con más energía y  tengo una relación mucho más tranquila con la comida.",
       rating: 5
     }
   ];
@@ -75,7 +75,7 @@ const TestimonialsSection = () => {
             Lo que dicen nuestros pacientes
           </h2>
           <p className="text-lg text-muted-foreground">
-            Experiencias reales de transformación y bienestar
+            Llevaba meses experimentando algunas molestias en mi salud y deseaba encontrar respuestas a esos malestares o una mejoria. En Saori, encontré un apoyo fundamental en mi proceso de sanación. Descubrí una manera diferente de comprender, escuchar y sentir mi salud y existencia. Aprendí a nutrirme, a ser compasiva y paciente conmigo misma y mi salud. Sin duda, Saori juega un papel crucial en mi bienestar. Agradezco a la Dra. Sara por ser un ángel en mi camino hacia la salud
           </p>
         </div>
 

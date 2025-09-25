@@ -13,20 +13,12 @@ const ConsultationSection = () => {
           {/* Contenido de texto */}
           <div>
             <h2 className="text-4xl md:text-5xl font-serif mb-8 text-foreground leading-tight">
-              Nos tomamos el
-              <br />
-              tiempo de conocerte
-              <br />
-              a profundidad
+              Nos tomamos el tiempo de conocerte a profundidad
             </h2>
             
             <div className="border-l-4 border-accent pl-6 mb-8">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                That's why we take the time to get to know you.
-                <br /><br />
-                As part of our diagnosis, we are looking at your unique symptom pattern. 
-                At Saori, you'll receive a 90-minute initial consultation and acupuncture 
-                treatment, a custom-made formula, and a guided nutrition plan.
+                Comienza tu camino hacia una versión más saludable y feliz de ti mismo con nosotros. Iniciaremos con un análisis profundo de tu historia clínica, recomendaremos pruebas diagnósticas avanzadas cuando sea necesario, y trabajaremos para lograr la mejor y más saludable versión de ti… física, emocional y mental.
               </p>
             </div>
 
@@ -39,7 +31,7 @@ const ConsultationSection = () => {
                 window.scrollTo(0, 0);
               }}
             >
-              YOUR FIRST VISIT
+              PRIMERA CONSULTA
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>

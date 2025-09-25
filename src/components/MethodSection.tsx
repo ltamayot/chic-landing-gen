@@ -23,13 +23,13 @@ const MethodSection = () => {
     },
     {
       icon: Brain,
-      title: "Enfoque Integrativo",
-      description: "Combinamos lo mejor de ambos mundos médicos"
+      title: "Holistico",
+      description: "Abordamos cada dimensión de tu bienestar: física, mental y emocional"
     },
     {
       icon: Leaf,
-      title: "Terapias Naturales",
-      description: "Métodos ancestrales respaldados por la ciencia moderna"
+      title: "Respaldado por ciencia",
+      description: "Cada plan de tratamiento se fundamenta en investigación científica y en los exámenes necesarios para lograr el máximo bienestar"
     },
     {
       icon: Target,
@@ -60,8 +60,7 @@ const MethodSection = () => {
             El Método Saori
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Una aproximación integral que combina lo mejor de la medicina oriental y occidental 
-            para ofrecerte un cuidado médico personalizado y efectivo
+            Una aproximación integral que combina lo mejor de la medicina oriental y occidental para ofrecerte un cuidado médico personalizado y efectivo
           </p>
         </div>
 
@@ -88,8 +87,7 @@ const MethodSection = () => {
             <div className="relative z-10">
               <h3 className="text-3xl font-serif mb-8">Medicina Tradicional China</h3>
               <p className="text-primary-foreground/90 mb-8 leading-relaxed text-lg">
-                Un ecosistema completo de terapias ancestrales que incluye acupuntura, 
-                ventosas, moxibustión y herbolaria para restaurar el equilibrio natural de tu cuerpo
+                Recupera tu balance con prácticas ancestrales que identifican y tratan la causa raiz de tus desequilibrios
               </p>
               <Button 
                 variant="secondary" 
@@ -100,7 +98,7 @@ const MethodSection = () => {
                   window.scrollTo(0, 0);
                 }}
               >
-                CONSULTA GRATUITA
+                CONOCER MÁS
               </Button>
             </div>
           </div>
@@ -110,8 +108,7 @@ const MethodSection = () => {
             <div className="relative z-10">
               <h3 className="text-3xl font-serif mb-8">Medicina Funcional</h3>
               <p className="text-accent-foreground/90 mb-8 leading-relaxed text-lg">
-                Análisis profundo de la función corporal, equilibrio hormonal y 
-                optimización metabólica para un tratamiento personalizado basado en evidencia científica
+                de un enfoque integrativo, personalizado  y basado en la evidencia
               </p>
               <Button 
                 variant="secondary" 

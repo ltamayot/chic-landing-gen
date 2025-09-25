@@ -5,27 +5,27 @@ const DoctorSection = () => {
   const certifications = [
     {
       icon: GraduationCap,
-      text: "Medicina General - Universidad Nacional de Colombia",
+      text: "Médica y cirujana- Pontificia Universidad Javeriana",
       color: "text-accent"
     },
     {
       icon: Sparkles,
-      text: "Medicina Tradicional China - Beijing University of Chinese Medicine", 
+      text: "Medicina tradicional china y acupuntura- China Medical University – Taichung Taiwan", 
       color: "text-accent"
     },
     {
       icon: Heart,
-      text: "Medicina Funcional - Institute for Functional Medicine",
+      text: "Medicina Funcional Certificación IFMCP - Institute for Functional Medicine EEUU",
       color: "text-accent"
     },
     {
       icon: User,
-      text: "Acupuntura Avanzada - World Federation of Acupuncture Societies",
+      text: "Certificación IFMCP en Medicina Funcional- Institute of Functional Medicine EEUU",
       color: "text-primary"
     },
     {
       icon: Heart,
-      text: "Especialización en Fertilidad y Salud Reproductiva",
+      text: "Sanación pránica y yoga Iyengar en India Himalayan Yoga Center",
       color: "text-red-500"
     }
   ];
@@ -45,8 +45,7 @@ const DoctorSection = () => {
             Dra. Sara Tamayo
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Especialista en medicina integrativa con más de 10 años de experiencia 
-            combinando técnicas ancestrales chinas con medicina occidental moderna
+            Especialista en Medicina Funcional y Medicina tradicional China
           </p>
         </div>
 
@@ -81,9 +80,7 @@ const DoctorSection = () => {
             {/* Testimonial */}
             <div className="bg-background border-l-4 border-accent p-6 mb-8 italic">
               <p className="text-lg text-foreground leading-relaxed">
-                "Mi enfoque médico se basa en la integración de la medicina oriental y
-                occidental, tratando a cada paciente como un individuo único con
-                necesidades específicas."
+                "La verdadera salud surge cuando tratamos la causa, no solo los síntomas, y ayudamos al cuerpo a sanar desde adentro hacia afuera."
               </p>
             </div>
 
@@ -93,10 +90,7 @@ const DoctorSection = () => {
                 Metodología Integrativa
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                La Dra. Sara Tamayo combina décadas de experiencia en medicina tradicional china 
-                con los avances más recientes en medicina funcional. Su enfoque holístico considera 
-                la interconexión entre mente, cuerpo y espíritu, proporcionando tratamientos 
-                personalizados que abordan la causa raíz de las condiciones médicas.
+                Mediante su enfoque integrativo, ofrece a sus pacientes una visión completa y personalizada para restaurar la salud y el equilibrio.  Con especial atención en:  Salud intestinal, Desequilibrios del sistema nervioso,  Salud mental, Salud de la mujer, Manejo del dolor, Inflamación crónica, Enfermedades autoinmunes.
               </p>
             </div>
 

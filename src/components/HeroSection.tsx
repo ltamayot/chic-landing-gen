@@ -31,23 +31,19 @@ const HeroSection = () => {
 
         {/* Título principal */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-normal mb-6 leading-tight animate-fade-in delay-200">
-          Cuidado Médico
+          Bienvenidos a Saori
           <br />
           <span className="text-primary-lighter">Integral</span>
         </h1>
 
         {/* Subtítulo */}
         <h2 className="text-xl md:text-2xl lg:text-3xl text-primary-lighter mb-12 font-light tracking-wide animate-fade-in delay-400">
-          Medicina Oriental y Occidental
+          Centro de Medicina Funcional Y Medicina tradicional china
         </h2>
 
         {/* Descripción */}
         <p className="text-lg md:text-xl lg:text-2xl text-primary-foreground/90 max-w-4xl mx-auto mb-12 leading-relaxed font-light animate-fade-in delay-600">
-          En Saori, combinamos la medicina tradicional con las últimas innovaciones
-          <br className="hidden md:block" />
-          para brindarte el mejor cuidado médico personalizado usando un enfoque
-          <br className="hidden md:block" />
-          integrativo de la medicina oriental.
+          Reconecta con tu bienestar desde la naturaleza y la ciencia
         </p>
 
         {/* Botones de acción */}
