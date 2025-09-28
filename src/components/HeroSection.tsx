@@ -1,6 +1,26 @@
 import { Button } from "@/components/ui/button";
 
-const HeroSection = () => {
+interface HeroSectionProps {
+  label?: string;
+  title?: string;
+  titleHighlight?: string;
+  subtitle?: string;
+  description?: string;
+  primaryButtonText?: string;
+  secondaryButtonText?: string;
+  backgroundImage?: string;
+}
+
+const HeroSection = ({
+  label = "NUESTRO MÉTODO",
+  title = "Bienvenidos a Saori",
+  titleHighlight = "Integral",
+  subtitle = "Centro de Medicina Funcional Y Medicina tradicional china",
+  description = "Reconecta con tu bienestar desde la naturaleza y la ciencia",
+  primaryButtonText = "AGENDAR CITA",
+  secondaryButtonText = "NUESTROS SERVICIOS",
+  backgroundImage
+}: HeroSectionProps) => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -14,8 +34,20 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden">
       {/* Background with overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary-dark"></div>
-      <div className="absolute inset-0 bg-black/20"></div>
+      {backgroundImage ? (
+        <>
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${backgroundImage})` }}
+          ></div>
+          <div className="absolute inset-0 bg-black/40"></div>
+        </>
+      ) : (
+        <>
+          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary-dark"></div>
+          <div className="absolute inset-0 bg-black/20"></div>
+        </>
+      )}
       
       {/* Animated background elements */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-primary-lighter/10 rounded-full blur-xl animate-pulse"></div>
@@ -25,25 +57,25 @@ const HeroSection = () => {
         {/* Etiqueta superior */}
         <div className="mb-8 animate-fade-in">
           <span className="text-primary-lighter uppercase tracking-[0.2em] text-sm font-medium border border-primary-lighter/30 px-6 py-2 rounded-full backdrop-blur-sm">
-            NUESTRO MÉTODO
+            {label}
           </span>
         </div>
 
         {/* Título principal */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-normal mb-6 leading-tight animate-fade-in delay-200">
-          Bienvenidos a Saori
+          {title}
           <br />
-          <span className="text-primary-lighter">Integral</span>
+          <span className="text-primary-lighter">{titleHighlight}</span>
         </h1>
 
         {/* Subtítulo */}
         <h2 className="text-xl md:text-2xl lg:text-3xl text-primary-lighter mb-12 font-light tracking-wide animate-fade-in delay-400">
-          Centro de Medicina Funcional Y Medicina tradicional china
+          {subtitle}
         </h2>
 
         {/* Descripción */}
         <p className="text-lg md:text-xl lg:text-2xl text-primary-foreground/90 max-w-4xl mx-auto mb-12 leading-relaxed font-light animate-fade-in delay-600">
-          Reconecta con tu bienestar desde la naturaleza y la ciencia
+          {description}
         </p>
 
         {/* Botones de acción */}
@@ -54,7 +86,7 @@ const HeroSection = () => {
             className="min-w-48 hover:scale-105 transform transition-all duration-300"
             onClick={() => scrollToSection('contacto')}
           >
-            AGENDAR CITA
+            {primaryButtonText}
           </Button>
           <Button 
             variant="outline" 
@@ -62,7 +94,7 @@ const HeroSection = () => {
             className="min-w-48 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary hover:scale-105 transform transition-all duration-300"
             onClick={() => scrollToSection('servicios')}
           >
-            NUESTROS SERVICIOS
+            {secondaryButtonText}
           </Button>
         </div>
       </div>
