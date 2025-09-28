@@ -49,7 +49,7 @@ const MedicinaTradicionalChina = () => {
                     </p>
                   </div>
                   <div className="flex justify-center">
-                    <div className="w-24 h-24 rounded-full overflow-hidden">
+                    <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
                       <img 
                         src={acupunctureTreatmentImg} 
                         alt="Acupuntura" 
@@ -64,7 +64,7 @@ const MedicinaTradicionalChina = () => {
               <div className="bg-background rounded-3xl p-8 md:p-12 shadow-lg">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div className="flex justify-center md:order-1">
-                    <div className="w-24 h-24 rounded-full overflow-hidden">
+                    <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
                       <img 
                         src={acupuncturaImagen} 
                         alt="Acupuntura Estética" 
@@ -95,7 +95,7 @@ const MedicinaTradicionalChina = () => {
                     </p>
                   </div>
                   <div className="flex justify-center">
-                    <div className="w-24 h-24 rounded-full overflow-hidden">
+                    <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
                       <img 
                         src={ventosasImg} 
                         alt="Terapia de Ventosas" 
@@ -110,7 +110,7 @@ const MedicinaTradicionalChina = () => {
               <div className="bg-background rounded-3xl p-8 md:p-12 shadow-lg">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div className="flex justify-center md:order-1">
-                    <div className="w-24 h-24 rounded-full overflow-hidden">
+                    <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
                       <img 
                         src={moxibustionImg} 
                         alt="Moxibustión" 
@@ -141,7 +141,7 @@ const MedicinaTradicionalChina = () => {
                     </p>
                   </div>
                   <div className="flex justify-center">
-                    <div className="w-24 h-24 rounded-full overflow-hidden">
+                    <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
                       <img 
                         src={diagnosisImg} 
                         alt="Diagnóstico Tradicional" 
