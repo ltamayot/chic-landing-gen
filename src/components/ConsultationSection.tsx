@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import patientImage from "@/assets/patient-lifestyle.jpg";
+import consultaImage from "@/assets/consulta-image.png";
 
 const ConsultationSection = () => {
   const navigate = useNavigate();
@@ -40,15 +40,10 @@ const ConsultationSection = () => {
           <div className="relative">
             <div className="bg-background rounded-3xl p-8 shadow-lg">
               <img 
-                src={patientImage} 
-                alt="Mujer joven sonriente con blusa floral"
+                src={consultaImage} 
+                alt="Consulta médica profesional"
                 className="w-full h-96 object-cover rounded-2xl"
               />
-              <div className="absolute bottom-12 left-12 bg-background/90 backdrop-blur-sm px-4 py-2 rounded-lg">
-                <p className="text-sm text-muted-foreground">
-                  Imagen: Mujer joven sonriente con blusa floral
-                </p>
-              </div>
             </div>
           </div>
         </div>

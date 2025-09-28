@@ -1,5 +1,8 @@
-import doctorImage from "@/assets/doctor-portrait.jpg";
+import doctorImage from "@/assets/dra-sara-tamayo.jpg";
 import { User, GraduationCap, Heart, Sparkles, Building } from "lucide-react";
+import logo1 from "@/assets/logo-1.png";
+import logo2 from "@/assets/logo-2.png";
+import logo3 from "@/assets/logo-3.png";
 
 const DoctorSection = () => {
   const certifications = [
@@ -31,9 +34,9 @@ const DoctorSection = () => {
   ];
 
   const clinics = [
-    { name: "Clínica A", icon: Building },
-    { name: "Centro B", icon: Building },
-    { name: "Instituto C", icon: Building }
+    { name: "Pontificia Universidad Javeriana", logo: logo1 },
+    { name: "Institute for Functional Medicine", logo: logo2 },
+    { name: "China Medical University", logo: logo3 }
   ];
 
   return (
@@ -53,17 +56,12 @@ const DoctorSection = () => {
           {/* Imagen y badge de certificación */}
           <div className="relative">
             <div className="bg-sage rounded-3xl p-8 relative">
-              <div className="bg-primary rounded-2xl p-8 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-24 h-24 bg-primary-lighter rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <User className="w-12 h-12 text-primary-foreground" />
-                  </div>
-                  <p className="text-primary-foreground font-medium">
-                    Foto de la Dra. Sara
-                    <br />
-                    Tamayo
-                  </p>
-                </div>
+              <div className="bg-background rounded-2xl p-8 flex items-center justify-center">
+                <img 
+                  src={doctorImage} 
+                  alt="Dra. Sara Tamayo"
+                  className="w-full h-80 object-cover rounded-2xl"
+                />
               </div>
               
               {/* Badge de médica certificada */}
@@ -114,11 +112,15 @@ const DoctorSection = () => {
               <h4 className="text-xl font-serif mb-6 text-foreground">
                 Experiencia en Clínicas Prestigiosas
               </h4>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {clinics.map((clinic, index) => (
-                  <div key={index} className="text-center p-4 bg-sage rounded-xl">
-                    <clinic.icon className="w-8 h-8 text-primary mx-auto mb-2" />
-                    <span className="text-sm text-muted-foreground">{clinic.name}</span>
+                  <div key={index} className="text-center p-6 bg-background rounded-xl border-2 border-sage">
+                    <img 
+                      src={clinic.logo} 
+                      alt={clinic.name}
+                      className="w-20 h-20 object-contain mx-auto mb-4"
+                    />
+                    <span className="text-xs text-muted-foreground">{clinic.name}</span>
                   </div>
                 ))}
               </div>

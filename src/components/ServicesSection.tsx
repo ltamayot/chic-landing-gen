@@ -2,6 +2,7 @@ import { useState } from "react";
 import saludMujerImg from "@/assets/salud-mujer.jpg";
 import medicinaInternaImg from "@/assets/medicina-interna.jpg";
 import saludMentalImg from "@/assets/salud-mental.jpg";
+import dolorIconoImg from "@/assets/dolor-icono.jpg";
 
 const ServicesSection = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -28,7 +29,8 @@ const ServicesSection = () => {
     {
       title: "Dolor",
       description: "Dolor crónico (espalda, cuello, articulaciones), Migrañas y cefaleas, Dolor musculoesquelético, fibromialgia, entre otros.",
-      image: "✨"
+      image: "✨",
+      backgroundImage: dolorIconoImg
     },
   ];
 

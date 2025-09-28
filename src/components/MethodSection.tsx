@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Heart, Brain, Leaf, Target, CheckCircle, Users } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import acupunctureImg from "@/assets/acupuncture.jpg";
+import saludMedicinaFuncionalImg from "@/assets/salud-medicina-funcional.jpg";
 
 const MethodSection = () => {
   const navigate = useNavigate();
@@ -82,8 +84,9 @@ const MethodSection = () => {
 
         {/* Tarjetas principales mejoradas */}
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <div className="group rounded-3xl p-12 text-primary-foreground hover:shadow-2xl transition-all duration-500 hover:scale-105 relative overflow-hidden bg-gradient-to-br from-primary to-primary-light text-center">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-light opacity-90"></div>
+          <div className="group rounded-3xl p-12 text-primary-foreground hover:shadow-2xl transition-all duration-500 hover:scale-105 relative overflow-hidden bg-cover bg-center text-center"
+               style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${acupunctureImg})` }}>
+            <div className="absolute inset-0 bg-primary/20"></div>
             <div className="relative z-10">
               <h3 className="text-3xl font-serif mb-8">Medicina Tradicional China</h3>
               <p className="text-primary-foreground/90 mb-8 leading-relaxed text-lg">
@@ -103,17 +106,18 @@ const MethodSection = () => {
             </div>
           </div>
 
-          <div className="group rounded-3xl p-12 text-accent-foreground hover:shadow-2xl transition-all duration-500 hover:scale-105 relative overflow-hidden bg-gradient-to-br from-accent to-accent/80 text-center">
-            <div className="absolute inset-0 bg-gradient-to-br from-accent to-accent/80 opacity-90"></div>
+          <div className="group rounded-3xl p-12 text-primary-foreground hover:shadow-2xl transition-all duration-500 hover:scale-105 relative overflow-hidden bg-cover bg-center text-center"
+               style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${saludMedicinaFuncionalImg})` }}>
+            <div className="absolute inset-0 bg-accent/20"></div>
             <div className="relative z-10">
               <h3 className="text-3xl font-serif mb-8">Medicina Funcional</h3>
-              <p className="text-accent-foreground/90 mb-8 leading-relaxed text-lg">
+              <p className="text-primary-foreground/90 mb-8 leading-relaxed text-lg">
                 de un enfoque integrativo, personalizado  y basado en la evidencia
               </p>
               <Button 
                 variant="secondary" 
                 size="lg" 
-                className="hover:scale-105 transform transition-all duration-300 bg-white text-accent hover:bg-white/90"
+                className="hover:scale-105 transform transition-all duration-300"
                 onClick={() => {
                   navigate('/medicina-funcional');
                   window.scrollTo(0, 0);
