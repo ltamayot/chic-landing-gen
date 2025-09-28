@@ -176,7 +176,7 @@ const MedicinaTradicionalChina = () => {
             <div className="relative max-w-6xl mx-auto">
               {/* Central icon placeholder */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-                <div className="w-24 h-24 rounded-full bg-sage/30 flex items-center justify-center animate-pulse hover:scale-110 transition-transform duration-300">
+                <div className="w-24 h-24 rounded-full bg-sage/30 flex items-center justify-center hover:scale-110 transition-transform duration-300">
                   <img 
                     src={group11Icon} 
                     alt="Medicina China" 
