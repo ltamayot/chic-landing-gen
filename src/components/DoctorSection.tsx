@@ -52,7 +52,7 @@ const DoctorSection = () => {
           <div className="relative">
             <div className="bg-sage rounded-3xl p-8 relative">
               <div className="bg-background rounded-2xl overflow-hidden">
-                <img src={doctorImage} alt="Dra. Sara Tamayo" className="w-full h-96 object-cover object-center" />
+                <img src={doctorImage} alt="Dra. Sara Tamayo" className="w-full h-96 object-cover object-center mt-2" />
               </div>
               
               {/* Badge de médica certificada */}
