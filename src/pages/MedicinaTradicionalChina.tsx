@@ -11,9 +11,9 @@ const MedicinaTradicionalChina = () => {
         <HeroSection 
           label="ACUPUNTURA EN BOGOTÁ"
           title="Con la acupuntura, activamos la inteligencia de tu cuerpo para restaurar el equilibrio"
-          titleHighlight="Integral"
-          subtitle="Sana, equilibra y reconecta con tu naturaleza regenerativa"
-          description="La medicina funcional te observa de forma holística para abordar el origen de los problemas, sanar tu cuerpo y optimizar tu manera de vivir"
+          titleHighlight=""
+          subtitle=""
+          description=""
           primaryButtonText="AGENDAR CITA"
           secondaryButtonText="NUESTROS SERVICIOS"
         />

@@ -55,28 +55,38 @@ const HeroSection = ({
       
       <div className="container mx-auto text-center text-primary-foreground relative z-10">
         {/* Etiqueta superior */}
-        <div className="mb-8 animate-fade-in">
-          <span className="text-primary-lighter uppercase tracking-[0.2em] text-sm font-medium border border-primary-lighter/30 px-6 py-2 rounded-full backdrop-blur-sm">
-            {label}
-          </span>
-        </div>
+        {label && (
+          <div className="mb-8 animate-fade-in">
+            <span className="text-primary-lighter uppercase tracking-[0.2em] text-sm font-medium border border-primary-lighter/30 px-6 py-2 rounded-full backdrop-blur-sm">
+              {label}
+            </span>
+          </div>
+        )}
 
         {/* Título principal */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-normal mb-6 leading-tight animate-fade-in delay-200">
           {title}
-          <br />
-          <span className="text-primary-lighter">{titleHighlight}</span>
+          {titleHighlight && (
+            <>
+              <br />
+              <span className="text-primary-lighter">{titleHighlight}</span>
+            </>
+          )}
         </h1>
 
         {/* Subtítulo */}
-        <h2 className="text-xl md:text-2xl lg:text-3xl text-primary-lighter mb-12 font-light tracking-wide animate-fade-in delay-400">
-          {subtitle}
-        </h2>
+        {subtitle && (
+          <h2 className="text-xl md:text-2xl lg:text-3xl text-primary-lighter mb-12 font-light tracking-wide animate-fade-in delay-400">
+            {subtitle}
+          </h2>
+        )}
 
         {/* Descripción */}
-        <p className="text-lg md:text-xl lg:text-2xl text-primary-foreground/90 max-w-4xl mx-auto mb-12 leading-relaxed font-light animate-fade-in delay-600">
-          {description}
-        </p>
+        {description && (
+          <p className="text-lg md:text-xl lg:text-2xl text-primary-foreground/90 max-w-4xl mx-auto mb-12 leading-relaxed font-light animate-fade-in delay-600">
+            {description}
+          </p>
+        )}
 
         {/* Botones de acción */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in delay-800">
