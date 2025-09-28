@@ -6,7 +6,7 @@ import mfEcosistema1 from "@/assets/mf-ecosistema-1.jpg";
 import mfEcosistema2 from "@/assets/mf-ecosistema-2.jpg";
 import mfEcosistema4 from "@/assets/mf-ecosistema-4.jpg";
 import mfPortada from "@/assets/mf-portada.jpg";
-import vectorIcon from "@/assets/vector-icon.svg";
+import vector3Icon from "@/assets/vector-3-icon.svg";
 import flaskIcon from "@/assets/flask-icon.svg";
 import group22Icon from "@/assets/group-2-2-icon.svg";
 import vector1Icon from "@/assets/vector-1-icon.svg";
@@ -52,7 +52,7 @@ const MedicinaFuncional = () => {
                     </p>
                   </div>
                   <div className="flex justify-center">
-                    <div className="w-32 h-32 rounded-full overflow-hidden shadow-lg">
+                    <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
                       <img 
                         src={mfEcosistema1} 
                         alt="Análisis Funcional" 
@@ -67,7 +67,7 @@ const MedicinaFuncional = () => {
               <div className="bg-background rounded-3xl p-8 md:p-12 shadow-lg">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div className="flex justify-center md:order-1">
-                    <div className="w-32 h-32 rounded-full overflow-hidden shadow-lg">
+                    <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
                       <img 
                         src={mfEcosistema2} 
                         alt="Nutrición terapéutica" 
@@ -98,7 +98,7 @@ const MedicinaFuncional = () => {
                     </p>
                   </div>
                   <div className="flex justify-center">
-                    <div className="w-32 h-32 rounded-full overflow-hidden shadow-lg">
+                    <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
                       <img 
                         src={mfEcosistema4} 
                         alt="Intervenciones personalizadas" 
@@ -126,11 +126,11 @@ const MedicinaFuncional = () => {
 
             {/* Central icon with surrounding cards */}
             <div className="relative max-w-6xl mx-auto">
-              {/* Central icon placeholder */}
+              {/* Central icon */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-                <div className="w-24 h-24 flex items-center justify-center bg-background rounded-full shadow-lg border-4 border-sage">
+                <div className="w-24 h-24 rounded-full bg-sage/30 flex items-center justify-center hover:scale-110 transition-transform duration-300">
                   <img 
-                    src={vectorIcon} 
+                    src={vector3Icon} 
                     alt="Medicina Funcional" 
                     className="w-12 h-12 transition-all duration-300"
                   />
@@ -190,54 +190,54 @@ const MedicinaFuncional = () => {
 
             {/* Four pillars grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-              <div className="text-center">
-                <div className="mb-6 flex justify-center">
+              <div className="text-center group cursor-pointer">
+                <div className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/40 group-hover:shadow-lg group-hover:shadow-sage/30 transition-all duration-500 group-hover:scale-125 group-hover:rotate-6 animate-fade-in transform-gpu">
                   <img 
                     src={flaskIcon} 
                     alt="Exámenes avanzados" 
-                    className="w-16 h-16 transition-all duration-300 hover:scale-110 hover:rotate-3 hover:brightness-110 hover:drop-shadow-[0_4px_20px_rgba(var(--primary-rgb),0.4)]"
+                    className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-foreground">
+                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
                   Exámenes avanzados que pueden detectar deficiencias nutricionales, desequilibrios hormonales y marcadores de inflamación invisibles en chequeos rutinarios.
                 </h3>
               </div>
 
-              <div className="text-center">
-                <div className="mb-6 flex justify-center">
+              <div className="text-center group cursor-pointer">
+                <div className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/40 group-hover:shadow-lg group-hover:shadow-sage/30 transition-all duration-500 group-hover:scale-125 group-hover:rotate-6 animate-fade-in transform-gpu">
                   <img 
                     src={group22Icon} 
                     alt="Diseño personalizado" 
-                    className="w-16 h-16 transition-all duration-300 hover:scale-110 hover:rotate-3 hover:brightness-110 hover:drop-shadow-[0_4px_20px_rgba(var(--primary-rgb),0.4)]"
+                    className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-foreground">
+                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
                   La genética, el entorno y los hábitos de vida de cada persona guían el diseño del tratamiento.
                 </h3>
               </div>
 
-              <div className="text-center">
-                <div className="mb-6 flex justify-center">
+              <div className="text-center group cursor-pointer">
+                <div className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/40 group-hover:shadow-lg group-hover:shadow-sage/30 transition-all duration-500 group-hover:scale-125 group-hover:rotate-6 animate-fade-in transform-gpu">
                   <img 
                     src={vector1Icon} 
                     alt="Investigación clínica" 
-                    className="w-16 h-16 transition-all duration-300 hover:scale-110 hover:rotate-3 hover:brightness-110 hover:drop-shadow-[0_4px_20px_rgba(var(--primary-rgb),0.4)]"
+                    className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-foreground">
+                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
                   Utiliza investigación clínica para sustentar cambios en nutrición, suplementación y medicina preventiva.
                 </h3>
               </div>
 
-              <div className="text-center">
-                <div className="mb-6 flex justify-center">
+              <div className="text-center group cursor-pointer">
+                <div className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/40 group-hover:shadow-lg group-hover:shadow-sage/30 transition-all duration-500 group-hover:scale-125 group-hover:rotate-6 animate-fade-in transform-gpu">
                   <img 
                     src={vector2Icon} 
                     alt="Prevención" 
-                    className="w-16 h-16 transition-all duration-300 hover:scale-110 hover:rotate-3 hover:brightness-110 hover:drop-shadow-[0_4px_20px_rgba(var(--primary-rgb),0.4)]"
+                    className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-foreground">
+                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
                   Prevención de enfermedades crónicas y equilibrio cuerpo-mente.
                 </h3>
               </div>
