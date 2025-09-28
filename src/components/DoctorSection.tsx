@@ -3,44 +3,39 @@ import { User, GraduationCap, Heart, Sparkles, Building } from "lucide-react";
 import logo1 from "@/assets/logo-1.png";
 import logo2 from "@/assets/logo-2.png";
 import logo3 from "@/assets/logo-3.png";
-
 const DoctorSection = () => {
-  const certifications = [
-    {
-      icon: GraduationCap,
-      text: "Médica y cirujana- Pontificia Universidad Javeriana",
-      color: "text-accent"
-    },
-    {
-      icon: Sparkles,
-      text: "Medicina tradicional china y acupuntura- China Medical University – Taichung Taiwan", 
-      color: "text-accent"
-    },
-    {
-      icon: Heart,
-      text: "Medicina Funcional Certificación IFMCP - Institute for Functional Medicine EEUU",
-      color: "text-accent"
-    },
-    {
-      icon: User,
-      text: "Certificación IFMCP en Medicina Funcional- Institute of Functional Medicine EEUU",
-      color: "text-primary"
-    },
-    {
-      icon: Heart,
-      text: "Sanación pránica y yoga Iyengar en India Himalayan Yoga Center",
-      color: "text-red-500"
-    }
-  ];
-
-  const clinics = [
-    { name: "Pontificia Universidad Javeriana", logo: logo1 },
-    { name: "Institute for Functional Medicine", logo: logo2 },
-    { name: "China Medical University", logo: logo3 }
-  ];
-
-  return (
-    <section id="doctora" className="py-20 bg-background">
+  const certifications = [{
+    icon: GraduationCap,
+    text: "Médica y cirujana- Pontificia Universidad Javeriana",
+    color: "text-accent"
+  }, {
+    icon: Sparkles,
+    text: "Medicina tradicional china y acupuntura- China Medical University – Taichung Taiwan",
+    color: "text-accent"
+  }, {
+    icon: Heart,
+    text: "Medicina Funcional Certificación IFMCP - Institute for Functional Medicine EEUU",
+    color: "text-accent"
+  }, {
+    icon: User,
+    text: "Certificación IFMCP en Medicina Funcional- Institute of Functional Medicine EEUU",
+    color: "text-primary"
+  }, {
+    icon: Heart,
+    text: "Sanación pránica y yoga Iyengar en India Himalayan Yoga Center",
+    color: "text-red-500"
+  }];
+  const clinics = [{
+    name: "Pontificia Universidad Javeriana",
+    logo: logo1
+  }, {
+    name: "Institute for Functional Medicine",
+    logo: logo2
+  }, {
+    name: "China Medical University",
+    logo: logo3
+  }];
+  return <section id="doctora" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         {/* Título de sección */}
         <div className="text-center mb-20">
@@ -57,19 +52,11 @@ const DoctorSection = () => {
           <div className="relative">
             <div className="bg-sage rounded-3xl p-8 relative">
               <div className="bg-background rounded-2xl p-8 flex items-center justify-center">
-                <img 
-                  src={doctorImage} 
-                  alt="Dra. Sara Tamayo"
-                  className="w-full h-80 object-cover rounded-2xl"
-                />
+                <img src={doctorImage} alt="Dra. Sara Tamayo" className="w-full h-80 object-cover rounded-2xl" />
               </div>
               
               {/* Badge de médica certificada */}
-              <div className="absolute -top-4 right-8 bg-accent px-4 py-2 rounded-full">
-                <span className="text-accent-foreground font-medium text-sm">
-                  🏥 MÉDICA CERTIFICADA
-                </span>
-              </div>
+              
             </div>
           </div>
 
@@ -98,12 +85,10 @@ const DoctorSection = () => {
                 Estudios y Certificaciones
               </h4>
               <div className="space-y-4">
-                {certifications.map((cert, index) => (
-                  <div key={index} className="flex items-start gap-3">
+                {certifications.map((cert, index) => <div key={index} className="flex items-start gap-3">
                     <cert.icon className={`w-5 h-5 mt-0.5 ${cert.color}`} />
                     <span className="text-muted-foreground">{cert.text}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
 
@@ -113,23 +98,15 @@ const DoctorSection = () => {
                 Experiencia en Clínicas Prestigiosas
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {clinics.map((clinic, index) => (
-                  <div key={index} className="text-center p-6 bg-background rounded-xl border-2 border-sage">
-                    <img 
-                      src={clinic.logo} 
-                      alt={clinic.name}
-                      className="w-20 h-20 object-contain mx-auto mb-4"
-                    />
+                {clinics.map((clinic, index) => <div key={index} className="text-center p-6 bg-background rounded-xl border-2 border-sage">
+                    <img src={clinic.logo} alt={clinic.name} className="w-20 h-20 object-contain mx-auto mb-4" />
                     <span className="text-xs text-muted-foreground">{clinic.name}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default DoctorSection;
