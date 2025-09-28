@@ -237,54 +237,54 @@ const MedicinaTradicionalChina = () => {
 
             {/* Four pillars grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-              <div className="text-center group">
-                <div className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/30 transition-all duration-300 group-hover:scale-110 animate-fade-in">
+              <div className="text-center group cursor-pointer">
+                <div className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/40 group-hover:shadow-lg group-hover:shadow-sage/30 transition-all duration-500 group-hover:scale-125 group-hover:rotate-6 animate-fade-in transform-gpu">
                   <img 
                     src={group1Icon} 
                     alt="Ecografías Doppler" 
-                    className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                    className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
                   Las ecografías Doppler muestran que la acupuntura mejora el flujo sanguíneo (circulación)
                 </h3>
               </div>
 
-              <div className="text-center group">
-                <div className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/30 transition-all duration-300 group-hover:scale-110 animate-fade-in" style={{animationDelay: '0.1s'}}>
+              <div className="text-center group cursor-pointer">
+                <div className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/40 group-hover:shadow-lg group-hover:shadow-sage/30 transition-all duration-500 group-hover:scale-125 group-hover:-rotate-6 animate-fade-in transform-gpu" style={{animationDelay: '0.1s'}}>
                   <img 
                     src={group3Icon} 
                     alt="Resonancia Magnética" 
-                    className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                    className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
                   Las imágenes RMN (resonancia magnética) demuestran cambios visibles en el cerebro.
                 </h3>
               </div>
 
-              <div className="text-center group">
-                <div className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/30 transition-all duration-300 group-hover:scale-110 animate-fade-in" style={{animationDelay: '0.2s'}}>
+              <div className="text-center group cursor-pointer">
+                <div className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/40 group-hover:shadow-lg group-hover:shadow-sage/30 transition-all duration-500 group-hover:scale-125 group-hover:rotate-12 animate-fade-in transform-gpu" style={{animationDelay: '0.2s'}}>
                   <img 
                     src={vectorIcon} 
                     alt="Termografías" 
-                    className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                    className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
                   Termografías (imágenes TDM) revelan que la acupuntura reduce la inflamación
                 </h3>
               </div>
 
-              <div className="text-center group">
-                <div className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/30 transition-all duration-300 group-hover:scale-110 animate-fade-in" style={{animationDelay: '0.3s'}}>
+              <div className="text-center group cursor-pointer">
+                <div className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/40 group-hover:shadow-lg group-hover:shadow-sage/30 transition-all duration-500 group-hover:scale-125 group-hover:-rotate-12 animate-fade-in transform-gpu" style={{animationDelay: '0.3s'}}>
                   <img 
                     src={group2Icon} 
                     alt="Tejido Conectivo" 
-                    className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                    className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
                   El tejido conectivo se enrolla alrededor de las agujas, aumentando la conductividad eléctrica.
                 </h3>
               </div>
