@@ -9,27 +9,23 @@ const ServicesSection = () => {
 
   const services = [
     {
-      title: "SALUD\nDE\nLA\nMUJER",
+      title: "SALUD\nDE LA\nMUJER",
       description: "Síndrome premenstrual, Ciclos irregulares o dolorosos, Endometriosis y Sindrome de ovarios poliquiticos, Apoyo en fertilidad, Menopausia, entre otros.",
-      image: "🌿",
       backgroundImage: saludMujerImg
     },
     {
       title: "MEDICINA\nINTERNA",
       description: "Trastornos digestivos, Problemas metabólicos, Fatiga crónica, Enfermedades autoinmunes, Entre otros.",
-      image: "🔬",
       backgroundImage: medicinaInternaImg
     },
     {
       title: "SALUD\nMENTAL",
       description: "Ansiedad, estrés crónico, Depresión, Insomnio, Apoyo en regulación emocional, entre otros.",
-      image: "⚖️",
       backgroundImage: saludMentalImg
     },
     {
-      title: "Dolor",
+      title: "DOLOR",
       description: "Dolor crónico (espalda, cuello, articulaciones), Migrañas y cefaleas, Dolor musculoesquelético, fibromialgia, entre otros.",
-      image: "✨",
       backgroundImage: dolorIconoImg
     },
   ];

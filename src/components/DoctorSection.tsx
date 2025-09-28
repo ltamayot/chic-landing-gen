@@ -95,7 +95,7 @@ const DoctorSection = () => {
             {/* Experiencia en clínicas */}
             <div>
               <h4 className="text-xl font-serif mb-6 text-foreground">
-                Experiencia en Clínicas Prestigiosas
+                Avalada por:
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {clinics.map((clinic, index) => <div key={index} className="text-center p-6 bg-background rounded-xl border-2 border-sage">
