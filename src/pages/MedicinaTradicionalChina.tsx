@@ -2,6 +2,12 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import BookingSection from "@/components/BookingSection";
 import Footer from "@/components/Footer";
+import moxaImagen from "@/assets/moxa-imagen.png";
+import acupuncturaImagen from "@/assets/acupunctura-imagen.png";
+import diagnosisImg from "@/assets/diagnosis.jpg";
+import moxibustionImg from "@/assets/moxibustion.jpg";
+import ventosasImg from "@/assets/ventosas.jpg";
+import acupunctureTreatmentImg from "@/assets/acupuncture-treatment.jpg";
 
 const MedicinaTradicionalChina = () => {
   return (
@@ -16,6 +22,7 @@ const MedicinaTradicionalChina = () => {
           description=""
           primaryButtonText="AGENDAR CITA"
           secondaryButtonText="NUESTROS SERVICIOS"
+          backgroundImage={moxaImagen}
         />
         
         {/* Ecosistema de Medicina China Section */}
@@ -42,10 +49,12 @@ const MedicinaTradicionalChina = () => {
                     </p>
                   </div>
                   <div className="flex justify-center">
-                    <div className="w-24 h-24 rounded-full bg-sage/20 flex items-center justify-center">
-                      <div className="text-4xl text-primary opacity-70">
-                        📍
-                      </div>
+                    <div className="w-24 h-24 rounded-full overflow-hidden">
+                      <img 
+                        src={acupunctureTreatmentImg} 
+                        alt="Acupuntura" 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                 </div>
@@ -55,10 +64,12 @@ const MedicinaTradicionalChina = () => {
               <div className="bg-background rounded-3xl p-8 md:p-12 shadow-lg">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div className="flex justify-center md:order-1">
-                    <div className="w-24 h-24 rounded-full bg-sage/20 flex items-center justify-center">
-                      <div className="text-4xl text-primary opacity-70">
-                        🌿
-                      </div>
+                    <div className="w-24 h-24 rounded-full overflow-hidden">
+                      <img 
+                        src={acupuncturaImagen} 
+                        alt="Acupuntura Estética" 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                   <div className="md:order-2">
@@ -84,10 +95,12 @@ const MedicinaTradicionalChina = () => {
                     </p>
                   </div>
                   <div className="flex justify-center">
-                    <div className="w-24 h-24 rounded-full bg-sage/20 flex items-center justify-center">
-                      <div className="text-4xl text-primary opacity-70">
-                        🫗
-                      </div>
+                    <div className="w-24 h-24 rounded-full overflow-hidden">
+                      <img 
+                        src={ventosasImg} 
+                        alt="Terapia de Ventosas" 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                 </div>
@@ -97,10 +110,12 @@ const MedicinaTradicionalChina = () => {
               <div className="bg-background rounded-3xl p-8 md:p-12 shadow-lg">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div className="flex justify-center md:order-1">
-                    <div className="w-24 h-24 rounded-full bg-sage/20 flex items-center justify-center">
-                      <div className="text-4xl text-primary opacity-70">
-                        🔥
-                      </div>
+                    <div className="w-24 h-24 rounded-full overflow-hidden">
+                      <img 
+                        src={moxibustionImg} 
+                        alt="Moxibustión" 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                   <div className="md:order-2">
@@ -126,10 +141,12 @@ const MedicinaTradicionalChina = () => {
                     </p>
                   </div>
                   <div className="flex justify-center">
-                    <div className="w-24 h-24 rounded-full bg-sage/20 flex items-center justify-center">
-                      <div className="text-4xl text-primary opacity-70">
-                        👁️
-                      </div>
+                    <div className="w-24 h-24 rounded-full overflow-hidden">
+                      <img 
+                        src={diagnosisImg} 
+                        alt="Diagnóstico Tradicional" 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                 </div>
