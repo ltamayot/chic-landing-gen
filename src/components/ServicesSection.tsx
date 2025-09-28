@@ -62,9 +62,6 @@ const ServicesSection = () => {
                 style={service.backgroundImage ? { 
                   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${service.backgroundImage})` 
                 } : {}}>
-                  <div className="text-6xl mb-4 opacity-20">
-                    {service.image}
-                  </div>
                   <h3 className="text-primary-foreground text-lg font-semibold leading-relaxed whitespace-pre-line">
                     {service.title}
                   </h3>
@@ -75,9 +72,6 @@ const ServicesSection = () => {
 
                 {/* Lado posterior */}
                 <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-3xl bg-background border-2 border-primary/20 p-6 flex flex-col justify-center text-center shadow-xl">
-                  <div className="text-4xl mb-4 text-primary">
-                    {service.image}
-                  </div>
                   <h3 className="text-primary text-lg font-semibold mb-4 whitespace-pre-line">
                     {service.title.replace(/\n/g, ' ')}
                   </h3>
