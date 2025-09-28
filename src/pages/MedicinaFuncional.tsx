@@ -2,6 +2,15 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import BookingSection from "@/components/BookingSection";
 import Footer from "@/components/Footer";
+import mfEcosistema1 from "@/assets/mf-ecosistema-1.jpg";
+import mfEcosistema2 from "@/assets/mf-ecosistema-2.jpg";
+import mfEcosistema4 from "@/assets/mf-ecosistema-4.jpg";
+import mfPortada from "@/assets/mf-portada.jpg";
+import vectorIcon from "@/assets/vector-icon.svg";
+import flaskIcon from "@/assets/flask-icon.svg";
+import group22Icon from "@/assets/group-2-2-icon.svg";
+import vector1Icon from "@/assets/vector-1-icon.svg";
+import vector2Icon from "@/assets/vector-2-icon.svg";
 
 const MedicinaFuncional = () => {
   return (
@@ -16,6 +25,7 @@ const MedicinaFuncional = () => {
           description=""
           primaryButtonText="AGENDAR CITA"
           secondaryButtonText="NUESTROS SERVICIOS"
+          backgroundImage={mfPortada}
         />
         
         {/* Ecosistema de Medicina Funcional Section */}
@@ -42,8 +52,12 @@ const MedicinaFuncional = () => {
                     </p>
                   </div>
                   <div className="flex justify-center">
-                    <div className="text-6xl opacity-20">
-                      🔍
+                    <div className="w-32 h-32 rounded-full overflow-hidden shadow-lg">
+                      <img 
+                        src={mfEcosistema1} 
+                        alt="Análisis Funcional" 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                 </div>
@@ -53,8 +67,12 @@ const MedicinaFuncional = () => {
               <div className="bg-background rounded-3xl p-8 md:p-12 shadow-lg">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div className="flex justify-center md:order-1">
-                    <div className="text-6xl opacity-20">
-                      ⚖️
+                    <div className="w-32 h-32 rounded-full overflow-hidden shadow-lg">
+                      <img 
+                        src={mfEcosistema2} 
+                        alt="Nutrición terapéutica" 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                   <div className="md:order-2">
@@ -80,8 +98,12 @@ const MedicinaFuncional = () => {
                     </p>
                   </div>
                   <div className="flex justify-center">
-                    <div className="text-6xl opacity-20">
-                      🔄
+                    <div className="w-32 h-32 rounded-full overflow-hidden shadow-lg">
+                      <img 
+                        src={mfEcosistema4} 
+                        alt="Intervenciones personalizadas" 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                 </div>
@@ -106,8 +128,12 @@ const MedicinaFuncional = () => {
             <div className="relative max-w-6xl mx-auto">
               {/* Central icon placeholder */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-                <div className="text-8xl opacity-20">
-                  🌳
+                <div className="w-24 h-24 flex items-center justify-center bg-background rounded-full shadow-lg border-4 border-sage">
+                  <img 
+                    src={vectorIcon} 
+                    alt="Medicina Funcional" 
+                    className="w-12 h-12 transition-all duration-300"
+                  />
                 </div>
               </div>
 
@@ -165,17 +191,25 @@ const MedicinaFuncional = () => {
             {/* Four pillars grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               <div className="text-center">
-                <div className="text-4xl mb-6 opacity-20">
-                  📊
+                <div className="mb-6 flex justify-center">
+                  <img 
+                    src={flaskIcon} 
+                    alt="Exámenes avanzados" 
+                    className="w-16 h-16 transition-all duration-300 hover:scale-110 hover:rotate-3 hover:brightness-110 hover:drop-shadow-[0_4px_20px_rgba(var(--primary-rgb),0.4)]"
+                  />
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground">
-                  Exámenes  avanzados que pueden detectar deficiencias nutricionales, desequilibrios hormonales y marcadores de inflamación invisibles en chequeos rutinarios.
+                  Exámenes avanzados que pueden detectar deficiencias nutricionales, desequilibrios hormonales y marcadores de inflamación invisibles en chequeos rutinarios.
                 </h3>
               </div>
 
               <div className="text-center">
-                <div className="text-4xl mb-6 opacity-20">
-                  🧬
+                <div className="mb-6 flex justify-center">
+                  <img 
+                    src={group22Icon} 
+                    alt="Diseño personalizado" 
+                    className="w-16 h-16 transition-all duration-300 hover:scale-110 hover:rotate-3 hover:brightness-110 hover:drop-shadow-[0_4px_20px_rgba(var(--primary-rgb),0.4)]"
+                  />
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground">
                   La genética, el entorno y los hábitos de vida de cada persona guían el diseño del tratamiento.
@@ -183,8 +217,12 @@ const MedicinaFuncional = () => {
               </div>
 
               <div className="text-center">
-                <div className="text-4xl mb-6 opacity-20">
-                  🎯
+                <div className="mb-6 flex justify-center">
+                  <img 
+                    src={vector1Icon} 
+                    alt="Investigación clínica" 
+                    className="w-16 h-16 transition-all duration-300 hover:scale-110 hover:rotate-3 hover:brightness-110 hover:drop-shadow-[0_4px_20px_rgba(var(--primary-rgb),0.4)]"
+                  />
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground">
                   Utiliza investigación clínica para sustentar cambios en nutrición, suplementación y medicina preventiva.
@@ -192,8 +230,12 @@ const MedicinaFuncional = () => {
               </div>
 
               <div className="text-center">
-                <div className="text-4xl mb-6 opacity-20">
-                  🛡️
+                <div className="mb-6 flex justify-center">
+                  <img 
+                    src={vector2Icon} 
+                    alt="Prevención" 
+                    className="w-16 h-16 transition-all duration-300 hover:scale-110 hover:rotate-3 hover:brightness-110 hover:drop-shadow-[0_4px_20px_rgba(var(--primary-rgb),0.4)]"
+                  />
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground">
                   Prevención de enfermedades crónicas y equilibrio cuerpo-mente.
