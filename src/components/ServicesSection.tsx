@@ -1,4 +1,7 @@
 import { useState } from "react";
+import saludMujerImg from "@/assets/salud-mujer.jpg";
+import medicinaInternaImg from "@/assets/medicina-interna.jpg";
+import saludMentalImg from "@/assets/salud-mental.jpg";
 
 const ServicesSection = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -7,17 +10,20 @@ const ServicesSection = () => {
     {
       title: "SALUD\nDE\nLA\nMUJER",
       description: "Síndrome premenstrual, Ciclos irregulares o dolorosos, Endometriosis y Sindrome de ovarios poliquiticos, Apoyo en fertilidad, Menopausia, entre otros.",
-      image: "🌿"
+      image: "🌿",
+      backgroundImage: saludMujerImg
     },
     {
       title: "MEDICINA\nINTERNA",
       description: "Trastornos digestivos, Problemas metabólicos, Fatiga crónica, Enfermedades autoinmunes, Entre otros.",
-      image: "🔬"
+      image: "🔬",
+      backgroundImage: medicinaInternaImg
     },
     {
       title: "SALUD\nMENTAL",
       description: "Ansiedad, estrés crónico, Depresión, Insomnio, Apoyo en regulación emocional, entre otros.",
-      image: "⚖️"
+      image: "⚖️",
+      backgroundImage: saludMentalImg
     },
     {
       title: "Dolor",
@@ -52,7 +58,12 @@ const ServicesSection = () => {
                 hoveredCard === index ? 'rotate-y-180' : ''
               }`}>
                 {/* Lado frontal */}
-                <div className="absolute inset-0 w-full h-full backface-hidden rounded-3xl bg-gradient-to-br from-primary to-primary-light p-8 flex flex-col items-center justify-center text-center shadow-xl">
+                <div className={`absolute inset-0 w-full h-full backface-hidden rounded-3xl p-8 flex flex-col items-center justify-center text-center shadow-xl ${
+                  service.backgroundImage ? 'bg-cover bg-center' : 'bg-gradient-to-br from-primary to-primary-light'
+                }`} 
+                style={service.backgroundImage ? { 
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${service.backgroundImage})` 
+                } : {}}>
                   <div className="text-6xl mb-4 opacity-20">
                     {service.image}
                   </div>

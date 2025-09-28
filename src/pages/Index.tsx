@@ -7,6 +7,7 @@ import ConsultationSection from "@/components/ConsultationSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import BookingSection from "@/components/BookingSection";
 import Footer from "@/components/Footer";
+import heroLandingImg from "@/assets/hero-landing.jpeg";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
         <HeroSection 
           label=""
           titleHighlight=""
+          backgroundImage={heroLandingImg}
         />
         <ServicesSection />
         <MethodSection />
