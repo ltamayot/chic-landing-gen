@@ -11,6 +11,7 @@ import blogTcmImage from "@/assets/blog-tcm.jpg";
 import blogFunctionalImage from "@/assets/blog-functional.jpg";
 import blogFertilityImage from "@/assets/blog-fertility.jpg";
 import blogWellnessImage from "@/assets/blog-wellness.jpg";
+import blogAcneMtcImage from "@/assets/blog-acne-mtc.jpg";
 
 const Blog = () => {
   const navigate = useNavigate();
@@ -18,13 +19,13 @@ const Blog = () => {
 
   const featuredBlog = {
     id: 0,
-    title: "Medicina Integrativa: El Futuro del Cuidado de la Salud",
-    excerpt: "Descubre cómo la combinación de medicina oriental y occidental puede transformar tu bienestar.",
-    author: "Dra. Ana Saori",
-    date: "15 de Septiembre, 2024",
-    category: "Medicina Integrativa",
-    image: blogHeroImage,
-    slug: "medicina-integrativa-futuro-cuidado-salud"
+    title: "Acné y Medicina Tradicional China: Una Mirada Integral para Sanar la Piel",
+    excerpt: "El acné es uno de los problemas de piel más comunes y frustrantes, y muchas veces se aborda solo desde lo superficial. Sin embargo, la Medicina Tradicional China (MTC) nos enseña que la piel refleja el estado interno de nuestro organismo. Los brotes, la inflamación y las manchas son señales de desequilibrios más profundos que podemos corregir al mirar el cuerpo como un sistema interconectado.",
+    author: "Sara Tamayo",
+    date: "15 de Octubre, 2024",
+    category: "Medicina Tradicional China",
+    image: blogAcneMtcImage,
+    slug: "acne-medicina-tradicional-china-mirada-integral"
   };
 
   const blogPosts = [
