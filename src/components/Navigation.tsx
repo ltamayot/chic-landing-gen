@@ -67,7 +67,7 @@ const Navigation = () => {
             <img 
               src={saoriLogo} 
               alt="SAORI Logo" 
-              className={`h-10 w-auto transition-all duration-300 ${
+              className={`h-16 w-auto transition-all duration-300 ${
                 isScrolled ? 'brightness-0' : 'brightness-0 invert'
               }`}
             />
