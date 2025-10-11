@@ -142,9 +142,7 @@ const MedicinaTradicionalChina = () => {
         <section className="py-20 bg-sage/50">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-serif mb-8 text-foreground">
-                Llegando a la raíz de tus síntomas
-              </h2>
+              <h2 className="text-4xl md:text-5xl font-serif mb-8 text-foreground">Llega a la raíz de tus síntomas</h2>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-16">
                 Cada punto actúa como una puerta, enviando información energética a través de la fascia hacia el
                 interior del cuerpo:
@@ -164,7 +162,7 @@ const MedicinaTradicionalChina = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-16 pb-16">
                 {/* Top Left */}
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Activa la Sanación </h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Activa la sanación </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     Estimula la respuesta del cuerpo para restaurar su equilibrio interno.
                   </p>
@@ -206,8 +204,7 @@ const MedicinaTradicionalChina = () => {
                 La ciencia detrás de la medicina china
               </h2>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-16">
-                La acupuntura se originó en China hace aproximadamente 3,500 años. Hoy en día, la ciencia puede explicar
-                su efectividad.
+                Lo que antes era intuición ancestral, hoy la ciencia lo confirma.
               </p>
             </div>
 
@@ -238,7 +235,7 @@ const MedicinaTradicionalChina = () => {
                   />
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
-                  Las imágenes RMN (resonancia magnética) demuestran cambios visibles en el cerebro.
+                  Resonancia magnética: cambios visibles en la actividad cerebral.
                 </h3>
               </div>
 
@@ -254,7 +251,7 @@ const MedicinaTradicionalChina = () => {
                   />
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
-                  Termografías (imágenes TDM) revelan que la acupuntura reduce la inflamación
+                  Termografía: evidencia de menor inflamación tras el tratamiento.
                 </h3>
               </div>
 
@@ -270,7 +267,7 @@ const MedicinaTradicionalChina = () => {
                   />
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
-                  El tejido conectivo se enrolla alrededor de las agujas, aumentando la conductividad eléctrica.
+                  Tejido conectivo: aumenta la conductividad eléctrica y la comunicación celular.
                 </h3>
               </div>
             </div>
