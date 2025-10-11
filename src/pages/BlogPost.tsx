@@ -11,6 +11,9 @@ import blogTcmImage from "@/assets/blog-tcm.jpg";
 import blogFunctionalImage from "@/assets/blog-functional.jpg";
 import blogFertilityImage from "@/assets/blog-fertility.jpg";
 import blogWellnessImage from "@/assets/blog-wellness.jpg";
+import blogAcneMtcImage from "@/assets/blog-acne-mtc.jpg";
+import blogAcupunctureImage from "@/assets/blog-acupuncture-illustration.jpg";
+import blogHerbalTeaImage from "@/assets/blog-herbal-tea.jpg";
 
 const BlogPost = () => {
   const { slug } = useParams();
@@ -54,6 +57,67 @@ const BlogPost = () => {
   };
 
   const blogPosts = {
+    "acne-medicina-tradicional-china-mirada-integral": {
+      title: "Acné y Medicina Tradicional China: Una Mirada Integral para Sanar la Piel",
+      author: "Sara Tamayo",
+      date: "15 de Octubre, 2024",
+      category: "Medicina Tradicional China",
+      image: blogAcneMtcImage,
+      content: `
+        <p>El acné es uno de los problemas de piel más comunes y frustrantes, y muchas veces se aborda solo desde lo superficial. Sin embargo, la Medicina Tradicional China (MTC) nos enseña que la piel refleja el estado interno de nuestro organismo. Los brotes, la inflamación y las manchas son señales de desequilibrios más profundos que podemos corregir al mirar el cuerpo como un sistema interconectado.</p>
+
+        <p>Como médica en Medicina Tradicional China, atravesé mi propio proceso con el acné y descubrí que la verdadera sanación requiere una visión integral. Hoy quiero compartir contigo las tres estrategias que transformaron mi piel y mi salud, todas basadas en los principios de la MTC.</p>
+
+        <h2>1. Fortalecer el intestino: el poder del elemento Tierra</h2>
+        <p>En MTC, el bazo y el estómago forman el elemento Tierra, encargado de nutrir y sostener todo el cuerpo. Cuando este sistema se debilita, aparecen la humedad, la inflamación y el acné.</p>
+        
+        <p><strong>🍵 Qué hice:</strong> cambié mi alimentación hacia comidas calientes, cocidas y fáciles de digerir (sopas, caldos, congee). Eliminé los alimentos fríos y crudos como ensaladas y batidos, que desde la MTC debilitan el "fuego digestivo" y generan humedad interna.</p>
+
+        <p><strong>💊 Apoyo extra:</strong> incorporé un probióticos, diseñado para equilibrar la microbiota intestinal. El resultado fue menos inflamación, mejor digestión y brotes más controlados.</p>
+        
+        <p><strong>✨ Conclusión:</strong> cuando el elemento Tierra está fuerte, el cuerpo elimina toxinas de manera más eficiente y la piel se ve más clara y saludable.</p>
+
+        <h2>2. Acupuntura semanal: equilibrar el Qi y dispersar el calor</h2>
+        
+        <img src="${blogAcupunctureImage}" alt="Acupuntura para el acné" class="w-full rounded-lg my-6" />
+        
+        <p>El acné suele relacionarse con exceso de calor y humedad en canales como hígado y estómago. La acupuntura semanal fue clave en mi recuperación:</p>
+        <ul>
+          <li>Reguló el flujo de Qi (energía vital).</li>
+          <li>Disminuyó la inflamación y el enrojecimiento.</li>
+          <li>Promovió un estado de calma profunda, reduciendo el impacto del estrés en mi piel.</li>
+        </ul>
+        
+        <p>✨ Además, integré la acupuntura cosmética, que mejora la circulación, estimula el colágeno y da un aspecto más luminoso, pero también actúa en el equilibrio interno del cuerpo.</p>
+        
+        <p><strong>💚 Conclusión:</strong> la acupuntura no solo mejora la piel, también armoniza el sistema nervioso y hormonal, generando cambios duraderos.</p>
+
+        <h2>3. Dormir antes de las 11 PM: cuidar al hígado y equilibrar hormonas</h2>
+        <p>En MTC, el hígado es responsable de detoxificar la sangre, regular las emociones y el Qi. Su horario de máxima actividad es entre las 11:00 p.m. y las 3:00 a.m.</p>
+        
+        <p><strong>Qué hice:</strong> establecí el hábito de dormir antes de las 11 p.m.</p>
+        
+        <p><strong>Resultados:</strong> mejor descanso, piel más clara, menos brotes hormonales y mayor estabilidad emocional.</p>
+        
+        <p><strong>Conclusión:</strong> respetar los ritmos del hígado es un paso simple pero poderoso para cuidar la piel y la salud integral.</p>
+
+        <h2>Mis infusiones favoritas para la piel</h2>
+        
+        <img src="${blogHerbalTeaImage}" alt="Infusiones herbales para la piel" class="w-full rounded-lg my-6" />
+        
+        <p>La fitoterapia es un pilar en MTC y me acompañó en este proceso. Te comparto algunas hierbas fáciles de incorporar en tu rutina:</p>
+        <ul>
+          <li><strong>Menta:</strong> ayuda a liberar calor del hígado y reduce el estrés.</li>
+          <li><strong>Bayas de goji:</strong> antioxidantes, nutren la sangre y la piel.</li>
+          <li><strong>Dátiles rojos (jujube):</strong> tonifican el Qi y aportan luminosidad.</li>
+          <li><strong>Raíz de diente de león:</strong> depura hígado y estómago.</li>
+        </ul>
+
+        <p>Sanar el acné no es un proceso rápido ni superficial. Requiere paciencia, constancia y confianza en la sabiduría del cuerpo. Mi experiencia con la Medicina Tradicional China me enseñó que cuando cuidamos la digestión, equilibramos el Qi con acupuntura y apoyamos el hígado con un buen descanso, la piel responde con claridad y vitalidad.</p>
+        
+        <p><strong>💚 Si estás lidiando con acné, recuerda:</strong> tu piel no es tu enemiga, es un mensajero. Escuchar sus señales puede ser el inicio de una transformación profunda, no solo en tu piel, sino en tu bienestar general.</p>
+      `
+    },
     "medicina-integrativa-futuro-cuidado-salud": {
       title: "Medicina Integrativa: El Futuro del Cuidado de la Salud",
       author: "Dra. Ana Saori",
