@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import saoriLogo from "@/assets/saori-logo-header.svg";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -62,10 +63,14 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-              <div className="w-3 h-3 bg-secondary rounded-full"></div>
-            </div>
+          <div className="flex items-center gap-3">
+            <img 
+              src={saoriLogo} 
+              alt="SAORI Logo" 
+              className={`h-10 w-auto transition-all duration-300 ${
+                isScrolled ? 'brightness-0' : 'brightness-0 invert'
+              }`}
+            />
             <span className={`text-2xl font-serif font-semibold tracking-wide transition-colors duration-300 ${
               isScrolled ? 'text-primary' : 'text-primary-foreground'
             }`}>
