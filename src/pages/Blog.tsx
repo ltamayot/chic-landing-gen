@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, User, ChevronRight, Menu, X } from "lucide-react";
+import { Calendar, User, ChevronRight } from "lucide-react";
+import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 import blogHeroImage from "@/assets/blog-hero.jpg";
@@ -13,42 +14,7 @@ import blogWellnessImage from "@/assets/blog-wellness.jpg";
 
 const Blog = () => {
   const navigate = useNavigate();
-  const location = useLocation();
   const [visibleBlogs, setVisibleBlogs] = useState(8);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const navItems = [
-    { name: "Servicios", id: "servicios" },
-    { name: "Método Saori", id: "metodo" }, 
-    { name: "Dra Sara Tamayo", id: "doctora" },
-    { name: "Primera Consulta", id: "consulta" },
-    { name: "Testimonios", id: "testimonios" },
-    { name: "Contacto", id: "contacto" }
-  ];
-
-  const scrollToSection = (id: string) => {
-    if (location.pathname !== '/') {
-      navigate('/', { replace: true });
-      setTimeout(() => {
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({ 
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      }, 100);
-    } else {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ 
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    }
-    setIsMobileMenuOpen(false);
-  };
 
   const featuredBlog = {
     id: 0,
@@ -206,129 +172,7 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Header with Desktop Navigation and Mobile Hamburger */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border/20 shadow-sm">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            {/* Logo */}
-            <button 
-              onClick={() => scrollToSection('hero')}
-              className="flex items-center gap-2"
-            >
-              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                <div className="w-3 h-3 bg-secondary rounded-full"></div>
-              </div>
-              <span className="text-2xl font-serif font-semibold tracking-wide text-primary">
-                SAORI
-              </span>
-            </button>
-
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-8">
-              {navItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className="text-foreground hover:text-primary transition-colors font-medium"
-                >
-                  {item.name}
-                </button>
-              ))}
-              
-              {/* Social Icons */}
-              <div className="flex items-center gap-3">
-                <a 
-                  href="#" 
-                  className="p-2 rounded-full text-foreground hover:text-primary hover:bg-primary/10 transition-colors"
-                  aria-label="TikTok"
-                >
-                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.10z"/>
-                  </svg>
-                </a>
-                <a 
-                  href="#" 
-                  className="p-2 rounded-full text-foreground hover:text-primary hover:bg-primary/10 transition-colors"
-                  aria-label="Instagram"
-                >
-                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                  </svg>
-                </a>
-              </div>
-              
-              <Button 
-                variant="outline" 
-                size="sm" 
-                className="font-medium tracking-wide"
-                onClick={() => scrollToSection('contacto')}
-              >
-                AGENDAR CITA
-              </Button>
-            </div>
-
-            {/* Mobile Hamburger Menu Button */}
-            <button
-              className="p-2 md:hidden"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            >
-              {isMobileMenuOpen ? (
-                <X className="w-6 h-6 text-foreground" />
-              ) : (
-                <Menu className="w-6 h-6 text-foreground" />
-              )}
-            </button>
-          </div>
-
-          {/* Mobile Menu Dropdown */}
-          {isMobileMenuOpen && (
-            <div className="absolute top-full left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-border/20 shadow-lg md:hidden">
-              <div className="flex flex-col p-6 space-y-4 max-w-sm mx-auto sm:max-w-md lg:max-w-lg">
-                {navItems.map((item) => (
-                  <button
-                    key={item.id}
-                    onClick={() => scrollToSection(item.id)}
-                    className="text-left py-2 text-foreground hover:text-primary transition-colors font-medium"
-                  >
-                    {item.name}
-                  </button>
-                ))}
-                
-                {/* Social Icons */}
-                <div className="flex items-center gap-4 py-2 justify-center sm:justify-start">
-                  <a 
-                    href="#" 
-                    className="p-2 rounded-full text-foreground hover:text-primary hover:bg-primary/10 transition-colors"
-                    aria-label="TikTok"
-                  >
-                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.10z"/>
-                    </svg>
-                  </a>
-                  <a 
-                    href="#" 
-                    className="p-2 rounded-full text-foreground hover:text-primary hover:bg-primary/10 transition-colors"
-                    aria-label="Instagram"
-                  >
-                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                  </a>
-                </div>
-
-                <Button 
-                  variant="outline" 
-                  size="sm" 
-                  className="mt-4 font-medium tracking-wide self-center sm:self-start"
-                  onClick={() => scrollToSection('contacto')}
-                >
-                  AGENDAR CITA
-                </Button>
-              </div>
-            </div>
-          )}
-        </div>
-      </nav>
+      <Navigation />
       
       {/* Hero Section with Featured Article */}
       <section className="relative bg-gradient-to-br from-primary via-primary-light to-primary-dark pt-32 pb-32 overflow-hidden">
