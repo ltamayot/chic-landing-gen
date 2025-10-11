@@ -330,72 +330,65 @@ const Blog = () => {
         </div>
       </nav>
       
-      {/* Hero Section */}
-      <section className="relative bg-hero-green pt-28 pb-16">
-        <div className="container mx-auto px-6">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-hero-green-foreground mb-8 text-center leading-[1.1] tracking-tight">
-            Blog de Medicina Integrativa
-          </h1>
-          <p className="text-xl text-hero-green-foreground/90 text-center max-w-3xl mx-auto leading-relaxed">
-            Descubre artículos especializados sobre medicina integrativa, medicina funcional y medicina tradicional china
-          </p>
-        </div>
-        {/* Divider line */}
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-hero-green-foreground/30 to-transparent"></div>
-      </section>
+      {/* Hero Section with Featured Article */}
+      <section className="relative bg-gradient-to-br from-primary via-primary-light to-primary-dark pt-32 pb-20 overflow-hidden">
+        {/* Animated background elements */}
+        <div className="absolute top-20 left-10 w-32 h-32 bg-primary-lighter/10 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-secondary/10 rounded-full blur-xl animate-pulse"></div>
+        
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Hero Title */}
+          <div className="text-center mb-16">
+            <span className="text-primary-lighter uppercase tracking-[0.2em] text-sm font-medium mb-6 block">
+              BIENVENIDO AL BLOG
+            </span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-normal text-primary-foreground mb-6 leading-tight">
+              Medicina Integrativa
+            </h1>
+            <p className="text-lg md:text-xl text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
+              Explora el equilibrio perfecto entre la sabiduría milenaria y la ciencia moderna para transformar tu bienestar
+            </p>
+          </div>
 
-      {/* Featured Blog Section */}
-      <section className="relative py-16 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Featured Content */}
-            <div>
-              <Badge className={`mb-4 ${getCategoryColor(featuredBlog.category)}`}>
-                {featuredBlog.category}
+          {/* Featured Article Card */}
+          <div className="max-w-4xl mx-auto">
+            <div className="inline-block mb-4">
+              <Badge className="bg-primary-lighter/20 text-primary-foreground border-primary-lighter/30 px-4 py-1 text-xs uppercase tracking-wider">
+                Artículo Destacado
               </Badge>
-              <h2 className="text-3xl lg:text-4xl font-light text-foreground mb-4 leading-tight">
+            </div>
+            
+            <div className="bg-background/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 md:p-10 border border-primary/10">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-normal text-foreground mb-4 leading-tight">
                 {featuredBlog.title}
               </h2>
               
-              <div className="flex items-center gap-4 mb-6 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <User className="h-4 w-4" />
-                  <span className="text-sm font-medium">{featuredBlog.author}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Calendar className="h-4 w-4" />
-                  <span className="text-sm">{featuredBlog.date}</span>
-                </div>
-              </div>
-              
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 {featuredBlog.excerpt}
               </p>
               
+              <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                    <User className="h-4 w-4 text-primary-foreground" />
+                  </div>
+                  <span className="font-medium">{featuredBlog.author}</span>
+                </div>
+                <span>•</span>
+                <span>5 min de lectura</span>
+              </div>
+              
               <Button 
-                variant="outline" 
-                className="group"
+                variant="default" 
+                className="mt-6 group"
                 onClick={() => handleBlogClick(featuredBlog.slug)}
               >
                 Leer Artículo
                 <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
             </div>
-
-            {/* Featured Image */}
-            <div className="order-first lg:order-last">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
-                <img 
-                  src={featuredBlog.image} 
-                  alt={featuredBlog.title}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
-            </div>
           </div>
         </div>
-        {/* Divider line */}
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
       </section>
 
       {/* Blog Grid Section */}
