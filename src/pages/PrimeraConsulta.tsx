@@ -14,22 +14,19 @@ const IntakeSection = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <span className="text-sm font-medium tracking-[0.2em] uppercase text-accent">
-                THE INTAKE
+                PRIMERA CONSULTA
               </span>
               <h2 className="text-4xl md:text-5xl font-serif text-foreground leading-tight">
-                We get to know you inside and out
+                Todo comienza con tu historia
               </h2>
             </div>
             <div className="border-l-4 border-accent pl-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                During your initial consultation, your practitioner will go over your health 
-                history in depth. Your initial consultation can be done virtually or in-clinic. We 
-                encourage you to share any labs or any blood work that may be relevant 
-                during your initial consultation.
+                En tu primera consulta nos sumergimos en tu historia clínica y de vida. Revisamos síntomas, exámenes y cada detalle que nos ayude a comprender la raíz de lo que estás viviendo. Esta cita, presencial o virtual, es el inicio de un proceso diseñado para ti, con una mirada integrativa y profunda.
               </p>
             </div>
             <Button variant="primary" size="lg" className="hover:scale-105 transform transition-all duration-300">
-              SCHEDULE YOUR FIRST VISIT
+              AGENDA TU PRIMERA CITA
             </Button>
           </div>
           
@@ -41,7 +38,7 @@ const IntakeSection = () => {
                   <div className="w-20 h-20 mx-auto mb-6 bg-accent/20 rounded-full flex items-center justify-center">
                     <Heart className="w-10 h-10 text-accent" />
                   </div>
-                  <p className="text-sm text-accent/70 font-medium">Patient consultation</p>
+                  <p className="text-sm text-accent/70 font-medium">Consulta inicial</p>
                 </div>
               </div>
             </div>
@@ -56,18 +53,18 @@ const TreatmentSection = () => {
   const treatments = [
     {
       icon: Activity,
-      title: "ACUPUNCTURE",
-      description: "Traditional healing technique using fine needles to restore energy balance"
+      title: "ACUPUNTURA",
+      description: "Terapia tradicional que utiliza finas agujas para equilibrar la energía y restaurar la armonía natural del cuerpo."
     },
     {
       icon: Stethoscope,
-      title: "CHINESE HERBS",
-      description: "Custom herbal formulas tailored to your specific health needs"
+      title: "SUPLEMENTACIÓN",
+      description: "Vitaminas, minerales y fitoterapia diseñados a la medida de tus necesidades."
     },
     {
       icon: Heart,
-      title: "BODYWORK",
-      description: "Therapeutic massage and manual healing techniques"
+      title: "EXÁMENES FUNCIONALES",
+      description: "Pruebas avanzadas que nos permiten identificar desequilibrios ocultos y guiar un tratamiento más preciso."
     }
   ];
 
@@ -76,12 +73,10 @@ const TreatmentSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif text-foreground mb-6">
-            The Treatment
+            El TRATAMIENTO
           </h2>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            We create a customized treatment for you, using a range of Chinese medicinal 
-            therapies. Acupuncture and other modalities including moxa, gua sha, cupping and massage 
-            may be used. Herbs may also be paired with acupuncture to enhance your treatment.
+            Cada tratamiento es único. Diseñamos un plan personalizado que integra nutrición, suplementación y terapias de la medicina china para acompañar a tu cuerpo a florecer de nuevo.
           </p>
         </div>
         
@@ -114,7 +109,7 @@ const PlanSection = () => {
                   <div className="w-20 h-20 mx-auto mb-6 bg-primary/20 rounded-full flex items-center justify-center">
                     <BookOpen className="w-10 h-10 text-primary" />
                   </div>
-                  <p className="text-sm text-primary/70 font-medium">Treatment plan</p>
+                  <p className="text-sm text-primary/70 font-medium">Plan de tratamiento</p>
                 </div>
               </div>
             </div>
@@ -124,23 +119,19 @@ const PlanSection = () => {
           <div className="order-1 lg:order-2 space-y-8">
             <div className="space-y-6">
               <span className="text-sm font-medium tracking-[0.2em] uppercase text-accent">
-                THE PLAN
+                EL PLAN
               </span>
               <h2 className="text-4xl md:text-5xl font-serif text-foreground leading-tight">
-                You will leave your first visit with a clear plan forward
+                Saldrás de tu primera visita con un plan claro
               </h2>
             </div>
             <div className="border-l-4 border-accent pl-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                We create your treatment plan to maximize both effectiveness and time. 
-                After your first treatment, you will have a clear idea of how many sessions 
-                you will have at Yinova, a customized herbal formula (if appropriate), 
-                nutritional and lifestyle advice and a realistic assessment of how we can help 
-                you.
+                Nuestro objetivo es aprovechar tu tiempo y maximizar los resultados. Tras tu primera consulta, tendrás una idea clara del número de sesiones recomendadas, un plan de suplementación personalizado (si es necesario), y recomendaciones nutricionales y estilo de vida, y una valoración realista de cómo podemos ayudarte.
               </p>
             </div>
             <Button variant="primary" size="lg" className="hover:scale-105 transform transition-all duration-300">
-              SCHEDULE YOUR FIRST VISIT
+              AGENDA TU VISITA
             </Button>
           </div>
         </div>
@@ -153,28 +144,18 @@ const GoodToKnowSection = () => {
   const items = [
     {
       icon: Users,
-      title: "INITIAL CONSULTATION",
-      description: "Our in depth 40 minute consultation is where we get to know you."
+      title: "CONSULTA INICIAL",
+      description: "Una consulta profunda de 90 minutos para conocerte a fondo y entender tus necesidades."
     },
     {
       icon: Shield,
-      title: "SAFETY",
-      description: "We take the utmost care when sourcing herbs and providing acupuncture."
-    },
-    {
-      icon: Stethoscope,
-      title: "PRACTITIONERS",
-      description: "All of our team members are board certified acupuncturists & herbalists."
-    },
-    {
-      icon: BookOpen,
-      title: "ONLINE RESOURCES",
-      description: "We have a curated set of blog posts and scientific studies to read at home."
+      title: "SEGURIDAD",
+      description: "Seleccionamos cuidadosamente cada suplemento y realizamos los tratamientos con los más altos estándares de seguridad."
     },
     {
       icon: Activity,
-      title: "HOW WE WORK",
-      description: "We provide integrative care with meaningful results."
+      title: "NUESTRO ENFOQUE",
+      description: "Ofrecemos un cuidado integrativo y basado en resultados, acompañándote en cada paso de tu proceso de sanación."
     }
   ];
 
@@ -183,10 +164,10 @@ const GoodToKnowSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif text-foreground mb-6">
-            Good to know before you go
+            Lo que debes saber antes de venir
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Everything you need to know to feel confident about your first visit
+            Todo lo que necesitas para sentirte tranquilo y preparado en tu primera visita.
           </p>
         </div>
         
@@ -213,19 +194,14 @@ const GoodToKnowSection = () => {
 const ServicesSection = () => {
   const services = [
     {
-      title: "ACUPUNCTURE",
-      description: "Healing & balancing, acupuncture offers a prompt to your body's intelligence to bring you back into homeostasis. Learn more about our approach to acupuncture",
-      link: "here"
+      title: "ACUPUNTURA",
+      description: "Sanación y equilibrio: la acupuntura estimula la inteligencia natural de tu cuerpo para devolverlo a la homeostasis. Conoce más sobre nuestro enfoque de acupuntura",
+      link: "Aquí"
     },
     {
-      title: "CHINESE HERBS",
-      description: "Nourishing & harmonizing, each custom herbal formula is uniquely tailored to address your internal landscape. Learn more about our herbs",
-      link: "here"
-    },
-    {
-      title: "BODYWORK",
-      description: "Restoring & Soothing, our therapeutic style of bodywork can be used to treat everything from injuries to infertility. Learn more about our bodywork program",
-      link: "here"
+      title: "MEDICINA FUNCIONAL",
+      description: "Un enfoque moderno y personalizado para descubrir lo que tu cuerpo realmente necesita. A través de pruebas avanzadas, nutrición y suplementación, tratamos la raíz de tus síntomas y diseñamos un plan claro para recuperar tu energía, equilibrio y bienestar duradero. Conoce más sobre nuestro enfoque de medicina funcional.",
+      link: "Aquí"
     }
   ];
 
@@ -234,14 +210,14 @@ const ServicesSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif text-foreground mb-6">
-            Services at Yinova
+            Servicios en Saori
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Comprehensive healing modalities designed to restore balance and optimize your health
+            Terapias integrales diseñadas para restaurar el equilibrio y optimizar tu salud
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {services.map((service, index) => (
             <div key={index} className="group text-center p-8 rounded-2xl hover:bg-sage/30 transition-all duration-300 hover:scale-105">
               <h3 className="text-xl font-serif text-foreground mb-6">
