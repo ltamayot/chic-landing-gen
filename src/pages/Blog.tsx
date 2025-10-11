@@ -358,7 +358,7 @@ const Blog = () => {
               </Badge>
             </div>
             
-            <div className="bg-background/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 md:p-10 border border-primary/10">
+            <div className="bg-primary-lighter/5 backdrop-blur-sm rounded-2xl shadow-2xl p-8 md:p-10 border border-primary-lighter/20">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-normal text-foreground mb-4 leading-tight">
                 {featuredBlog.title}
               </h2>
