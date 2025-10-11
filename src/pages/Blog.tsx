@@ -19,31 +19,31 @@ const Blog = () => {
 
   const navItems = [
     { name: "Servicios", id: "servicios" },
-    { name: "Método Saori", id: "metodo" }, 
+    { name: "Método Saori", id: "metodo" },
     { name: "Dra Sara Tamayo", id: "doctora" },
     { name: "Primera Consulta", id: "consulta" },
     { name: "Testimonios", id: "testimonios" },
-    { name: "Contacto", id: "contacto" }
+    { name: "Contacto", id: "contacto" },
   ];
 
   const scrollToSection = (id: string) => {
-    if (location.pathname !== '/') {
-      navigate('/', { replace: true });
+    if (location.pathname !== "/") {
+      navigate("/", { replace: true });
       setTimeout(() => {
         const element = document.getElementById(id);
         if (element) {
-          element.scrollIntoView({ 
-            behavior: 'smooth',
-            block: 'start'
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
           });
         }
       }, 100);
     } else {
       const element = document.getElementById(id);
       if (element) {
-        element.scrollIntoView({ 
-          behavior: 'smooth',
-          block: 'start'
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
         });
       }
     }
@@ -58,7 +58,7 @@ const Blog = () => {
     date: "15 de Septiembre, 2024",
     category: "Medicina Integrativa",
     image: blogHeroImage,
-    slug: "medicina-integrativa-futuro-cuidado-salud"
+    slug: "medicina-integrativa-futuro-cuidado-salud",
   };
 
   const blogPosts = [
@@ -70,7 +70,7 @@ const Blog = () => {
       date: "15 de Septiembre, 2024",
       category: "Medicina Integrativa",
       image: blogHeroImage,
-      slug: "medicina-integrativa-futuro-cuidado-salud"
+      slug: "medicina-integrativa-futuro-cuidado-salud",
     },
     {
       id: 2,
@@ -80,7 +80,7 @@ const Blog = () => {
       date: "12 de Septiembre, 2024",
       category: "Fertilidad",
       image: blogFertilityImage,
-      slug: "acupuntura-fertilidad-perspectiva-cientifica"
+      slug: "acupuntura-fertilidad-perspectiva-cientifica",
     },
     {
       id: 3,
@@ -90,7 +90,7 @@ const Blog = () => {
       date: "10 de Septiembre, 2024",
       category: "Medicina Funcional",
       image: blogFunctionalImage,
-      slug: "medicina-funcional-causas-raiz"
+      slug: "medicina-funcional-causas-raiz",
     },
     {
       id: 4,
@@ -100,7 +100,7 @@ const Blog = () => {
       date: "8 de Septiembre, 2024",
       category: "Medicina Tradicional China",
       image: blogTcmImage,
-      slug: "poder-medicina-tradicional-china"
+      slug: "poder-medicina-tradicional-china",
     },
     {
       id: 5,
@@ -110,7 +110,7 @@ const Blog = () => {
       date: "5 de Septiembre, 2024",
       category: "Nutrición",
       image: blogWellnessImage,
-      slug: "nutricion-integrativa-alimentando-bienestar"
+      slug: "nutricion-integrativa-alimentando-bienestar",
     },
     {
       id: 6,
@@ -120,7 +120,7 @@ const Blog = () => {
       date: "3 de Septiembre, 2024",
       category: "Medicina Funcional",
       image: blogFunctionalImage,
-      slug: "equilibrio-hormonal-bienestar-femenino"
+      slug: "equilibrio-hormonal-bienestar-femenino",
     },
     {
       id: 7,
@@ -130,7 +130,7 @@ const Blog = () => {
       date: "1 de Septiembre, 2024",
       category: "Medicina Tradicional China",
       image: blogTcmImage,
-      slug: "manejo-estres-tecnicas-orientales"
+      slug: "manejo-estres-tecnicas-orientales",
     },
     {
       id: 8,
@@ -140,7 +140,7 @@ const Blog = () => {
       date: "28 de Agosto, 2024",
       category: "Bienestar",
       image: blogWellnessImage,
-      slug: "detoxificacion-natural-renovando-cuerpo"
+      slug: "detoxificacion-natural-renovando-cuerpo",
     },
     {
       id: 9,
@@ -150,7 +150,7 @@ const Blog = () => {
       date: "25 de Agosto, 2024",
       category: "Fertilidad",
       image: blogFertilityImage,
-      slug: "fertilidad-natural-preparando-concepcion"
+      slug: "fertilidad-natural-preparando-concepcion",
     },
     {
       id: 10,
@@ -160,7 +160,7 @@ const Blog = () => {
       date: "23 de Agosto, 2024",
       category: "Medicina Funcional",
       image: blogFunctionalImage,
-      slug: "medicina-personalizada-tratamiento-unico"
+      slug: "medicina-personalizada-tratamiento-unico",
     },
     {
       id: 11,
@@ -170,7 +170,7 @@ const Blog = () => {
       date: "22 de Agosto, 2024",
       category: "Bienestar",
       image: blogWellnessImage,
-      slug: "mindfulness-salud-conexion-mente-cuerpo"
+      slug: "mindfulness-salud-conexion-mente-cuerpo",
     },
     {
       id: 12,
@@ -180,8 +180,8 @@ const Blog = () => {
       date: "20 de Agosto, 2024",
       category: "Medicina Integrativa",
       image: blogTcmImage,
-      slug: "plantas-medicinales-sabiduria-ancestral"
-    }
+      slug: "plantas-medicinales-sabiduria-ancestral",
+    },
   ];
 
   const handleBlogClick = (slug: string) => {
@@ -189,17 +189,17 @@ const Blog = () => {
   };
 
   const showMoreBlogs = () => {
-    setVisibleBlogs(prev => prev + 8);
+    setVisibleBlogs((prev) => prev + 8);
   };
 
   const getCategoryColor = (category: string) => {
     const colors = {
       "Medicina Integrativa": "bg-primary text-primary-foreground",
-      "Fertilidad": "bg-accent text-accent-foreground",
+      Fertilidad: "bg-accent text-accent-foreground",
       "Medicina Funcional": "bg-secondary text-secondary-foreground",
       "Medicina Tradicional China": "bg-primary/80 text-primary-foreground",
-      "Bienestar": "bg-accent/80 text-accent-foreground",
-      "Nutrición": "bg-secondary/80 text-secondary-foreground"
+      Bienestar: "bg-accent/80 text-accent-foreground",
+      Nutrición: "bg-secondary/80 text-secondary-foreground",
     };
     return colors[category as keyof typeof colors] || "bg-primary text-primary-foreground";
   };
@@ -211,16 +211,11 @@ const Blog = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <button 
-              onClick={() => scrollToSection('hero')}
-              className="flex items-center gap-2"
-            >
+            <button onClick={() => scrollToSection("hero")} className="flex items-center gap-2">
               <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                 <div className="w-3 h-3 bg-secondary rounded-full"></div>
               </div>
-              <span className="text-2xl font-serif font-semibold tracking-wide text-primary">
-                SAORI
-              </span>
+              <span className="text-2xl font-serif font-semibold tracking-wide text-primary">SAORI</span>
             </button>
 
             {/* Desktop Navigation */}
@@ -234,44 +229,41 @@ const Blog = () => {
                   {item.name}
                 </button>
               ))}
-              
+
               {/* Social Icons */}
               <div className="flex items-center gap-3">
-                <a 
-                  href="#" 
+                <a
+                  href="#"
                   className="p-2 rounded-full text-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                   aria-label="TikTok"
                 >
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.10z"/>
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.10z" />
                   </svg>
                 </a>
-                <a 
-                  href="#" 
+                <a
+                  href="#"
                   className="p-2 rounded-full text-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                   aria-label="Instagram"
                 >
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                   </svg>
                 </a>
               </div>
-              
-              <Button 
-                variant="outline" 
-                size="sm" 
+
+              <Button
+                variant="outline"
+                size="sm"
                 className="font-medium tracking-wide"
-                onClick={() => scrollToSection('contacto')}
+                onClick={() => scrollToSection("contacto")}
               >
                 AGENDAR CITA
               </Button>
             </div>
 
             {/* Mobile Hamburger Menu Button */}
-            <button
-              className="p-2 md:hidden"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            >
+            <button className="p-2 md:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
               {isMobileMenuOpen ? (
                 <X className="w-6 h-6 text-foreground" />
               ) : (
@@ -293,34 +285,34 @@ const Blog = () => {
                     {item.name}
                   </button>
                 ))}
-                
+
                 {/* Social Icons */}
                 <div className="flex items-center gap-4 py-2 justify-center sm:justify-start">
-                  <a 
-                    href="#" 
+                  <a
+                    href="#"
                     className="p-2 rounded-full text-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                     aria-label="TikTok"
                   >
                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.10z"/>
+                      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.10z" />
                     </svg>
                   </a>
-                  <a 
-                    href="#" 
+                  <a
+                    href="#"
                     className="p-2 rounded-full text-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                     aria-label="Instagram"
                   >
                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                     </svg>
                   </a>
                 </div>
 
-                <Button 
-                  variant="outline" 
-                  size="sm" 
+                <Button
+                  variant="outline"
+                  size="sm"
                   className="mt-4 font-medium tracking-wide self-center sm:self-start"
-                  onClick={() => scrollToSection('contacto')}
+                  onClick={() => scrollToSection("contacto")}
                 >
                   AGENDAR CITA
                 </Button>
@@ -329,110 +321,102 @@ const Blog = () => {
           )}
         </div>
       </nav>
-      
-      {/* Hero Section with Featured Article */}
-      <section className="relative bg-gradient-to-br from-primary via-primary-light to-primary-dark pt-32 pb-32 overflow-hidden">
-        {/* Animated background elements */}
-        <div className="absolute top-20 left-10 w-64 h-64 bg-primary-lighter/5 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-10 right-10 w-80 h-80 bg-secondary/5 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary-lighter/3 rounded-full blur-3xl"></div>
-        
-        <div className="container mx-auto px-6 relative z-10">
-          {/* Hero Title */}
-          <div className="text-center mb-16">
-            <span className="text-primary-lighter uppercase tracking-[0.2em] text-sm font-medium mb-6 block">
-              BIENVENIDO AL BLOG
-            </span>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-normal text-primary-foreground mb-6 leading-tight">
-              Medicina Integrativa
-            </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
-              Explora el equilibrio perfecto entre la sabiduría milenaria y la ciencia moderna para transformar tu bienestar
-            </p>
-          </div>
 
-          {/* Featured Article Card */}
-          <div className="max-w-4xl mx-auto">
-            <div className="inline-block mb-6">
-              <Badge className="bg-primary-lighter/30 text-primary-foreground border-primary-lighter/40 px-4 py-2 text-xs uppercase tracking-wider shadow-lg">
-                Artículo Destacado
-              </Badge>
-            </div>
-            
-            <div className="bg-gradient-to-br from-background/10 via-background/5 to-primary-lighter/5 backdrop-blur-md rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-8 md:p-12 border border-primary-lighter/20 hover:border-primary-lighter/30 transition-all duration-300 hover:shadow-[0_8px_40px_rgb(0,0,0,0.16)]">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-normal text-primary-foreground mb-5 leading-tight">
+      {/* Hero Section */}
+      <section className="relative bg-hero-green pt-28 pb-16">
+        <div className="container mx-auto px-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-hero-green-foreground mb-8 text-center leading-[1.1] tracking-tight">
+            Blog de Medicina Integrativa
+          </h1>
+          <p className="text-xl text-hero-green-foreground/90 text-center max-w-3xl mx-auto leading-relaxed">
+            Descubre artículos especializados sobre medicina integrativa, medicina funcional y medicina tradicional
+            china
+          </p>
+        </div>
+        {/* Divider line */}
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-hero-green-foreground/30 to-transparent"></div>
+      </section>
+
+      {/* Featured Blog Section */}
+      <section className="relative py-16 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Featured Content */}
+            <div>
+              <Badge className={`mb-4 ${getCategoryColor(featuredBlog.category)}`}>{featuredBlog.category}</Badge>
+              <h2 className="text-3xl lg:text-4xl font-light text-foreground mb-4 leading-tight">
                 {featuredBlog.title}
               </h2>
-              
-              <p className="text-lg text-primary-foreground/80 mb-8 leading-relaxed">
-                {featuredBlog.excerpt}
-              </p>
-              
-              <div className="flex items-center gap-4 text-sm text-primary-foreground/70 mb-8">
+
+              <div className="flex items-center gap-4 mb-6 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
-                  <div className="w-9 h-9 bg-primary-lighter/30 rounded-full flex items-center justify-center backdrop-blur-sm">
-                    <User className="h-4 w-4 text-primary-foreground" />
-                  </div>
-                  <span className="font-medium text-primary-foreground">{featuredBlog.author}</span>
+                  <User className="h-4 w-4" />
+                  <span className="text-sm font-medium">{featuredBlog.author}</span>
                 </div>
-                <span>•</span>
-                <span>5 min de lectura</span>
+                <div className="flex items-center gap-2">
+                  <Calendar className="h-4 w-4" />
+                  <span className="text-sm">{featuredBlog.date}</span>
+                </div>
               </div>
-              
-              <Button 
-                variant="secondary" 
-                size="lg"
-                className="group bg-primary-foreground text-primary hover:bg-primary-foreground/90 shadow-lg"
-                onClick={() => handleBlogClick(featuredBlog.slug)}
-              >
+
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">{featuredBlog.excerpt}</p>
+
+              <Button variant="outline" className="group" onClick={() => handleBlogClick(featuredBlog.slug)}>
                 Leer Artículo
-                <ChevronRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
+            </div>
+
+            {/* Featured Image */}
+            <div className="order-first lg:order-last">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
+                <img
+                  src={featuredBlog.image}
+                  alt={featuredBlog.title}
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
             </div>
           </div>
         </div>
+        {/* Divider line */}
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
       </section>
 
       {/* Blog Grid Section */}
       <section className="relative py-16 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-light text-foreground mb-4">
-              Últimos Artículos
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Mantente al día con las últimas investigaciones y tendencias en medicina integrativa
-            </p>
+            <h2 className="text-3xl lg:text-4xl font-light text-foreground mb-4">Artículos Recientes</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Conocimiento que Transforma</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {blogPosts.slice(0, visibleBlogs).map((post) => (
-              <article 
-                key={post.id} 
+              <article
+                key={post.id}
                 className="bg-background rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer group border border-border/20"
                 onClick={() => handleBlogClick(post.slug)}
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
-                  <img 
-                    src={post.image} 
+                  <img
+                    src={post.image}
                     alt={post.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                
+
                 <div className="p-6">
                   <Badge className={`mb-3 ${getCategoryColor(post.category)}`} variant="secondary">
                     {post.category}
                   </Badge>
-                  
+
                   <h3 className="text-lg font-semibold text-foreground mb-3 leading-tight group-hover:text-primary transition-colors">
                     {post.title}
                   </h3>
-                  
-                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                    {post.excerpt}
-                  </p>
-                  
+
+                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{post.excerpt}</p>
+
                   <div className="flex items-center gap-3 text-xs text-muted-foreground">
                     <div className="flex items-center gap-1">
                       <User className="h-3 w-3" />
@@ -451,12 +435,7 @@ const Blog = () => {
           {/* Show More Button */}
           {visibleBlogs < blogPosts.length && (
             <div className="text-center mt-12">
-              <Button 
-                variant="outline" 
-                size="lg"
-                onClick={showMoreBlogs}
-                className="px-8"
-              >
+              <Button variant="outline" size="lg" onClick={showMoreBlogs} className="px-8">
                 Cargar Más Artículos
               </Button>
             </div>
