@@ -12,6 +12,7 @@ import blogFunctionalImage from "@/assets/blog-functional.jpg";
 import blogFertilityImage from "@/assets/blog-fertility.jpg";
 import blogWellnessImage from "@/assets/blog-wellness.jpg";
 import blogAcneMtcImage from "@/assets/blog-acne-mtc.jpg";
+import blogFatigaImage from "@/assets/blog-fatiga.jpg";
 
 const Blog = () => {
   const navigate = useNavigate();
@@ -31,6 +32,16 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
+      title: "Fatiga Crónica: Causas, Tratamiento y Abordaje Integrativo desde la Medicina Funcional y la Medicina China",
+      excerpt: "Sentirse cansado después de un día intenso es normal. Pero cuando el agotamiento se vuelve constante, dormir ya no recupera y la energía nunca alcanza, hablamos de fatiga crónica.",
+      author: "Sara Tamayo",
+      date: "20 de Octubre, 2024",
+      category: "Medicina Integrativa",
+      image: blogFatigaImage,
+      slug: "fatiga-cronica-tratamiento-medicina-funcional-china"
+    },
+    {
+      id: 2,
       title: "Medicina Integrativa: El Futuro del Cuidado de la Salud",
       excerpt: "Descubre cómo la combinación de medicina oriental y occidental puede transformar tu bienestar.",
       author: "Dra. Ana Saori",
@@ -40,7 +51,7 @@ const Blog = () => {
       slug: "medicina-integrativa-futuro-cuidado-salud"
     },
     {
-      id: 2,
+      id: 3,
       title: "Acupuntura para la Fertilidad: Una Perspectiva Científica",
       excerpt: "Cómo la acupuntura puede apoyar tu camino hacia la maternidad con evidencia científica.",
       author: "Dra. Ana Saori",
@@ -50,7 +61,7 @@ const Blog = () => {
       slug: "acupuntura-fertilidad-perspectiva-cientifica"
     },
     {
-      id: 3,
+      id: 4,
       title: "Medicina Funcional: Tratando las Causas Raíz",
       excerpt: "Un enfoque revolucionario que va más allá de los síntomas para encontrar la verdadera causa.",
       author: "Dra. Ana Saori",
@@ -60,7 +71,7 @@ const Blog = () => {
       slug: "medicina-funcional-causas-raiz"
     },
     {
-      id: 4,
+      id: 5,
       title: "El Poder de la Medicina Tradicional China",
       excerpt: "Explorando los beneficios milenarios de la MTC en el cuidado de la salud moderna.",
       author: "Dra. Ana Saori",
@@ -70,7 +81,7 @@ const Blog = () => {
       slug: "poder-medicina-tradicional-china"
     },
     {
-      id: 5,
+      id: 6,
       title: "Nutrición Integrativa: Alimentando tu Bienestar",
       excerpt: "Cómo una alimentación consciente puede transformar tu salud desde adentro hacia afuera.",
       author: "Dra. Ana Saori",
@@ -80,7 +91,7 @@ const Blog = () => {
       slug: "nutricion-integrativa-alimentando-bienestar"
     },
     {
-      id: 6,
+      id: 7,
       title: "Equilibrio Hormonal: La Clave del Bienestar Femenino",
       excerpt: "Descubre estrategias naturales para mantener un equilibrio hormonal óptimo.",
       author: "Dra. Ana Saori",
@@ -90,7 +101,7 @@ const Blog = () => {
       slug: "equilibrio-hormonal-bienestar-femenino"
     },
     {
-      id: 7,
+      id: 8,
       title: "Manejo del Estrés con Técnicas Orientales",
       excerpt: "Técnicas milenarias adaptadas al mundo moderno para combatir el estrés diario.",
       author: "Dra. Ana Saori",
@@ -100,7 +111,7 @@ const Blog = () => {
       slug: "manejo-estres-tecnicas-orientales"
     },
     {
-      id: 8,
+      id: 9,
       title: "Detoxificación Natural: Renovando tu Cuerpo",
       excerpt: "Métodos seguros y efectivos para desintoxicar tu organismo de manera natural.",
       author: "Dra. Ana Saori",
@@ -110,7 +121,7 @@ const Blog = () => {
       slug: "detoxificacion-natural-renovando-cuerpo"
     },
     {
-      id: 9,
+      id: 10,
       title: "Fertilidad Natural: Preparando tu Cuerpo para la Concepción",
       excerpt: "Estrategias integrativas para optimizar tu fertilidad de manera natural y holística.",
       author: "Dra. Ana Saori",
@@ -120,7 +131,7 @@ const Blog = () => {
       slug: "fertilidad-natural-preparando-concepcion"
     },
     {
-      id: 10,
+      id: 11,
       title: "Medicina Personalizada: Tu Tratamiento Único",
       excerpt: "Cómo la medicina funcional crea planes de tratamiento únicos para cada paciente.",
       author: "Dra. Ana Saori",
@@ -130,7 +141,7 @@ const Blog = () => {
       slug: "medicina-personalizada-tratamiento-unico"
     },
     {
-      id: 11,
+      id: 12,
       title: "Mindfulness y Salud: La Conexión Mente-Cuerpo",
       excerpt: "Explorando cómo la atención plena puede mejorar tu salud física y mental.",
       author: "Dra. Ana Saori",
@@ -140,7 +151,7 @@ const Blog = () => {
       slug: "mindfulness-salud-conexion-mente-cuerpo"
     },
     {
-      id: 12,
+      id: 13,
       title: "Plantas Medicinales: Sabiduría Ancestral y Ciencia Moderna",
       excerpt: "Explorando el uso terapéutico de las plantas medicinales respaldado por la investigación.",
       author: "Dra. Ana Saori",

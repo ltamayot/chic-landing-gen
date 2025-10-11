@@ -14,6 +14,8 @@ import blogWellnessImage from "@/assets/blog-wellness.jpg";
 import blogAcneMtcImage from "@/assets/blog-acne-mtc.jpg";
 import blogAcupunctureImage from "@/assets/blog-acupuncture-illustration.jpg";
 import blogHerbalTeaImage from "@/assets/blog-herbal-tea.jpg";
+import blogFatigaImage from "@/assets/blog-fatiga.jpg";
+import blogFatigaIllustration from "@/assets/blog-fatiga-illustration.jpg";
 
 const BlogPost = () => {
   const { slug } = useParams();
@@ -57,6 +59,83 @@ const BlogPost = () => {
   };
 
   const blogPosts = {
+    "fatiga-cronica-tratamiento-medicina-funcional-china": {
+      title: "Fatiga Crónica: Causas, Tratamiento y Abordaje Integrativo desde la Medicina Funcional y la Medicina China",
+      author: "Sara Tamayo",
+      date: "20 de Octubre, 2024",
+      category: "Medicina Integrativa",
+      image: blogFatigaImage,
+      content: `
+        <p>Sentirse cansado después de un día intenso es normal. Pero cuando el agotamiento se vuelve constante, dormir ya no recupera y la energía nunca alcanza, hablamos de fatiga crónica.</p>
+        
+        <p>Este síntoma afecta a miles de personas y suele tener múltiples causas: desde desequilibrios hormonales hasta alteraciones digestivas o emocionales. En Saori lo abordamos con una visión integrativa, uniendo la Medicina Funcional y la Medicina Tradicional China (MTC) para encontrar la raíz y restaurar la vitalidad.</p>
+
+        <h2>¿Por qué estoy cansado todo el tiempo?</h2>
+        <p>La fatiga crónica no es una enfermedad en sí misma, sino una señal de que algo en el cuerpo no está funcionando en equilibrio.</p>
+        
+        <p>Algunas causas frecuentes son:</p>
+        <ul>
+          <li><strong>Disfunción mitocondrial</strong> (la "fábrica de energía" de las células no produce suficiente ATP).</li>
+          <li><strong>Desequilibrios hormonales:</strong> tiroides, cortisol o DHEA alterados.</li>
+          <li><strong>Deficiencias nutricionales:</strong> vitamina B, hierro, magnesio, vitamina D.</li>
+          <li><strong>Problemas digestivos y de microbiota:</strong> intestino permeable, disbiosis, inflamación.</li>
+          <li><strong>Estrés crónico:</strong> sobrecarga del eje HPA (hipotálamo-hipófisis-suprarrenal).</li>
+        </ul>
+        
+        <p>En Medicina Funcional utilizamos exámenes de laboratorio personalizados para evaluar estas áreas y diseñar un plan basado en evidencia.</p>
+
+        <h2>La visión de la Medicina China sobre la fatiga</h2>
+        
+        <img src="${blogFatigaIllustration}" alt="Medicina China y fatiga crónica" class="w-full rounded-lg my-6" />
+        
+        <p>La MTC entiende la fatiga como un reflejo de desequilibrios en el Qi (energía vital). Los patrones más comunes son:</p>
+        <ul>
+          <li><strong>Deficiencia de Qi de Bazo y Estómago:</strong> cansancio después de comer, digestión lenta, pesadez.</li>
+          <li><strong>Deficiencia de Riñón:</strong> fatiga profunda, dolor lumbar, debilidad, sensación de frío.</li>
+          <li><strong>Estancamiento de Qi de Hígado:</strong> fatiga emocional, irritabilidad, tensión muscular.</li>
+          <li><strong>Deficiencia de Yin o Sangre:</strong> agotamiento mental, insomnio, palidez, mareos.</li>
+        </ul>
+
+        <p>Con acupuntura, fitoterapia, nutrición energética y técnicas de respiración buscamos armonizar cuerpo y mente, fortalecer el Qi y recuperar vitalidad.</p>
+
+        <h2>Estrategias integrativas para recuperar la energía</h2>
+        <p>En nuestra clínica combinamos ambas miradas para un abordaje completo:</p>
+
+        <h3>1. Nutrición terapéutica</h3>
+        <ul>
+          <li><strong>Funcional:</strong> proteínas de calidad, omega 3, carbohidratos de bajo índice glucémico, evitar azúcares refinados.</li>
+          <li><strong>MTC:</strong> comidas calientes, fáciles de digerir, sopas y caldos que fortalezcan el bazo y la energía.</li>
+        </ul>
+
+        <h3>2. Regulación del estrés y sueño</h3>
+        <ul>
+          <li><strong>Funcional:</strong> adaptógenos como ashwagandha y rhodiola, magnesio, apoyo al ritmo circadiano.</li>
+          <li><strong>MTC:</strong> dormir antes de las 11 p.m. para respetar el ciclo del hígado, acupuntura para relajación profunda.</li>
+        </ul>
+
+        <h3>3. Acupuntura y estimulación energética</h3>
+        <ul>
+          <li>Tonifica el Qi del bazo y riñón.</li>
+          <li>Libera bloqueos emocionales del hígado.</li>
+          <li>Mejora la calidad del sueño y regula el sistema nervioso.</li>
+        </ul>
+
+        <h3>4. Apoyo herbal y suplementos</h3>
+        <ul>
+          <li><strong>MTC:</strong> astrágalo, ginseng, reishi, dátiles rojos para fortalecer energía y sangre.</li>
+          <li><strong>Funcional:</strong> complejo B, vitamina D, coenzima Q10 y L-carnitina para potenciar energía mitocondrial.</li>
+        </ul>
+
+        <h2>Conclusión</h2>
+        <p>La fatiga tiene múltiples causas y requiere una mirada detallada y personalizada.</p>
+        
+        <p>En Saori acompañamos a cada paciente a identificar la raíz de su desequilibrio y diseñamos un plan que une lo mejor de ambas medicinas para recuperar tu energía vital.</p>
+        
+        <p><strong>¿Te identificas con estos síntomas?</strong></p>
+        
+        <p>Agenda una cita con nosotros y da el primer paso hacia la recuperación de tu bienestar.</p>
+      `,
+    },
     "acne-medicina-tradicional-china-mirada-integral": {
       title: "Acné y Medicina Tradicional China: Una Mirada Integral para Sanar la Piel",
       author: "Sara Tamayo",
