@@ -19,7 +19,7 @@ const MedicinaTradicionalChina = () => {
     <div className="min-h-screen">
       <Navigation />
       <main>
-        <HeroSection 
+        <HeroSection
           label="ACUPUNTURA EN BOGOTÁ"
           title="Con la acupuntura, activamos la inteligencia de tu cuerpo para restaurar el equilibrio"
           titleHighlight=""
@@ -29,7 +29,7 @@ const MedicinaTradicionalChina = () => {
           secondaryButtonText="NUESTROS SERVICIOS"
           backgroundImage={moxaImagen}
         />
-        
+
         {/* Ecosistema de Medicina China Section */}
         <section className="py-20 bg-sage">
           <div className="container mx-auto px-6">
@@ -46,20 +46,15 @@ const MedicinaTradicionalChina = () => {
               <div className="bg-background rounded-3xl p-8 md:p-12 shadow-lg">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div>
-                    <h3 className="text-2xl md:text-3xl font-serif mb-4 text-foreground">
-                      Acupuntura
-                    </h3>
+                    <h3 className="text-2xl md:text-3xl font-serif mb-4 text-foreground">Acupuntura</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                       Técnica milenaria que utiliza agujas finas para estimular puntos específicos del cuerpo, equilibrando el flujo de energía vital (Qi) y promoviendo la sanación natural del organismo.
+                      Técnica milenaria que utiliza agujas finas para estimular puntos específicos del cuerpo,
+                      equilibrando el flujo de energía vital (Qi) y promoviendo la sanación natural del organismo.
                     </p>
                   </div>
                   <div className="flex justify-center">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img 
-                        src={acupunctureTreatmentImg} 
-                        alt="Acupuntura" 
-                        className="w-full h-full object-cover"
-                      />
+                      <img src={acupunctureTreatmentImg} alt="Acupuntura" className="w-full h-full object-cover" />
                     </div>
                   </div>
                 </div>
@@ -70,19 +65,15 @@ const MedicinaTradicionalChina = () => {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div className="flex justify-center md:order-1">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img 
-                        src={acupuncturaImagen} 
-                        alt="Acupuntura Estética" 
-                        className="w-full h-full object-cover"
-                      />
+                      <img src={acupuncturaImagen} alt="Acupuntura Estética" className="w-full h-full object-cover" />
                     </div>
                   </div>
                   <div className="md:order-2">
-                    <h3 className="text-2xl md:text-3xl font-serif mb-4 text-foreground">
-                      Acupuntura Estética
-                    </h3>
+                    <h3 className="text-2xl md:text-3xl font-serif mb-4 text-foreground">Acupuntura Estética</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Es una técnica que combina la acupuntura tradicional con un enfoque especial en mejorar la circulación en el rostro y cuello, estimular la producción de colágeno, reducir líneas finas, dar volumen y tono, y unificar el brillo natural de la piel.
+                      Es una técnica que combina la acupuntura tradicional con un enfoque especial en mejorar la
+                      circulación en el rostro y cuello, estimular la producción de colágeno, reducir líneas finas, dar
+                      volumen y tono, y unificar el brillo natural de la piel.
                     </p>
                   </div>
                 </div>
@@ -92,20 +83,16 @@ const MedicinaTradicionalChina = () => {
               <div className="bg-background rounded-3xl p-8 md:p-12 shadow-lg">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div>
-                    <h3 className="text-2xl md:text-3xl font-serif mb-4 text-foreground">
-                      Terapia de Ventosas
-                    </h3>
+                    <h3 className="text-2xl md:text-3xl font-serif mb-4 text-foreground">Terapia de Ventosas</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Técnica terapéutica que utiliza copas de cristal para crear vacío sobre la piel permitiendo aliviar dolores, mejorar la circulación sanguínea, eliminar toxinas y estimular la respuesta inmunológica.
+                      Técnica terapéutica que utiliza copas de cristal para crear vacío sobre la piel permitiendo
+                      aliviar dolores, mejorar la circulación sanguínea, eliminar toxinas y estimular la respuesta
+                      inmunológica.
                     </p>
                   </div>
                   <div className="flex justify-center">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img 
-                        src={ventosasImg} 
-                        alt="Terapia de Ventosas" 
-                        className="w-full h-full object-cover"
-                      />
+                      <img src={ventosasImg} alt="Terapia de Ventosas" className="w-full h-full object-cover" />
                     </div>
                   </div>
                 </div>
@@ -116,19 +103,15 @@ const MedicinaTradicionalChina = () => {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div className="flex justify-center md:order-1">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img 
-                        src={moxibustionImg} 
-                        alt="Moxibustión" 
-                        className="w-full h-full object-cover"
-                      />
+                      <img src={moxibustionImg} alt="Moxibustión" className="w-full h-full object-cover" />
                     </div>
                   </div>
                   <div className="md:order-2">
-                    <h3 className="text-2xl md:text-3xl font-serif mb-4 text-foreground">
-                      Moxibustión
-                    </h3>
+                    <h3 className="text-2xl md:text-3xl font-serif mb-4 text-foreground">Moxibustión</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Aplicación de calor mediante la combustión de artemisa sobre puntos de acupuntura específicos para tonificar la energía vital y fortalecer el sistema inmunológico. Aporta beneficios en fertilidad, dolor articular y energía.
+                      Aplicación de calor mediante la combustión de artemisa sobre puntos de acupuntura específicos para
+                      tonificar la energía vital y fortalecer el sistema inmunológico. Aporta beneficios en fertilidad,
+                      dolor articular y energía.
                     </p>
                   </div>
                 </div>
@@ -138,20 +121,15 @@ const MedicinaTradicionalChina = () => {
               <div className="bg-background rounded-3xl p-8 md:p-12 shadow-lg">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div>
-                    <h3 className="text-2xl md:text-3xl font-serif mb-4 text-foreground">
-                      Diagnóstico Tradicional
-                    </h3>
+                    <h3 className="text-2xl md:text-3xl font-serif mb-4 text-foreground">Diagnóstico Tradicional</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Evaluación integral mediante observación de la lengua, palpación del pulso y análisis constitucional para identificar patrones de desequilibrio según la medicina tradicional china.
+                      Evaluación integral mediante observación de la lengua, palpación del pulso y análisis
+                      constitucional para identificar patrones de desequilibrio según la medicina tradicional china.
                     </p>
                   </div>
                   <div className="flex justify-center">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img 
-                        src={diagnosisImg} 
-                        alt="Diagnóstico Tradicional" 
-                        className="w-full h-full object-cover"
-                      />
+                      <img src={diagnosisImg} alt="Diagnóstico Tradicional" className="w-full h-full object-cover" />
                     </div>
                   </div>
                 </div>
@@ -168,7 +146,8 @@ const MedicinaTradicionalChina = () => {
                 Llegando a la raíz de tus síntomas
               </h2>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-16">
-                Cada punto actúa como una puerta, enviando información energética a través de la fascia hacia el interior del cuerpo:
+                Cada punto actúa como una puerta, enviando información energética a través de la fascia hacia el
+                interior del cuerpo:
               </p>
             </div>
 
@@ -177,11 +156,7 @@ const MedicinaTradicionalChina = () => {
               {/* Central icon placeholder */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
                 <div className="w-24 h-24 rounded-full bg-sage/30 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                  <img 
-                    src={group11Icon} 
-                    alt="Medicina China" 
-                    className="w-16 h-16 opacity-70"
-                  />
+                  <img src={group11Icon} alt="Medicina China" className="w-16 h-16 opacity-70" />
                 </div>
               </div>
 
@@ -189,33 +164,33 @@ const MedicinaTradicionalChina = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-16 pb-16">
                 {/* Top Left */}
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Favorece la sanación </h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Activa la Sanación </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    ofrece un estímulo eléctrico que restaura la homeostasis y el equilibrio.
+                    Estimula la respuesta del cuerpo para restaurar su equilibrio interno.
                   </p>
                 </div>
 
                 {/* Top Right */}
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Libera bloqueos</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Libera Bloqueos</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    desbloquea áreas de Qi estancado, estimulando la función de los órganos y promoviendo la salud.
+                    Facilita el flujo del Qi y la sangre, mejorando la función de órganos y tejidos.
                   </p>
                 </div>
 
                 {/* Bottom Left */}
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Disminuye el dolor</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Alivia el Dolor</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    actúa como analgésico natural interrumpiendo las señales de dolor.
+                    Actúa como un analgésico natural al modular las señales del sistema nervioso.
                   </p>
                 </div>
 
                 {/* Bottom Right */}
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Reduce la inflamación</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Reduce la Inflamación</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    disminuye los marcadores proinflamatorios en el cuerpo.
+                    Favorece la circulación y disminuye procesos inflamatorios en el cuerpo.
                   </p>
                 </div>
               </div>
@@ -231,7 +206,8 @@ const MedicinaTradicionalChina = () => {
                 La ciencia detrás de la medicina china
               </h2>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-16">
-                La acupuntura se originó en China hace aproximadamente 3,500 años. Hoy en día, la ciencia puede explicar su efectividad.
+                La acupuntura se originó en China hace aproximadamente 3,500 años. Hoy en día, la ciencia puede explicar
+                su efectividad.
               </p>
             </div>
 
@@ -239,9 +215,9 @@ const MedicinaTradicionalChina = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               <div className="text-center group cursor-pointer">
                 <div className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/40 group-hover:shadow-lg group-hover:shadow-sage/30 transition-all duration-500 group-hover:scale-125 group-hover:rotate-6 animate-fade-in transform-gpu">
-                  <img 
-                    src={group1Icon} 
-                    alt="Ecografías Doppler" 
+                  <img
+                    src={group1Icon}
+                    alt="Ecografías Doppler"
                     className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
@@ -251,10 +227,13 @@ const MedicinaTradicionalChina = () => {
               </div>
 
               <div className="text-center group cursor-pointer">
-                <div className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/40 group-hover:shadow-lg group-hover:shadow-sage/30 transition-all duration-500 group-hover:scale-125 group-hover:-rotate-6 animate-fade-in transform-gpu" style={{animationDelay: '0.1s'}}>
-                  <img 
-                    src={group3Icon} 
-                    alt="Resonancia Magnética" 
+                <div
+                  className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/40 group-hover:shadow-lg group-hover:shadow-sage/30 transition-all duration-500 group-hover:scale-125 group-hover:-rotate-6 animate-fade-in transform-gpu"
+                  style={{ animationDelay: "0.1s" }}
+                >
+                  <img
+                    src={group3Icon}
+                    alt="Resonancia Magnética"
                     className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
@@ -264,10 +243,13 @@ const MedicinaTradicionalChina = () => {
               </div>
 
               <div className="text-center group cursor-pointer">
-                <div className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/40 group-hover:shadow-lg group-hover:shadow-sage/30 transition-all duration-500 group-hover:scale-125 group-hover:rotate-12 animate-fade-in transform-gpu" style={{animationDelay: '0.2s'}}>
-                  <img 
-                    src={vectorIcon} 
-                    alt="Termografías" 
+                <div
+                  className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/40 group-hover:shadow-lg group-hover:shadow-sage/30 transition-all duration-500 group-hover:scale-125 group-hover:rotate-12 animate-fade-in transform-gpu"
+                  style={{ animationDelay: "0.2s" }}
+                >
+                  <img
+                    src={vectorIcon}
+                    alt="Termografías"
                     className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
@@ -277,10 +259,13 @@ const MedicinaTradicionalChina = () => {
               </div>
 
               <div className="text-center group cursor-pointer">
-                <div className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/40 group-hover:shadow-lg group-hover:shadow-sage/30 transition-all duration-500 group-hover:scale-125 group-hover:-rotate-12 animate-fade-in transform-gpu" style={{animationDelay: '0.3s'}}>
-                  <img 
-                    src={group2Icon} 
-                    alt="Tejido Conectivo" 
+                <div
+                  className="w-20 h-20 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-sage/40 group-hover:shadow-lg group-hover:shadow-sage/30 transition-all duration-500 group-hover:scale-125 group-hover:-rotate-12 animate-fade-in transform-gpu"
+                  style={{ animationDelay: "0.3s" }}
+                >
+                  <img
+                    src={group2Icon}
+                    alt="Tejido Conectivo"
                     className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
