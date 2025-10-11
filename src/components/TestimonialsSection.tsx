@@ -10,49 +10,49 @@ const TestimonialsSection = () => {
       name: "Juliana Cely",
       location: "Bucaramanga, Colombia",
       initials: "JC",
-      text: "Llevaba meses experimentando algunas molestias en mi salud y deseaba encontrar respuestas a esos malestares o una mejoria. En Saori, encontré un apoyo fundamental en mi proceso de sanación. Descubrí una manera diferente de comprender, escuchar y sentir mi salud y existencia. Aprendí a nutrirme, a ser compasiva y paciente conmigo misma y mi salud. Sin duda, Saori juega un papel crucial en mi bienestar. Agradezco a la Dra. Sara por ser un ángel en mi camino hacia la salud",
-      rating: 5
+      text: "Llevaba meses experimentando algunas molestias en mi salud y deseaba encontrar respuestas a esos malestares. En Saori, encontré un apoyo fundamental en mi proceso de sanación. Aprendí a nutrirme, a ser compasiva y paciente conmigo misma. Agradezco a la Dra. Sara por ser un ángel en mi camino hacia la salud.",
+      rating: 5,
     },
     {
-      name: "Valentina Ruiz", 
+      name: "Valentina Ruiz",
       location: "Pereira, Colombia",
       initials: "VR",
       text: "Mi experiencia en el Saori con la Dra. Sara fué transformadora. Su enfoque personalizado combinando la medicina funcional y oriental me permitieron comprender mi cuerpo profundamente y regular mi sistema Hormonal. Recomiendo Saori a quienes buscan una atención médica personalizada y holística.",
-      rating: 5
+      rating: 5,
     },
     {
       name: "David Diaz",
-      location: "Manizales, Colombia", 
+      location: "Manizales, Colombia",
       initials: "DD",
       text: "Nunca había probado un enfoque de medicina china y medicina funcional antes, siento que me ha ayudado mucho a ser más consciente de mi alimentación, y lo más importante, el proceso en Saori me ha ayudado mucho mejorar mi calidad de sueño y ansiedad.",
-      rating: 5
+      rating: 5,
     },
     {
       name: "María Elena García",
       location: "Medellín, Colombia",
       initials: "MG",
       text: "Me acerqué a Saori por ansiedad y dificultades para dormir. Desde la primera cita sentí un cambio y un acompañamiento profundo. Con las terapias de acupuntura, mi descanso ha mejorado y mi mente está más tranquila.",
-      rating: 5
+      rating: 5,
     },
     {
       name: "Maria Paula Pinilla",
       location: "Cali, Colombia",
       initials: "MP",
       text: "La Dra. Sara se tomó el tiempo de escucharme y personalizar mi tratamiento. Mis síntomas han mejorado y he aprendido a conocer mi cuerpo y a nutrirme mejor..",
-      rating: 5
+      rating: 5,
     },
     {
       name: "Andres Morales",
       location: "Barranquilla, Colombia",
       initials: "AM",
       text: " Tenía problemas digestivos y todo lo que comía me sentaba mal. En Saori identificaron la causa de mis síntomas y, a lo largo de cada fase del tratamiento, fui trabajando las raíces del problema. Ahora me siento muy bien, con más energía y  tengo una relación mucho más tranquila con la comida.",
-      rating: 5
-    }
+      rating: 5,
+    },
   ];
 
   const testimonialsPerGroup = 3;
   const totalGroups = Math.ceil(testimonials.length / testimonialsPerGroup);
-  
+
   const nextGroup = () => {
     setCurrentGroup((prev) => (prev + 1) % totalGroups);
   };
@@ -71,11 +71,13 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-6">
         {/* Título */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif mb-4 text-foreground">
-            Lo que dicen nuestros pacientes
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-serif mb-4 text-foreground">Lo que dicen nuestros pacientes</h2>
           <p className="text-lg text-muted-foreground">
-            Llevaba meses experimentando algunas molestias en mi salud y deseaba encontrar respuestas a esos malestares o una mejoria. En Saori, encontré un apoyo fundamental en mi proceso de sanación. Descubrí una manera diferente de comprender, escuchar y sentir mi salud y existencia. Aprendí a nutrirme, a ser compasiva y paciente conmigo misma y mi salud. Sin duda, Saori juega un papel crucial en mi bienestar. Agradezco a la Dra. Sara por ser un ángel en mi camino hacia la salud
+            Llevaba meses experimentando algunas molestias en mi salud y deseaba encontrar respuestas a esos malestares
+            o una mejoria. En Saori, encontré un apoyo fundamental en mi proceso de sanación. Descubrí una manera
+            diferente de comprender, escuchar y sentir mi salud y existencia. Aprendí a nutrirme, a ser compasiva y
+            paciente conmigo misma y mi salud. Sin duda, Saori juega un papel crucial en mi bienestar. Agradezco a la
+            Dra. Sara por ser un ángel en mi camino hacia la salud
           </p>
         </div>
 
@@ -85,28 +87,34 @@ const TestimonialsSection = () => {
             {getCurrentTestimonials().map((testimonial, index) => {
               const originalIndex = currentGroup * testimonialsPerGroup + index;
               return (
-                <div 
+                <div
                   key={originalIndex}
                   className="bg-card rounded-2xl p-6 transition-all duration-300 hover:shadow-lg hover:scale-105"
                 >
                   {/* Badge con color único */}
                   <div className="flex justify-end mb-4">
-                    <div className={`w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold ${
-                      originalIndex === 0 ? 'bg-green-500' : 
-                      originalIndex === 1 ? 'bg-green-600' : 
-                      originalIndex === 2 ? 'bg-green-700' :
-                      originalIndex === 3 ? 'bg-green-500' :
-                      originalIndex === 4 ? 'bg-green-600' : 'bg-green-700'
-                    }`}>
+                    <div
+                      className={`w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold ${
+                        originalIndex === 0
+                          ? "bg-green-500"
+                          : originalIndex === 1
+                            ? "bg-green-600"
+                            : originalIndex === 2
+                              ? "bg-green-700"
+                              : originalIndex === 3
+                                ? "bg-green-500"
+                                : originalIndex === 4
+                                  ? "bg-green-600"
+                                  : "bg-green-700"
+                      }`}
+                    >
                       {testimonial.initials}
                     </div>
                   </div>
 
                   {/* Testimonial */}
                   <div className="border-l-4 border-accent pl-4 mb-6">
-                    <p className="text-foreground italic leading-relaxed">
-                      "{testimonial.text}"
-                    </p>
+                    <p className="text-foreground italic leading-relaxed">"{testimonial.text}"</p>
                   </div>
 
                   {/* Rating */}
@@ -118,13 +126,21 @@ const TestimonialsSection = () => {
 
                   {/* Author info */}
                   <div className="flex items-center gap-3">
-                    <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-semibold ${
-                      originalIndex === 0 ? 'bg-green-500' : 
-                      originalIndex === 1 ? 'bg-green-600' : 
-                      originalIndex === 2 ? 'bg-green-700' :
-                      originalIndex === 3 ? 'bg-green-500' :
-                      originalIndex === 4 ? 'bg-green-600' : 'bg-green-700'
-                    }`}>
+                    <div
+                      className={`w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-semibold ${
+                        originalIndex === 0
+                          ? "bg-green-500"
+                          : originalIndex === 1
+                            ? "bg-green-600"
+                            : originalIndex === 2
+                              ? "bg-green-700"
+                              : originalIndex === 3
+                                ? "bg-green-500"
+                                : originalIndex === 4
+                                  ? "bg-green-600"
+                                  : "bg-green-700"
+                      }`}
+                    >
                       {testimonial.initials}
                     </div>
                     <div>
@@ -155,7 +171,7 @@ const TestimonialsSection = () => {
                   key={index}
                   onClick={() => setCurrentGroup(index)}
                   className={`w-3 h-3 rounded-full transition-colors ${
-                    index === currentGroup ? 'bg-primary' : 'bg-primary/20'
+                    index === currentGroup ? "bg-primary" : "bg-primary/20"
                   }`}
                 />
               ))}

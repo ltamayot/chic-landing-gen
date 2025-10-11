@@ -22,7 +22,7 @@ const DoctorSection = () => {
     },
     {
       icon: User,
-      text: "Certificación IFMCP en Medicina Funcional- Institute of Functional Medicine EEUU",
+      text: "Formación en Medicina Clásica Jingfang – Escuela Jingfang.",
       color: "text-primary",
     },
     {
