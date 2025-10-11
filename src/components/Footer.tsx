@@ -1,6 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
-import saoriLogo from "@/assets/saori-logo.svg";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -35,13 +34,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Left Section */}
           <div className="space-y-8">
-            {/* SAORI Logo */}
+            {/* SAORI Title */}
             <div>
-              <img 
-                src={saoriLogo} 
-                alt="Saori Logo" 
-                className="h-16 w-auto brightness-0 invert"
-              />
+              <h3 className="text-3xl font-serif font-semibold mb-4 text-accent tracking-wide">
+                SAORI
+              </h3>
             </div>
 
             {/* Philosophy Section */}
