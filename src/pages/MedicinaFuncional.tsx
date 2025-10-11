@@ -111,7 +111,9 @@ const MedicinaFuncional = () => {
                 Con la medicina funcional, podras…
               </h2>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-16">
-                Como un árbol que florece desde raíces sólidas, la Medicina Funcional restaura tu salud desde la raíz
+                Como un árbol que necesita raíces fuertes para crecer saludable, la medicina funcional busca las causas
+                fundamentales de tus síntomas para restaurar tu salud desde la base. Explora algunas de las formas en
+                que funciona la medicina funcional a continuación:
               </p>
             </div>
 
@@ -128,34 +130,39 @@ const MedicinaFuncional = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-16 pb-16">
                 {/* Top Left */}
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Descubrir la Verdadera Causa</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">
+                    Optimiza tu salud física, mental y espiritual
+                  </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Exploramos tu historia, tu estilo de vida y tus exámenes para entender qué origina tus síntomas.
+                    Exploramos a fondo cómo funciona tu cuerpo para que recuperes tu equilibrio, fortalezcas tu energía
+                    y te sientas en plenitud
                   </p>
                 </div>
 
                 {/* Top Right */}
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Nutrir tu Cuerpo con lo Escencial</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">
+                    Corrige las disfunciones mediante un enfoque holístico e integrativo
+                  </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Diseñamos un plan de nutrición, suplementación y hábitos que restaura lo que tu cuerpo lo que
-                    realmente necesita.
+                    Un plan que combina alimentación, suplementación y prácticas mente-cuerpo para restablecer la
+                    armonía interna.
                   </p>
                 </div>
 
                 {/* Bottom Left */}
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Recuperar Energía y Claridad</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Funciona al máximo, cada día</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Fortalece tu vitalidad, mejora tu enfoque mental y equilibra tus defensas de forma integral.
+                    Identificando y liberando áreas de disfunción que estimulan y promueven la salud integral.
                   </p>
                 </div>
 
                 {/* Bottom Right */}
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Alcanzar Resultados Duraderos</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Restaura el equilibrio de tu cuerpo</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Al tratar la raíz de los síntomas, los cambios se mantienen en el tiempo.
+                    Recupera la energía y vitalidad para que cada sistema funcione en armonía.
                   </p>
                 </div>
               </div>
@@ -171,8 +178,7 @@ const MedicinaFuncional = () => {
                 La ciencia detrás de la medicina funcional
               </h2>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-16">
-                La medicina funcional se basa en la ciencia moderna y la investigación clínica para identificar y tratar
-                las causas fundamentales de la enfermedad, no solo los síntomas.
+                Más allá de tratar síntomas, descubrimos lo que tu cuerpo realmente necesita para sanar.
               </p>
             </div>
 
@@ -187,8 +193,7 @@ const MedicinaFuncional = () => {
                   />
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
-                  Exámenes avanzados que pueden detectar deficiencias nutricionales, desequilibrios hormonales y
-                  marcadores de inflamación invisibles en chequeos rutinarios.
+                  Exámenes que revelan lo que los chequeos de rutina no muestran.
                 </h3>
               </div>
 
@@ -201,7 +206,7 @@ const MedicinaFuncional = () => {
                   />
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
-                  La genética, el entorno y los hábitos de vida de cada persona guían el diseño del tratamiento.
+                  Tratamientos guiados por tu genética, tu entorno y tu estilo de vida.
                 </h3>
               </div>
 
@@ -214,8 +219,7 @@ const MedicinaFuncional = () => {
                   />
                 </div>
                 <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
-                  Utiliza investigación clínica para sustentar cambios en nutrición, suplementación y medicina
-                  preventiva.
+                  Cada recomendación respaldada por evidencia científica sólida.
                 </h3>
               </div>
 
