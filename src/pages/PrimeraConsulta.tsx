@@ -4,6 +4,7 @@ import BookingSection from "@/components/BookingSection";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Heart, Shield, Users, Stethoscope, BookOpen, Activity } from "lucide-react";
+import heroPrimeraConsulta from "@/assets/hero-primera-consulta.png";
 
 const IntakeSection = () => {
   return (
@@ -242,7 +243,15 @@ const PrimeraConsulta = () => {
     <div className="min-h-screen">
       <Navigation />
       <main>
-        <HeroSection />
+        <HeroSection 
+          label="Primera Consulta"
+          title="Primera Consulta"
+          subtitle="Sana, equilibra y reconecta con tu naturaleza regenerativa"
+          description="El patrón único de síntomas de cada paciente requiere una solución individual"
+          primaryButtonText="AGENDAR CITA"
+          secondaryButtonText="NUESTROS SERVICIOS"
+          backgroundImage={heroPrimeraConsulta}
+        />
         <IntakeSection />
         <TreatmentSection />
         <PlanSection />
