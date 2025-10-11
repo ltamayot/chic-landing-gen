@@ -4,7 +4,7 @@ import BookingSection from "@/components/BookingSection";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Heart, Shield, Users, Stethoscope, BookOpen, Activity } from "lucide-react";
-import heroPrimeraConsulta from "@/assets/hero-primera-consulta.png";
+import heroPrimeraConsulta from "@/assets/hero-primera-consulta.jpg";
 
 const IntakeSection = () => {
   return (
