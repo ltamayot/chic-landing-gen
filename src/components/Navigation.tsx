@@ -71,6 +71,11 @@ const Navigation = () => {
                 isScrolled ? '' : 'brightness-0 invert'
               }`}
             />
+            <span className={`text-2xl font-serif font-semibold tracking-wide transition-colors duration-300 ${
+              isScrolled ? 'text-primary' : 'text-primary-foreground'
+            }`}>
+              SAORI
+            </span>
           </div>
 
           {/* Desktop Navigation Items */}
