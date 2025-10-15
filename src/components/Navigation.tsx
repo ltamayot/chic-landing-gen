@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import saoriLogo from "@/assets/saori-logo.svg";
+import saoriLogo from "@/assets/saori-logo-header.svg";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,15 +63,20 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <button onClick={() => scrollToSection('inicio')} className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <img 
               src={saoriLogo} 
               alt="SAORI Logo" 
-              className={`h-12 w-auto transition-all duration-300 ${
-                isScrolled ? 'opacity-100' : 'opacity-100'
+              className={`h-16 w-auto transition-all duration-300 ${
+                isScrolled ? 'brightness-0' : 'brightness-0 invert'
               }`}
             />
-          </button>
+            <span className={`text-2xl font-serif font-semibold tracking-wide transition-colors duration-300 ${
+              isScrolled ? 'text-primary' : 'text-primary-foreground'
+            }`}>
+              SAORI
+            </span>
+          </div>
 
           {/* Desktop Navigation Items */}
           <div className="hidden lg:flex items-center gap-8">
