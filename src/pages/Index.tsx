@@ -7,6 +7,7 @@ import ConsultationSection from "@/components/ConsultationSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import BookingSection from "@/components/BookingSection";
 import Footer from "@/components/Footer";
+import { Separator } from "@/components/ui/separator";
 import heroTreatmentImg from "@/assets/hero-treatment.jpg";
 
 const Index = () => {
@@ -24,6 +25,7 @@ const Index = () => {
         <DoctorSection />
         <ConsultationSection />
         <TestimonialsSection />
+        <Separator className="h-1 bg-gray-400" />
         <BookingSection />
       </main>
       <Footer />
