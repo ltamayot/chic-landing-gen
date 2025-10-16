@@ -5,7 +5,7 @@ const BookingSection = () => {
   const navigate = useNavigate();
 
   return (
-    <section id="contacto" className="py-20 bg-sage">
+    <section id="contacto" className="py-20 bg-background">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-4xl md:text-5xl font-serif mb-8 text-foreground">
           Agenda tu cita o contáctanos
