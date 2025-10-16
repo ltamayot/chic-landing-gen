@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import BookingSection from "@/components/BookingSection";
 import Footer from "@/components/Footer";
+import { Separator } from "@/components/ui/separator";
 import moxaImagen from "@/assets/moxa-imagen.png";
 import acupuncturaImagen from "@/assets/acupunctura-imagen.png";
 import diagnosisImg from "@/assets/diagnosis.jpg";
@@ -274,6 +275,7 @@ const MedicinaTradicionalChina = () => {
           </div>
         </section>
 
+        <Separator className="h-1 bg-gray-400" />
         <BookingSection />
       </main>
       <Footer />
