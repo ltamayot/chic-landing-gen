@@ -31,7 +31,7 @@ const MedicinaTradicionalChina = () => {
         />
 
         {/* Ecosistema de Medicina China Section */}
-        <section className="py-20 bg-sage">
+        <section className="py-20 bg-gradient-to-r from-[#DD6D5F]/60 to-sage/60">
           <div className="container mx-auto px-6">
             {/* Título de sección */}
             <div className="text-center mb-16">
