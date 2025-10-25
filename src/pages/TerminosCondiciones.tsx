@@ -462,7 +462,7 @@ const TerminosCondiciones = () => {
                 </p>
                 <ul style={{marginLeft: '2rem', marginBottom: '1.5rem', listStyleType: 'none'}}>
                   <li style={{marginBottom: '0.5rem', fontSize: '17px', lineHeight: '1.6', color: '#333333'}}><strong>Correo electrónico:</strong> info@saori.com</li>
-                  <li style={{marginBottom: '0.5rem', fontSize: '17px', lineHeight: '1.6', color: '#333333'}}><strong>Teléfono:</strong> +57 300 123 4567</li>
+                  <li style={{marginBottom: '0.5rem', fontSize: '17px', lineHeight: '1.6', color: '#333333'}}><strong>Teléfono:</strong> +57 310 573 9221</li>
                   <li style={{marginBottom: '0.5rem', fontSize: '17px', lineHeight: '1.6', color: '#333333'}}><strong>Dirección:</strong> Calle 72A #20A–22, Bogotá, Colombia</li>
                   <li style={{marginBottom: '0.5rem', fontSize: '17px', lineHeight: '1.6', color: '#333333'}}><strong>Horario de atención:</strong> Lunes a viernes, de 8:00 a.m. a 6:00 p.m.</li>
                 </ul>
