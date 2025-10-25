@@ -43,7 +43,7 @@ const Footer = () => {
 
             {/* Philosophy Section */}
             <div>
-            <h4 className="text-xl font-semibold mb-4 text-black uppercase tracking-wider">
+            <h4 className="text-xl font-semibold mb-4 text-white uppercase tracking-wider">
               NUESTRA FILOSOFÍA
             </h4>
             <p className="text-black mb-6 leading-relaxed text-lg">
@@ -70,7 +70,7 @@ const Footer = () => {
 
           {/* Right Section - Contact Info in Box */}
           <div className="border border-primary-foreground/30 rounded-lg p-8">
-            <h4 className="text-xl font-semibold mb-6 text-black uppercase tracking-wider">
+            <h4 className="text-xl font-semibold mb-6 text-white uppercase tracking-wider">
               CONTACTO
             </h4>
             <div className="space-y-4">
