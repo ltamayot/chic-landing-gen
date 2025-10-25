@@ -101,7 +101,7 @@ const Footer = () => {
           <div className="mt-2">
             <a 
               href="/terminos-condiciones"
-              className="text-primary-foreground/70 hover:text-white transition-colors text-sm underline"
+              className="text-black hover:text-white transition-colors text-sm underline"
             >
               Términos y Condiciones
             </a>
