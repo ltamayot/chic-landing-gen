@@ -67,7 +67,7 @@ const Blog = () => {
       <Navigation />
       
       {/* Hero Section with Featured Article */}
-      <section className="relative bg-gradient-to-br from-sage via-sage-dark to-primary-lighter pt-32 pb-32 overflow-hidden">
+      <section className="relative bg-sage pt-32 pb-32 overflow-hidden">
         {/* Animated background elements */}
         <div className="absolute top-20 left-10 w-64 h-64 bg-primary-lighter/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-10 right-10 w-80 h-80 bg-sage-dark/20 rounded-full blur-3xl animate-pulse"></div>
