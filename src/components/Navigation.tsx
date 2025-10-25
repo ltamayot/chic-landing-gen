@@ -16,6 +16,7 @@ const Navigation = () => {
     { name: "Dra Sara Tamayo", id: "doctora" },
     { name: "Primera Consulta", id: "consulta" },
     { name: "Testimonios", id: "testimonios" },
+    { name: "Blog", id: "blog", isRoute: true },
     { name: "Contacto", id: "contacto" }
   ];
 
@@ -28,7 +29,14 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
+  const scrollToSection = (id: string, isRoute?: boolean) => {
+    // If it's a route navigation (like Blog), navigate directly
+    if (isRoute) {
+      navigate(`/${id}`);
+      setIsMobileMenuOpen(false);
+      return;
+    }
+    
     // If we're not on the home page, navigate there first
     if (location.pathname !== '/') {
       navigate('/', { replace: true });
@@ -83,7 +91,7 @@ const Navigation = () => {
             {navItems.map((item) => (
               <button
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
+                onClick={() => scrollToSection(item.id, item.isRoute)}
                 className={`font-medium transition-colors duration-200 hover:scale-105 transform ${
                   isScrolled 
                     ? 'text-foreground hover:text-primary' 
@@ -159,7 +167,7 @@ const Navigation = () => {
               {navItems.map((item) => (
                 <button
                   key={item.id}
-                  onClick={() => scrollToSection(item.id)}
+                  onClick={() => scrollToSection(item.id, item.isRoute)}
                   className="text-left py-2 text-foreground hover:text-primary transition-colors font-medium"
                 >
                   {item.name}
