@@ -12,10 +12,7 @@ const BookingSection = () => {
         </h2>
         
         <p className="text-lg text-muted-foreground mb-4 max-w-3xl mx-auto leading-relaxed">
-          Inicia tu camino hacia un bienestar integral y pleno con nosotros{" "}
-          <span className="text-accent underline cursor-pointer">
-            Ver la Ubicación
-          </span>
+          Inicia tu camino hacia un bienestar integral y pleno con nosotros
         </p>
 
         <div className="mt-12">

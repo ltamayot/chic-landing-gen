@@ -113,7 +113,7 @@ const TestimonialsSection = () => {
                   </div>
 
                   {/* Testimonial */}
-                  <div className="border-l-4 border-accent pl-4 mb-6">
+                  <div className="border-l-4 border-[#DD6D5F]/60 pl-4 mb-6">
                     <p className="text-foreground italic leading-relaxed">"{testimonial.text}"</p>
                   </div>
 

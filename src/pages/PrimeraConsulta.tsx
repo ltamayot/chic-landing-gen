@@ -21,7 +21,7 @@ const IntakeSection = () => {
                 Todo comienza con tu historia
               </h2>
             </div>
-            <div className="border-l-4 border-accent pl-6">
+            <div className="border-l-4 border-[#DD6D5F]/60 pl-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 En tu primera consulta nos sumergimos en tu historia clínica y de vida. Revisamos síntomas, exámenes y cada detalle que nos ayude a comprender la raíz de lo que estás viviendo. Esta cita, presencial o virtual, es el inicio de un proceso diseñado para ti, con una mirada integrativa y profunda.
               </p>
@@ -126,7 +126,7 @@ const PlanSection = () => {
                 Saldrás de tu primera visita con un plan claro
               </h2>
             </div>
-            <div className="border-l-4 border-accent pl-6">
+            <div className="border-l-4 border-[#DD6D5F]/60 pl-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Nuestro objetivo es aprovechar tu tiempo y maximizar los resultados. Tras tu primera consulta, tendrás una idea clara del número de sesiones recomendadas, un plan de suplementación personalizado (si es necesario), y recomendaciones nutricionales y estilo de vida, y una valoración realista de cómo podemos ayudarte.
               </p>

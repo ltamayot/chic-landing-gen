@@ -16,7 +16,7 @@ const ConsultationSection = () => {
               Nos tomamos el tiempo de conocerte a profundidad
             </h2>
             
-            <div className="border-l-4 border-accent pl-6 mb-8">
+            <div className="border-l-4 border-[#DD6D5F]/60 pl-6 mb-8">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Comienza tu camino hacia una versión más saludable y feliz de ti mismo con nosotros. Iniciaremos con un análisis profundo de tu historia clínica, recomendaremos pruebas diagnósticas avanzadas cuando sea necesario, y trabajaremos para lograr la mejor y más saludable versión de ti… física, emocional y mental.
               </p>

@@ -75,7 +75,7 @@ const DoctorSection = () => {
           {/* Contenido */}
           <div>
             {/* Testimonial */}
-            <div className="bg-background border-l-4 border-accent p-6 mb-8 italic">
+            <div className="bg-background border-l-4 border-[#DD6D5F]/60 p-6 mb-8 italic">
               <p className="text-lg text-foreground leading-relaxed">
                 "La verdadera salud surge cuando tratamos la causa, no solo los síntomas, y acompañamos al cuerpo a
                 florecer desde adentro hacia afuera."
@@ -109,11 +109,10 @@ const DoctorSection = () => {
             {/* Experiencia en clínicas */}
             <div>
               <h4 className="text-xl font-serif mb-6 text-foreground">Avalada por:</h4>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="flex justify-center gap-8">
                 {clinics.map((clinic, index) => (
-                  <div key={index} className="text-center p-6 bg-background rounded-xl border-2 border-sage">
-                    <img src={clinic.logo} alt={clinic.name} className="w-20 h-20 object-contain mx-auto mb-4" />
-                    <span className="text-xs text-muted-foreground">{clinic.name}</span>
+                  <div key={index} className="flex items-center justify-center">
+                    <img src={clinic.logo} alt={clinic.name} className="w-32 h-32 object-contain" />
                   </div>
                 ))}
               </div>
