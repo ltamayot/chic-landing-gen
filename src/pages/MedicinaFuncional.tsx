@@ -192,7 +192,7 @@ const MedicinaFuncional = () => {
                     className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
+                <h3 className="text-lg mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
                   Exámenes que revelan lo que los chequeos de rutina no muestran.
                 </h3>
               </div>
@@ -205,7 +205,7 @@ const MedicinaFuncional = () => {
                     className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
+                <h3 className="text-lg mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
                   Tratamientos guiados por tu genética, tu entorno y tu estilo de vida.
                 </h3>
               </div>
@@ -218,7 +218,7 @@ const MedicinaFuncional = () => {
                     className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
+                <h3 className="text-lg mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
                   Cada recomendación respaldada por evidencia científica sólida.
                 </h3>
               </div>
@@ -231,7 +231,7 @@ const MedicinaFuncional = () => {
                     className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
+                <h3 className="text-lg mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
                   Prevención de enfermedades crónicas y equilibrio cuerpo-mente.
                 </h3>
               </div>

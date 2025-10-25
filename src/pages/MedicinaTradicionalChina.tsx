@@ -218,7 +218,7 @@ const MedicinaTradicionalChina = () => {
                     className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
+                <h3 className="text-lg mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
                   Las ecografías Doppler muestran que la acupuntura mejora el flujo sanguíneo (circulación)
                 </h3>
               </div>
@@ -234,7 +234,7 @@ const MedicinaTradicionalChina = () => {
                     className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
+                <h3 className="text-lg mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
                   Resonancia magnética: cambios visibles en la actividad cerebral.
                 </h3>
               </div>
@@ -250,7 +250,7 @@ const MedicinaTradicionalChina = () => {
                     className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
+                <h3 className="text-lg mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
                   Termografía: evidencia de menor inflamación tras el tratamiento.
                 </h3>
               </div>
@@ -266,7 +266,7 @@ const MedicinaTradicionalChina = () => {
                     className="w-12 h-12 opacity-70 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                 </div>
-                <h3 className="text-lg font-semibold mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
+                <h3 className="text-lg mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
                   Tejido conectivo: aumenta la conductividad eléctrica y la comunicación celular.
                 </h3>
               </div>
