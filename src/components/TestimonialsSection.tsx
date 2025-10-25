@@ -73,11 +73,7 @@ const TestimonialsSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif mb-4 text-foreground">Lo que dicen nuestros pacientes</h2>
           <p className="text-lg text-muted-foreground">
-            Llevaba meses experimentando algunas molestias en mi salud y deseaba encontrar respuestas a esos malestares
-            o una mejoria. En Saori, encontré un apoyo fundamental en mi proceso de sanación. Descubrí una manera
-            diferente de comprender, escuchar y sentir mi salud y existencia. Aprendí a nutrirme, a ser compasiva y
-            paciente conmigo misma y mi salud. Sin duda, Saori juega un papel crucial en mi bienestar. Agradezco a la
-            Dra. Sara por ser un ángel en mi camino hacia la salud
+            Cada historia es una semilla que florece en Saori
           </p>
         </div>
 
