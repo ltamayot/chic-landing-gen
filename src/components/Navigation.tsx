@@ -146,7 +146,7 @@ const Navigation = () => {
             variant={isScrolled ? "outline" : "secondary"} 
             size="sm" 
             className="hidden lg:flex font-medium tracking-wide"
-            onClick={() => window.location.href = 'https://wa.me/573107539221'}
+            onClick={() => window.open('https://wa.me/573107539221', '_blank')}
           >
             AGENDAR CITA
           </Button>
@@ -196,7 +196,7 @@ const Navigation = () => {
                 variant="outline" 
                 size="sm" 
                 className="mt-4 font-medium tracking-wide self-start"
-                onClick={() => window.location.href = 'https://wa.me/573107539221'}
+                onClick={() => window.open('https://wa.me/573107539221', '_blank')}
               >
                 AGENDAR CITA
               </Button>

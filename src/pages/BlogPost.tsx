@@ -273,7 +273,7 @@ const BlogPost = () => {
                 variant="outline"
                 size="sm"
                 className="font-medium tracking-wide"
-                onClick={() => window.location.href = 'https://wa.me/573107539221'}
+                onClick={() => window.open('https://wa.me/573107539221', '_blank')}
               >
                 AGENDAR CITA
               </Button>
@@ -333,7 +333,7 @@ const BlogPost = () => {
                   variant="outline"
                   size="sm"
                   className="mt-4 font-medium tracking-wide self-center sm:self-start"
-                  onClick={() => window.location.href = 'https://wa.me/573107539221'}
+                  onClick={() => window.open('https://wa.me/573107539221', '_blank')}
                 >
                   AGENDAR CITA
                 </Button>
