@@ -2,7 +2,6 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import BookingSection from "@/components/BookingSection";
 import Footer from "@/components/Footer";
-import { Separator } from "@/components/ui/separator";
 import moxaImagen from "@/assets/moxa-imagen.png";
 import acupuncturaImagen from "@/assets/acupunctura-imagen.png";
 import diagnosisImg from "@/assets/diagnosis.jpg";
@@ -32,7 +31,7 @@ const MedicinaTradicionalChina = () => {
         />
 
         {/* Ecosistema de Medicina China Section */}
-        <section className="py-20 bg-gradient-to-r from-[#DD6D5F]/60 to-sage/60">
+        <section className="py-20 bg-sage">
           <div className="container mx-auto px-6">
             {/* Título de sección */}
             <div className="text-center mb-16">
@@ -275,7 +274,6 @@ const MedicinaTradicionalChina = () => {
           </div>
         </section>
 
-        <Separator className="h-1 bg-gray-400" />
         <BookingSection />
       </main>
       <Footer />

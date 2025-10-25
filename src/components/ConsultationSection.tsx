@@ -7,7 +7,7 @@ const ConsultationSection = () => {
   const navigate = useNavigate();
 
   return (
-    <section id="consulta" className="py-20 bg-gradient-to-r from-[#DD6D5F]/60 to-sage/60">
+    <section id="consulta" className="py-20 bg-sage">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
           {/* Contenido de texto */}

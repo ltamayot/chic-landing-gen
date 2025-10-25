@@ -26,7 +26,7 @@ All colors MUST be HSL.
     --secondary: 40 35% 88%; /* Beige/crema */
     --secondary-foreground: 140 30% 20%;
 
-    --accent: 8 65% 61%; /* DD6D5F - Color coral para detalles */
+    --accent: 25 95% 65%; /* Naranja/dorado para detalles */
     --accent-foreground: 0 0% 98%;
 
     --muted: 210 40% 96.1%;
@@ -86,7 +86,7 @@ All colors MUST be HSL.
     --muted: 140 15% 30%;
     --muted-foreground: 120 10% 70%;
 
-    --accent: 8 65% 61%; /* DD6D5F - Color coral para detalles */
+    --accent: 25 95% 65%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
