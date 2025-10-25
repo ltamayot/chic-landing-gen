@@ -192,13 +192,11 @@ const ServicesSection = () => {
   const services = [
     {
       title: "ACUPUNTURA",
-      description: "Sanación y equilibrio: la acupuntura estimula la inteligencia natural de tu cuerpo para devolverlo a la homeostasis. Conoce más sobre nuestro enfoque de acupuntura",
-      link: "Aquí"
+      description: "Sanación y equilibrio: la acupuntura estimula la inteligencia natural de tu cuerpo para devolverlo a la homeostasis. Conoce más sobre nuestro enfoque de acupuntura."
     },
     {
       title: "MEDICINA FUNCIONAL",
-      description: "Un enfoque moderno y personalizado para descubrir lo que tu cuerpo realmente necesita. A través de pruebas avanzadas, nutrición y suplementación, tratamos la raíz de tus síntomas y diseñamos un plan claro para recuperar tu energía, equilibrio y bienestar duradero. Conoce más sobre nuestro enfoque de medicina funcional.",
-      link: "Aquí"
+      description: "Un enfoque moderno y personalizado para descubrir lo que tu cuerpo realmente necesita. A través de pruebas avanzadas, nutrición y suplementación, tratamos la raíz de tus síntomas y diseñamos un plan claro para recuperar tu energía, equilibrio y bienestar duradero. Conoce más sobre nuestro enfoque de medicina funcional."
     }
   ];
 
@@ -221,10 +219,7 @@ const ServicesSection = () => {
                 {service.title}
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                {service.description}{" "}
-                <span className="text-accent underline cursor-pointer hover:text-accent/80 transition-colors">
-                  {service.link}
-                </span>.
+                {service.description}
               </p>
             </div>
           ))}
