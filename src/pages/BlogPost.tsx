@@ -180,11 +180,11 @@ const BlogPost = () => {
   };
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: 'hsl(32, 38%, 84%)' }}>
+    <div className="min-h-screen bg-sage">
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative pt-28 pb-16" style={{ backgroundColor: 'hsl(32, 38%, 84%)' }}>
+      <section className="relative bg-sage pt-28 pb-16">
         <div className="container mx-auto px-6">
           <div className="flex justify-between">
             {/* Left spacer - aligns with logo */}
@@ -236,7 +236,7 @@ const BlogPost = () => {
       </section>
 
       {/* Content Section */}
-      <section className="py-16" style={{ backgroundColor: 'hsl(32, 38%, 84%)' }}>
+      <section className="py-16 bg-sage">
         <div className="container mx-auto px-6">
           <div className="flex justify-between">
             {/* Left spacer - aligns with logo */}
