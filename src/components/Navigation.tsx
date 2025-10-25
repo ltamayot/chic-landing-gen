@@ -110,7 +110,9 @@ const Navigation = () => {
           {/* Social Icons - Desktop */}
           <div className="hidden lg:flex items-center gap-4">
             <a 
-              href="#" 
+              href="https://www.tiktok.com/@saratamayomd" 
+              target="_blank"
+              rel="noopener noreferrer"
               className={`p-2 rounded-full transition-colors duration-200 hover:scale-110 transform ${
                 isScrolled 
                   ? 'text-foreground hover:text-primary hover:bg-primary/10' 
@@ -123,7 +125,9 @@ const Navigation = () => {
               </svg>
             </a>
             <a 
-              href="#" 
+              href="https://www.instagram.com/dra.saratamayo" 
+              target="_blank"
+              rel="noopener noreferrer"
               className={`p-2 rounded-full transition-colors duration-200 hover:scale-110 transform ${
                 isScrolled 
                   ? 'text-foreground hover:text-primary hover:bg-primary/10' 
@@ -142,7 +146,7 @@ const Navigation = () => {
             variant={isScrolled ? "outline" : "secondary"} 
             size="sm" 
             className="hidden lg:flex font-medium tracking-wide"
-            onClick={() => scrollToSection('contacto')}
+            onClick={() => window.open('https://wa.me/573107539221', '_blank')}
           >
             AGENDAR CITA
           </Button>
@@ -165,7 +169,9 @@ const Navigation = () => {
               {/* Social Icons - Mobile */}
               <div className="flex items-center gap-4 py-2">
                 <a 
-                  href="#" 
+                  href="https://www.tiktok.com/@saratamayomd" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2 rounded-full text-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                   aria-label="TikTok"
                 >
@@ -174,7 +180,9 @@ const Navigation = () => {
                   </svg>
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.instagram.com/dra.saratamayo" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2 rounded-full text-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                   aria-label="Instagram"
                 >
@@ -188,7 +196,7 @@ const Navigation = () => {
                 variant="outline" 
                 size="sm" 
                 className="mt-4 font-medium tracking-wide self-start"
-                onClick={() => scrollToSection('contacto')}
+                onClick={() => window.open('https://wa.me/573107539221', '_blank')}
               >
                 AGENDAR CITA
               </Button>
