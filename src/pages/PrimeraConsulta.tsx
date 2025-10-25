@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Heart, Shield, Users, Stethoscope, BookOpen, Activity } from "lucide-react";
 import heroPrimeraConsulta from "@/assets/hero-primera-consulta.jpg";
+import primeraConsultaHistoria from "@/assets/primera-consulta-historia.jpg";
+import primeraConsultaPlan from "@/assets/primera-consulta-plan.jpg";
 
 const IntakeSection = () => {
   return (
@@ -31,17 +33,14 @@ const IntakeSection = () => {
             </Button>
           </div>
           
-          {/* Right image placeholder */}
+          {/* Right image */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-accent/10 to-accent/20 rounded-3xl p-12 shadow-lg">
-              <div className="bg-gradient-to-br from-accent/20 to-accent/40 rounded-2xl aspect-[4/3] flex items-center justify-center">
-                <div className="text-center text-accent-foreground/60">
-                  <div className="w-20 h-20 mx-auto mb-6 bg-accent/20 rounded-full flex items-center justify-center">
-                    <Heart className="w-10 h-10 text-accent" />
-                  </div>
-                  <p className="text-sm text-accent/70 font-medium">Consulta inicial</p>
-                </div>
-              </div>
+            <div className="rounded-3xl overflow-hidden shadow-lg">
+              <img 
+                src={primeraConsultaHistoria} 
+                alt="Primera consulta - Todo comienza con tu historia"
+                className="w-full h-full object-cover aspect-[4/3]"
+              />
             </div>
           </div>
         </div>
@@ -102,17 +101,14 @@ const PlanSection = () => {
     <section className="py-20 px-6 bg-background">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
-          {/* Right image placeholder - order changed for alternating layout */}
+          {/* Left image - order changed for alternating layout */}
           <div className="order-2 lg:order-1 relative">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/20 rounded-3xl p-12 shadow-lg">
-              <div className="bg-gradient-to-br from-primary/20 to-primary/40 rounded-2xl aspect-[4/3] flex items-center justify-center">
-                <div className="text-center text-primary-foreground/60">
-                  <div className="w-20 h-20 mx-auto mb-6 bg-primary/20 rounded-full flex items-center justify-center">
-                    <BookOpen className="w-10 h-10 text-primary" />
-                  </div>
-                  <p className="text-sm text-primary/70 font-medium">Plan de tratamiento</p>
-                </div>
-              </div>
+            <div className="rounded-3xl overflow-hidden shadow-lg">
+              <img 
+                src={primeraConsultaPlan} 
+                alt="Plan de tratamiento - Saldrás con un plan claro"
+                className="w-full h-full object-cover aspect-[4/3]"
+              />
             </div>
           </div>
           
