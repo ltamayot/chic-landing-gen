@@ -59,12 +59,12 @@ const Footer = () => {
               >
                 NUESTRO MÉTODO
               </button>
-              <a 
-                href="/blog"
+              <button 
+                onClick={() => navigate('/blog')}
                 className="text-white hover:text-white/80 transition-colors text-lg font-medium"
               >
                 BLOG
-              </a>
+              </button>
             </div>
           </div>
 
