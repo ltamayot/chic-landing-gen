@@ -29,7 +29,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-l from-[#DD6D5F]/50 to-[#DD6D5F]/40 text-primary-foreground py-16">
+    <footer className="bg-gradient-to-l from-[#DD6D5F]/60 to-[#DD6D5F]/50 text-primary-foreground py-16">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Left Section */}
