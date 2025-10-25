@@ -94,7 +94,7 @@ const HeroSection = ({
             variant="hero" 
             size="lg" 
             className="min-w-48 hover:scale-105 transform transition-all duration-300"
-            onClick={() => scrollToSection('contacto')}
+            onClick={() => window.open('https://wa.me/573107539221', '_blank')}
           >
             {primaryButtonText}
           </Button>

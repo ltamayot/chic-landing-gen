@@ -1,9 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
 
 const BookingSection = () => {
-  const navigate = useNavigate();
-
   return (
     <section id="contacto" className="py-20 bg-sage">
       <div className="container mx-auto px-6 text-center">
@@ -20,10 +17,7 @@ const BookingSection = () => {
             variant="primary" 
             size="lg" 
             className="min-w-48"
-            onClick={() => {
-              navigate('/primera-consulta');
-              window.scrollTo(0, 0);
-            }}
+            onClick={() => window.open('https://wa.me/573107539221', '_blank')}
           >
             AGENDAR CITA
           </Button>
