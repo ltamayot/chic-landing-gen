@@ -97,7 +97,7 @@ const BlogPost = () => {
       author: "Sara Tamayo",
       date: "30 de Octubre, 2024",
       category: "Medicina Funcional",
-      image: blogVitaminaDHero,
+      image: blogVitaminaDSol,
       content: `
         <p>Durante los últimos años, la vitamina D ha pasado de ser vista como un simple nutriente para los huesos a considerarse una hormona esencial para la salud integral. Sus efectos van mucho más allá del sistema óseo: influye en el equilibrio hormonal, inmunitario, emocional y energético.</p>
         
@@ -131,7 +131,7 @@ const BlogPost = () => {
 
         <h2>Cómo optimizar tus niveles naturalmente</h2>
         
-        <img src="${blogVitaminaDSol}" alt="Optimizando niveles de Vitamina D naturalmente" class="w-full rounded-lg my-6" />
+        <img src="${blogVitaminaDHero}" alt="Optimizando niveles de Vitamina D naturalmente" class="w-full rounded-lg my-6" />
 
         <ol>
           <li><strong>Exposición solar inteligente:</strong> 15–20 minutos al día en brazos y piernas, evitando las horas de máxima radiación.</li>

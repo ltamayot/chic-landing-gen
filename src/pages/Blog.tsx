@@ -15,6 +15,7 @@ import blogAcneMtcImage from "@/assets/blog-acne-mtc.jpg";
 import blogFatigaImage from "@/assets/blog-fatiga.jpg";
 import blogEmocionesHero from "@/assets/blog-emociones-hero.jpg";
 import blogVitaminaDHero from "@/assets/blog-vitamina-d-hero.jpg";
+import blogVitaminaDSol from "@/assets/blog-vitamina-d-sol.jpg";
 import blogPostnatalHero from "@/assets/blog-postnatal-hero.jpg";
 
 const Blog = () => {
@@ -50,7 +51,7 @@ const Blog = () => {
       author: "Sara Tamayo",
       date: "30 de Octubre, 2024",
       category: "Medicina Funcional",
-      image: blogVitaminaDHero,
+      image: blogVitaminaDSol,
       slug: "vitamina-d-hormona-sol-energia-vital"
     },
     {
