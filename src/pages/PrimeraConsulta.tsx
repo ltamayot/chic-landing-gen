@@ -196,7 +196,7 @@ const ServicesSection = () => {
     },
     {
       title: "MEDICINA FUNCIONAL",
-      description: "Un enfoque moderno y personalizado para descubrir lo que tu cuerpo realmente necesita. A través de pruebas avanzadas, nutrición y suplementación, tratamos la raíz de tus síntomas y diseñamos un plan claro para recuperar tu energía, equilibrio y bienestar duradero. Conoce más sobre nuestro enfoque de medicina funcional."
+      description: "Un enfoque personalizado a través de pruebas avanzadas, nutrición y suplementación, diseñamos un plan claro para recuperar tu energía, equilibrio y bienestar"
     }
   ];
 
