@@ -90,19 +90,7 @@ const TestimonialsSection = () => {
                   {/* Badge con color único */}
                   <div className="flex justify-end mb-4">
                     <div
-                      className={`w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold ${
-                        originalIndex === 0
-                          ? "bg-green-500"
-                          : originalIndex === 1
-                            ? "bg-green-600"
-                            : originalIndex === 2
-                              ? "bg-green-700"
-                              : originalIndex === 3
-                                ? "bg-green-500"
-                                : originalIndex === 4
-                                  ? "bg-green-600"
-                                  : "bg-green-700"
-                      }`}
+                      className="w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold bg-[#DD6D5F]/60"
                     >
                       {testimonial.initials}
                     </div>
@@ -122,21 +110,7 @@ const TestimonialsSection = () => {
 
                   {/* Author info */}
                   <div className="flex items-center gap-3">
-                    <div
-                      className={`w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-semibold ${
-                        originalIndex === 0
-                          ? "bg-green-500"
-                          : originalIndex === 1
-                            ? "bg-green-600"
-                            : originalIndex === 2
-                              ? "bg-green-700"
-                              : originalIndex === 3
-                                ? "bg-green-500"
-                                : originalIndex === 4
-                                  ? "bg-green-600"
-                                  : "bg-green-700"
-                      }`}
-                    >
+                    <div className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-semibold bg-[#DD6D5F]/60">
                       {testimonial.initials}
                     </div>
                     <div>
