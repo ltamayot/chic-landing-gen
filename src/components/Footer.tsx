@@ -55,13 +55,13 @@ const Footer = () => {
             <div className="flex gap-8">
               <button 
                 onClick={() => scrollToSection('metodo')}
-                className="text-black hover:text-white transition-colors text-lg font-medium"
+                className="text-white hover:text-white/80 transition-colors text-lg font-medium"
               >
                 NUESTRO MÉTODO
               </button>
               <a 
                 href="/blog"
-                className="text-black hover:text-white transition-colors text-lg font-medium"
+                className="text-white hover:text-white/80 transition-colors text-lg font-medium"
               >
                 BLOG
               </a>
