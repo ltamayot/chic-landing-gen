@@ -95,7 +95,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center">
-          <p className="text-primary-foreground/70 text-sm">
+          <p className="text-black text-sm">
             © 2025 Saori. Todos los derechos reservados.
           </p>
           <div className="mt-2">
