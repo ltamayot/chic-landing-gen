@@ -19,12 +19,79 @@ import blogEmocionesHero from "@/assets/blog-emociones-hero.jpg";
 import blogEmocionesOrganos from "@/assets/blog-emociones-organos.jpg";
 import blogVitaminaDHero from "@/assets/blog-vitamina-d-hero.jpg";
 import blogVitaminaDSol from "@/assets/blog-vitamina-d-sol.jpg";
+import blogPostnatalHero from "@/assets/blog-postnatal-hero.jpg";
+import blogPostnatalNutricion from "@/assets/blog-postnatal-nutricion.jpg";
 
 const BlogPost = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
 
   const blogPosts = {
+    "cuidado-madre-postnatal-medicina-china-funcional": {
+      title: "El arte de cuidar a la madre: sabiduría postnatal desde la Medicina China y la Medicina Funcional",
+      author: "Sara Tamayo",
+      date: "5 de Noviembre, 2024",
+      category: "Medicina Integrativa",
+      image: blogPostnatalHero,
+      content: `
+        <p>En muchas culturas, el nacimiento de un bebé se celebra como el inicio de una nueva vida. Pero pocas reconocen con tanta profundidad como la Medicina Tradicional China (MTC) que también nace una madre. Después del parto, el cuerpo, la mente y la energía vital atraviesan una transformación profunda que requiere cuidado, nutrición y tiempo.</p>
+        
+        <p>En China y Taiwán, este periodo sagrado se conoce como "Zuo Yue Zi" (坐月子), que significa literalmente "sentarse durante un mes". Es un tiempo de recuperación y renacimiento, en el que la madre recibe apoyo constante para sanar, restaurar su energía (Qi) y nutrir su sangre (Xue). En Saori, retomamos esta sabiduría ancestral y la integramos con la Medicina Funcional, ofreciendo acompañamiento personalizado para el bienestar postnatal.</p>
+
+        <h2>La visión tradicional: reposo, calor y contención</h2>
+        
+        <p>La MTC enseña que durante el parto, la mujer experimenta una gran pérdida de sangre y energía vital. El cuerpo queda en un estado de vulnerabilidad, en el que el Qi, la Sangre y el Yang deben ser protegidos y reconstruidos. Por eso, la cuarentena postparto se centra en tres pilares:</p>
+
+        <h3>1. Reposo absoluto:</h3>
+        <p>El cuerpo necesita tiempo para cerrar los canales energéticos abiertos durante el parto. En la tradición china, se evita el frío, los esfuerzos y las corrientes de aire, pues podrían debilitar el Yang y generar desequilibrios a largo plazo (como fatiga crónica, dolores articulares o depresión postparto).</p>
+
+        <h3>2. Nutrición cálida y tonificante:</h3>
+        <p>Se priorizan los alimentos cocidos, caldos de huesos, sopas de pollo, raíces, jengibre, dátiles rojos y sésamo negro. Estos ingredientes nutren la sangre, fortalecen el bazo y el estómago, y ayudan al cuerpo a producir leche materna de buena calidad.</p>
+
+        <h3>3. Contención emocional y vínculo:</h3>
+        <p>Se reconoce que el alma también necesita descanso. La madre debe sentirse cuidada, sostenida y rodeada de tranquilidad. Este soporte emocional es esencial para equilibrar el corazón y el hígado, y permitir una recuperación profunda.</p>
+
+        <h2>La mirada de la Medicina Funcional: restaurar desde lo biológico</h2>
+        
+        <p>Desde la Medicina Funcional, entendemos que el puerperio implica un proceso intenso de regeneración:</p>
+        
+        <ul>
+          <li>Los niveles hormonales (estrógeno, progesterona, cortisol y tiroides) se reajustan.</li>
+          <li>El sistema inmunológico se reorganiza.</li>
+          <li>El intestino y el microbioma necesitan apoyo para volver al equilibrio.</li>
+          <li>Y el sistema nervioso, muchas veces sobrecargado por la falta de sueño y el estrés, requiere contención.</li>
+        </ul>
+
+        <p>Por eso, en Saori acompañamos este proceso con un enfoque integral que puede incluir:</p>
+        
+        <ul>
+          <li>Evaluación funcional personalizada, con estudios de micronutrientes, tiroides y ejes hormonales.</li>
+          <li>Suplementación guiada por médico, con nutrientes clave como hierro, magnesio, vitamina D, omega 3 y probióticos específicos.</li>
+          <li>Apoyo adaptógeno suave.</li>
+          <li>Acupuntura postnatal, que ayuda a equilibrar el Qi, mejorar el estado emocional y favorecer la lactancia.</li>
+        </ul>
+
+        <h2>Recomendaciones prácticas para el postparto</h2>
+        
+        <img src="${blogPostnatalNutricion}" alt="Nutrición postnatal según Medicina China" class="w-full rounded-lg my-6" />
+
+        <ol>
+          <li><strong>Prioriza el descanso:</strong> dormir cuando el bebé duerme no es un cliché, es una necesidad fisiológica y energética.</li>
+          <li><strong>Come caliente y despacio:</strong> los alimentos fríos y crudos pueden debilitar el bazo y enlentecer la recuperación.</li>
+          <li><strong>Evita el exceso de estímulos:</strong> las pantallas, el ruido o las visitas excesivas pueden alterar el Shen (espíritu).</li>
+          <li><strong>Rodéate de apoyo:</strong> una red amorosa, pareja o familia presente es medicina emocional.</li>
+          <li><strong>Escucha tu cuerpo:</strong> la recuperación no es igual para todas, y cada cuerpo tiene su propio ritmo de sanación.</li>
+        </ol>
+
+        <h2>Conclusión</h2>
+        
+        <p>En Saori, creemos que el cuidado postnatal es un arte y una oportunidad para honrar la transformación que vive la mujer al convertirse en madre.</p>
+        
+        <p>Combinamos la sabiduría milenaria de la Medicina China con la precisión de la Medicina Funcional, ofreciendo un acompañamiento médico, emocional y energético que sostiene a la madre mientras recupera su fuerza y equilibrio.</p>
+        
+        <p><strong>Y cuando una madre es cuidada, toda la familia sana con ella.</strong></p>
+      `,
+    },
     "vitamina-d-hormona-sol-energia-vital": {
       title: "Vitamina D: la hormona del sol y su papel en la energía vital",
       author: "Sara Tamayo",
