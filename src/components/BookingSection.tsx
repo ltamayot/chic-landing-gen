@@ -18,7 +18,7 @@ const BookingSection = () => {
             variant="primary" 
             size="lg" 
             className="min-w-48"
-            onClick={() => window.open('https://wa.me/573107539221', '_blank')}
+            onClick={() => window.location.href = 'https://wa.me/573107539221'}
           >
             AGENDAR CITA
           </Button>
