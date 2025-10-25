@@ -29,21 +29,21 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-primary text-primary-foreground py-16">
+    <footer className="bg-gradient-to-l from-[#DD6D5F]/60 to-sage/60 text-primary-foreground py-16">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Left Section */}
           <div className="space-y-8">
             {/* SAORI Title */}
             <div>
-              <h3 className="text-3xl font-serif font-semibold mb-4 text-accent tracking-wide">
+              <h3 className="text-3xl font-serif font-semibold mb-4 text-white tracking-wide">
                 SAORI
               </h3>
             </div>
 
             {/* Philosophy Section */}
             <div>
-              <h4 className="text-xl font-semibold mb-4 text-accent uppercase tracking-wider">
+              <h4 className="text-xl font-semibold mb-4 text-white uppercase tracking-wider">
                 NUESTRA FILOSOFÍA
               </h4>
               <p className="text-primary-foreground mb-6 leading-relaxed text-lg">
@@ -55,13 +55,13 @@ const Footer = () => {
             <div className="flex gap-8">
               <button 
                 onClick={() => scrollToSection('metodo')}
-                className="text-primary-foreground hover:text-accent transition-colors text-lg font-medium"
+                className="text-primary-foreground hover:text-white transition-colors text-lg font-medium"
               >
                 NUESTRO MÉTODO
               </button>
               <a 
                 href="/blog"
-                className="text-primary-foreground hover:text-accent transition-colors text-lg font-medium"
+                className="text-primary-foreground hover:text-white transition-colors text-lg font-medium"
               >
                 BLOG
               </a>
@@ -70,20 +70,20 @@ const Footer = () => {
 
           {/* Right Section - Contact Info in Box */}
           <div className="border border-primary-foreground/30 rounded-lg p-8">
-            <h4 className="text-xl font-semibold mb-6 text-accent uppercase tracking-wider">
+            <h4 className="text-xl font-semibold mb-6 text-white uppercase tracking-wider">
               CONTACTO
             </h4>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-accent" />
+                <Phone className="h-5 w-5 text-white" />
                 <span className="text-primary-foreground text-lg">+57 300 123 4567</span>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-accent" />
+                <Mail className="h-5 w-5 text-white" />
                 <span className="text-primary-foreground text-lg">s@saori.com</span>
               </div>
               <div className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-accent mt-1" />
+                <MapPin className="h-5 w-5 text-white mt-1" />
                 <div className="text-primary-foreground text-lg">
                   <div>Bogotá, Colombia</div>
                   <div>Calle 72a  #20a-22 </div>
@@ -101,7 +101,7 @@ const Footer = () => {
           <div className="mt-2">
             <a 
               href="/terminos-condiciones"
-              className="text-primary-foreground/70 hover:text-accent transition-colors text-sm underline"
+              className="text-primary-foreground/70 hover:text-white transition-colors text-sm underline"
             >
               Términos y Condiciones
             </a>
