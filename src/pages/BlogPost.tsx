@@ -17,12 +17,70 @@ import blogFatigaImage from "@/assets/blog-fatiga.jpg";
 import blogFatigaIllustration from "@/assets/blog-fatiga-illustration.jpg";
 import blogEmocionesHero from "@/assets/blog-emociones-hero.jpg";
 import blogEmocionesOrganos from "@/assets/blog-emociones-organos.jpg";
+import blogVitaminaDHero from "@/assets/blog-vitamina-d-hero.jpg";
+import blogVitaminaDSol from "@/assets/blog-vitamina-d-sol.jpg";
 
 const BlogPost = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
 
   const blogPosts = {
+    "vitamina-d-hormona-sol-energia-vital": {
+      title: "Vitamina D: la hormona del sol y su papel en la energía vital",
+      author: "Sara Tamayo",
+      date: "30 de Octubre, 2024",
+      category: "Medicina Funcional",
+      image: blogVitaminaDHero,
+      content: `
+        <p>Durante los últimos años, la vitamina D ha pasado de ser vista como un simple nutriente para los huesos a considerarse una hormona esencial para la salud integral. Sus efectos van mucho más allá del sistema óseo: influye en el equilibrio hormonal, inmunitario, emocional y energético.</p>
+        
+        <p>Desde la Medicina Funcional, se entiende como un regulador clave de múltiples sistemas corporales.</p>
+        
+        <p>Desde la Medicina Tradicional China (MTC), podríamos relacionarla con la energía del Yang del Riñón y con el Qi defensivo (Wei Qi), responsables de la vitalidad, la inmunidad y la conexión con la luz solar.</p>
+
+        <h2>Vitamina D desde la Medicina Funcional</h2>
+        
+        <p>La vitamina D es una prohormona liposoluble que el cuerpo sintetiza al exponerse a la luz solar. Sin embargo, factores como el trabajo en interiores, el uso constante de protector solar, la contaminación o ciertos trastornos digestivos han hecho que su deficiencia sea cada vez más frecuente.</p>
+
+        <h3>Funciones clave:</h3>
+        <ul>
+          <li><strong>Regulación inmunológica:</strong> modula las respuestas inflamatorias y ayuda a prevenir infecciones respiratorias, autoinmunidad y fatiga crónica.</li>
+          <li><strong>Equilibrio hormonal:</strong> participa en la función tiroidea, la producción de testosterona y progesterona, y en el metabolismo del calcio y fósforo.</li>
+          <li><strong>Salud mental y emocional:</strong> niveles adecuados se asocian con mejor ánimo y menor riesgo de depresión o ansiedad.</li>
+          <li><strong>Energía celular:</strong> estimula la función mitocondrial y favorece la producción de ATP (energía).</li>
+        </ul>
+
+        <h3>Causas comunes de deficiencia:</h3>
+        <ul>
+          <li>Falta de exposición solar.</li>
+          <li>Alteraciones intestinales o hepáticas que dificultan la absorción.</li>
+          <li>Dietas muy bajas en grasas saludables.</li>
+          <li>Uso prolongado de ciertos medicamentos (como corticoides o anticonvulsivantes).</li>
+        </ul>
+
+        <p>En Medicina Funcional, se recomienda evaluar los niveles séricos de 25(OH) vitamina D y mantenerlos entre 50 y 80 ng/mL para una función óptima.</p>
+        
+        <p>La suplementación debe ser siempre guiada por un profesional de la salud, ajustando la dosis a las necesidades individuales y controlando los niveles cada 3 a 6 meses.</p>
+
+        <h2>Cómo optimizar tus niveles naturalmente</h2>
+        
+        <img src="${blogVitaminaDSol}" alt="Optimizando niveles de Vitamina D naturalmente" class="w-full rounded-lg my-6" />
+
+        <ol>
+          <li><strong>Exposición solar inteligente:</strong> 15–20 minutos al día en brazos y piernas, evitando las horas de máxima radiación.</li>
+          <li><strong>Incluir fuentes naturales:</strong> pescados grasos, yema de huevo, mantequilla orgánica, hongos expuestos al sol.</li>
+          <li><strong>Combinar con grasas saludables:</strong> aguacate, aceite de oliva o frutos secos mejoran su absorción.</li>
+          <li><strong>Suplementación guiada por médico:</strong> la vitamina D3, acompañada de vitamina K2, favorece su correcta utilización ósea y cardiovascular.</li>
+          <li><strong>Medición periódica:</strong> controlar tus niveles es la mejor forma de ajustar la dosis y mantener el equilibrio.</li>
+        </ol>
+
+        <h2>Conclusión</h2>
+        
+        <p>La vitamina D nos recuerda la importancia del vínculo entre el cuerpo, la naturaleza y la luz solar.</p>
+        
+        <p>Así como las plantas necesitan sol para florecer, nuestro cuerpo y espíritu también requieren esa energía luminosa para mantener su equilibrio interno.</p>
+      `,
+    },
     "emociones-medicina-china-cuerpo-alma": {
       title: "Las Emociones desde la Medicina China: Cuando el Cuerpo Habla lo que el Alma Siente",
       author: "Sara Tamayo",

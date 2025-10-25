@@ -14,6 +14,7 @@ import blogWellnessImage from "@/assets/blog-wellness.jpg";
 import blogAcneMtcImage from "@/assets/blog-acne-mtc.jpg";
 import blogFatigaImage from "@/assets/blog-fatiga.jpg";
 import blogEmocionesHero from "@/assets/blog-emociones-hero.jpg";
+import blogVitaminaDHero from "@/assets/blog-vitamina-d-hero.jpg";
 
 const Blog = () => {
   const navigate = useNavigate();
@@ -33,6 +34,16 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
+      title: "Vitamina D: la hormona del sol y su papel en la energía vital",
+      excerpt: "Durante los últimos años, la vitamina D ha pasado de ser vista como un simple nutriente para los huesos a considerarse una hormona esencial para la salud integral. Sus efectos van mucho más allá del sistema óseo.",
+      author: "Sara Tamayo",
+      date: "30 de Octubre, 2024",
+      category: "Medicina Funcional",
+      image: blogVitaminaDHero,
+      slug: "vitamina-d-hormona-sol-energia-vital"
+    },
+    {
+      id: 2,
       title: "Las Emociones desde la Medicina China: Cuando el Cuerpo Habla lo que el Alma Siente",
       excerpt: "En Medicina Tradicional China (MTC), cada emoción tiene una energía propia que circula a través del cuerpo. No se ve como algo 'mental', sino como una fuerza que puede nutrir o desequilibrar los órganos.",
       author: "Sara Tamayo",
@@ -42,7 +53,7 @@ const Blog = () => {
       slug: "emociones-medicina-china-cuerpo-alma"
     },
     {
-      id: 2,
+      id: 3,
       title: "Fatiga Crónica: Causas, Tratamiento y Abordaje Integrativo desde la Medicina Funcional y la Medicina China",
       excerpt: "Sentirse cansado después de un día intenso es normal. Pero cuando el agotamiento se vuelve constante, dormir ya no recupera y la energía nunca alcanza, hablamos de fatiga crónica.",
       author: "Sara Tamayo",
