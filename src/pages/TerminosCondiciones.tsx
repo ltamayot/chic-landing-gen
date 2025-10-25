@@ -7,7 +7,7 @@ const TerminosCondiciones = () => {
       <Navigation />
       
       {/* Content */}
-      <section className="pt-32 pb-16 bg-background">
+      <section className="pt-32 pb-16" style={{ backgroundColor: '#D4E4D4' }}>
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-light text-foreground mb-8 text-center">
