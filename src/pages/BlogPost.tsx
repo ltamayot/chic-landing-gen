@@ -15,12 +15,94 @@ import blogAcupunctureImage from "@/assets/blog-acupuncture-illustration.jpg";
 import blogHerbalTeaImage from "@/assets/blog-herbal-tea.jpg";
 import blogFatigaImage from "@/assets/blog-fatiga.jpg";
 import blogFatigaIllustration from "@/assets/blog-fatiga-illustration.jpg";
+import blogEmocionesHero from "@/assets/blog-emociones-hero.jpg";
+import blogEmocionesOrganos from "@/assets/blog-emociones-organos.jpg";
 
 const BlogPost = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
 
   const blogPosts = {
+    "emociones-medicina-china-cuerpo-alma": {
+      title: "Las Emociones desde la Medicina China: Cuando el Cuerpo Habla lo que el Alma Siente",
+      author: "Sara Tamayo",
+      date: "25 de Octubre, 2024",
+      category: "Medicina Tradicional China",
+      image: blogEmocionesHero,
+      content: `
+        <p>En Medicina Tradicional China (MTC), cada emoción tiene una energía propia que circula a través del cuerpo. No se ve como algo "mental", sino como una fuerza que puede nutrir o desequilibrar los órganos. Cuando una emoción se vive con intensidad, o se reprime por mucho tiempo, esa energía se estanca, generando síntomas físicos, fatiga o incluso enfermedad.</p>
+        
+        <p>La Medicina Funcional también reconoce esta conexión. Hoy sabemos que el estrés emocional sostenido altera el eje hipotálamo-hipófisis-suprarrenal (HPA), afecta el microbioma intestinal, el sueño y las hormonas. En otras palabras, lo que sentimos deja huellas en el cuerpo.</p>
+        
+        <p>En Saori, vemos las emociones como mensajes del cuerpo, que nos invitan a restablecer el equilibrio interno.</p>
+
+        <h2>Las Siete Emociones y sus Órganos Asociados</h2>
+        
+        <img src="${blogEmocionesOrganos}" alt="Las siete emociones y los órganos en Medicina China" class="w-full rounded-lg my-6" />
+
+        <h3>Ira – Hígado</h3>
+        <p>La ira, frustración o resentimiento bloquean el flujo natural del Qi del Hígado, generando tensión muscular, digestión lenta, dolor de cabeza o acné.</p>
+        
+        <p>Cuando el Qi del Hígado fluye, nos sentimos creativos, flexibles y con visión clara.</p>
+        
+        <p><strong>Sabores que armonizan:</strong></p>
+        <p>El sabor ácido tonifica suavemente el Hígado. Incluye alimentos como limón, vinagre de manzana, frutas cítricas en pequeñas cantidades.</p>
+        <p>Evita excesos, ya que mucho ácido puede dañar el estómago.</p>
+        
+        <p><strong>Desde la Medicina Funcional:</strong></p>
+        <p>Apoya la función hepática con crucíferas (brócoli, col, kale), diente de león, cúrcuma y suficiente hidratación, ayudan a reducir el impacto del estrés oxidativo sobre el hígado.</p>
+
+        <h3>Alegría – Corazón</h3>
+        <p>La alegría equilibra y expande, pero en exceso —como euforia o hiperactividad mental— puede agotar el Shen (mente-espíritu) y causar insomnio, palpitaciones o ansiedad.</p>
+        
+        <p>Un corazón equilibrado refleja serenidad, conexión y risa genuina.</p>
+        
+        <p><strong>Sabores que armonizan:</strong></p>
+        <p>El sabor amargo nutre el corazón y drena el exceso de calor. Puedes incluir cacao puro, rúgula, espinaca, alcachofa, té verde o infusión de flor de loto.</p>
+        
+        <p><strong>Desde la Medicina Funcional:</strong></p>
+        <p>Favorece la coherencia cardíaca y el equilibrio nervioso con técnicas de respiración, magnesio glicinato y omega 3. Dormir adecuadamente antes de las 11 p.m. protege el ritmo circadiano del corazón.</p>
+
+        <h3>Preocupación – Bazo y Estómago</h3>
+        <p>Pensar demasiado o vivir en constante preocupación debilita el Qi del Bazo, generando digestión lenta, pesadez, antojos de dulces o niebla mental.</p>
+        
+        <p>Cuando el Bazo está fuerte, hay claridad mental, concentración y estabilidad emocional.</p>
+        
+        <p><strong>Sabores que armonizan:</strong></p>
+        <p>El sabor dulce natural (no refinado) tonifica el Bazo: camote, calabaza, dátiles rojos, avena tibia y caldos.</p>
+        <p>Evita azúcares procesados, que debilitan aún más la digestión.</p>
+        
+        <p><strong>Desde la Medicina Funcional:</strong></p>
+        <p>Apoya la microbiota intestinal con probióticos y alimentos fermentados. Elimina el exceso de azúcares y ultraprocesados que generan alteración del microbioma intestinal.</p>
+
+        <h3>Tristeza – Pulmón</h3>
+        <p>La tristeza y la melancolía contraen la energía del Pulmón, debilitando la inmunidad y el ánimo. Cuando los pulmones están en equilibrio, respiramos con profundidad y vivimos con apertura emocional.</p>
+        
+        <p><strong>Sabores que armonizan:</strong></p>
+        <p>El sabor picante suave ayuda a mover el Qi y liberar la energía estancada. Jengibre, cebolla, ajo, rábano y canela son excelentes aliados.</p>
+        <p>Evita el picante excesivo, que puede secar los líquidos del Pulmón.</p>
+        
+        <p><strong>Desde la Medicina Funcional:</strong></p>
+        <p>Fortalece el sistema inmunológico con vitamina C, zinc y una respiración consciente. Caminar al aire libre y practicar gratitud ayudan a abrir el pecho y mover la energía del Pulmón.</p>
+
+        <h3>Miedo – Riñón</h3>
+        <p>El miedo y la inseguridad afectan la energía del Riñón, raíz de la vitalidad y del Jing (esencia). Su agotamiento se refleja en cansancio profundo, caída del cabello, insomnio o pérdida de motivación.</p>
+        
+        <p>Cuando los Riñones están fuertes, hay confianza, voluntad y serenidad interior.</p>
+        
+        <p><strong>Sabores que armonizan:</strong></p>
+        <p>El sabor salado natural (no refinado) nutre el Riñón: algas, miso, semillas de sésamo, nueces y pescados marinos.</p>
+        <p>Evita el exceso de sal, que agota los líquidos corporales.</p>
+        
+        <p><strong>Desde la Medicina Funcional:</strong></p>
+        <p>Apoya la función adrenal y renal con adaptógenos como ashwagandha y rhodiola, magnesio y descanso profundo. Dormir temprano y mantener rutinas.</p>
+
+        <h2>Conclusión</h2>
+        <p>En Saori trabajamos con acupuntura, nutrición energética, adaptógenos y medicina funcional personalizada, buscando que cada paciente recupere no solo la salud física, sino también su centro emocional. Las emociones son energía en movimiento, mensajeras que nos indican dónde hay un desequilibrio o una necesidad no escuchada.</p>
+        
+        <p>Cuando aprendemos a sentir sin reprimir y a cuidar el cuerpo desde su energía y su biología restauramos la armonía.</p>
+      `,
+    },
     "fatiga-cronica-tratamiento-medicina-funcional-china": {
       title: "Fatiga Crónica: Causas, Tratamiento y Abordaje Integrativo desde la Medicina Funcional y la Medicina China",
       author: "Sara Tamayo",
