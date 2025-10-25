@@ -36,17 +36,17 @@ const Footer = () => {
           <div className="space-y-8">
             {/* SAORI Title */}
             <div>
-              <h3 className="text-3xl font-serif font-semibold mb-4 text-white tracking-wide">
+              <h3 className="text-3xl font-serif font-semibold mb-4 text-gray-300 tracking-wide">
                 SAORI
               </h3>
             </div>
 
             {/* Philosophy Section */}
             <div>
-              <h4 className="text-xl font-semibold mb-4 text-white uppercase tracking-wider">
+              <h4 className="text-xl font-semibold mb-4 text-gray-300 uppercase tracking-wider">
                 NUESTRA FILOSOFÍA
               </h4>
-              <p className="text-primary-foreground mb-6 leading-relaxed text-lg">
+              <p className="text-gray-300 mb-6 leading-relaxed text-lg">
                 En Saori ayudamos a nuestros pacientes a alcanzar su máximo potencial tomando su salud en sus propias manos.
               </p>
             </div>
@@ -55,13 +55,13 @@ const Footer = () => {
             <div className="flex gap-8">
               <button 
                 onClick={() => scrollToSection('metodo')}
-                className="text-primary-foreground hover:text-white transition-colors text-lg font-medium"
+                className="text-gray-300 hover:text-white transition-colors text-lg font-medium"
               >
                 NUESTRO MÉTODO
               </button>
               <a 
                 href="/blog"
-                className="text-primary-foreground hover:text-white transition-colors text-lg font-medium"
+                className="text-gray-300 hover:text-white transition-colors text-lg font-medium"
               >
                 BLOG
               </a>
@@ -70,21 +70,21 @@ const Footer = () => {
 
           {/* Right Section - Contact Info in Box */}
           <div className="border border-primary-foreground/30 rounded-lg p-8">
-            <h4 className="text-xl font-semibold mb-6 text-white uppercase tracking-wider">
+            <h4 className="text-xl font-semibold mb-6 text-gray-300 uppercase tracking-wider">
               CONTACTO
             </h4>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-white" />
-                <span className="text-primary-foreground text-lg">+57 300 123 4567</span>
+                <Phone className="h-5 w-5 text-gray-300" />
+                <span className="text-gray-300 text-lg">+57 300 123 4567</span>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-white" />
-                <span className="text-primary-foreground text-lg">s@saori.com</span>
+                <Mail className="h-5 w-5 text-gray-300" />
+                <span className="text-gray-300 text-lg">s@saori.com</span>
               </div>
               <div className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-white mt-1" />
-                <div className="text-primary-foreground text-lg">
+                <MapPin className="h-5 w-5 text-gray-300 mt-1" />
+                <div className="text-gray-300 text-lg">
                   <div>Bogotá, Colombia</div>
                   <div>Calle 72a  #20a-22 </div>
                 </div>
