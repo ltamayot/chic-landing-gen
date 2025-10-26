@@ -102,7 +102,16 @@ const HeroSection = ({
             variant="outline" 
             size="lg" 
             className="min-w-48 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary hover:scale-105 transform transition-all duration-300"
-            onClick={() => scrollToSection('servicios')}
+            onClick={() => {
+              // Check if we're on a non-home page
+              if (window.location.pathname !== '/') {
+                // Navigate to home first
+                window.location.href = '/#servicios';
+              } else {
+                // Already on home, just scroll
+                scrollToSection('servicios');
+              }
+            }}
           >
             {secondaryButtonText}
           </Button>

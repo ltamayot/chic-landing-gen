@@ -99,12 +99,12 @@ const Footer = () => {
             © 2025 Saori. Todos los derechos reservados.
           </p>
           <div className="mt-2">
-            <a 
-              href="/terminos-condiciones"
+            <button 
+              onClick={() => navigate('/terminos-condiciones')}
               className="text-black hover:text-white transition-colors text-sm underline"
             >
               Términos y Condiciones
-            </a>
+            </button>
           </div>
         </div>
       </div>

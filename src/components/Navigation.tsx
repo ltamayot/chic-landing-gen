@@ -103,6 +103,16 @@ const Navigation = () => {
             ))}
           </div>
 
+          {/* CTA Button - Mobile (next to hamburger) */}
+          <Button
+            variant="cta"
+            size="sm"
+            className="lg:hidden"
+            onClick={() => window.open('https://wa.me/573107539221', '_blank')}
+          >
+            AGENDAR
+          </Button>
+
           {/* Mobile Menu Button */}
           <button
             className="lg:hidden p-2"

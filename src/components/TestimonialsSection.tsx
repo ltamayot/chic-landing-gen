@@ -115,7 +115,6 @@ const TestimonialsSection = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-foreground">{testimonial.name}</p>
-                      <p className="text-sm text-muted-foreground">{testimonial.location}</p>
                     </div>
                   </div>
                 </div>

@@ -28,7 +28,12 @@ const IntakeSection = () => {
                 En tu primera consulta nos sumergimos en tu historia clínica y de vida. Revisamos síntomas, exámenes y cada detalle que nos ayude a comprender la raíz de lo que estás viviendo. Esta cita, presencial o virtual, es el inicio de un proceso diseñado para ti, con una mirada integrativa y profunda.
               </p>
             </div>
-            <Button variant="primary" size="lg" className="hover:scale-105 transform transition-all duration-300">
+            <Button 
+              variant="primary" 
+              size="lg" 
+              className="hover:scale-105 transform transition-all duration-300"
+              onClick={() => window.open('https://wa.me/573107539221', '_blank')}
+            >
               AGENDA TU PRIMERA CITA
             </Button>
           </div>
@@ -127,7 +132,12 @@ const PlanSection = () => {
                 Nuestro objetivo es aprovechar tu tiempo y maximizar los resultados. Tras tu primera consulta, tendrás una idea clara del número de sesiones recomendadas, un plan de suplementación personalizado (si es necesario), y recomendaciones nutricionales y estilo de vida, y una valoración realista de cómo podemos ayudarte.
               </p>
             </div>
-            <Button variant="primary" size="lg" className="hover:scale-105 transform transition-all duration-300">
+            <Button 
+              variant="primary" 
+              size="lg" 
+              className="hover:scale-105 transform transition-all duration-300"
+              onClick={() => window.open('https://wa.me/573107539221', '_blank')}
+            >
               AGENDA TU VISITA
             </Button>
           </div>
