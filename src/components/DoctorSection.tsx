@@ -65,6 +65,7 @@ const DoctorSection = () => {
                   src={doctorImage}
                   alt="Dra. Sara Tamayo"
                   className="w-full h-[500px] object-cover object-[center_20%]"
+                  loading="lazy"
                 />
               </div>
 
@@ -112,7 +113,7 @@ const DoctorSection = () => {
               <div className="flex justify-center gap-8">
                 {clinics.map((clinic, index) => (
                   <div key={index} className="flex items-center justify-center">
-                    <img src={clinic.logo} alt={clinic.name} className="w-32 h-32 object-contain" />
+                    <img src={clinic.logo} alt={clinic.name} className="w-32 h-32 object-contain" loading="lazy" />
                   </div>
                 ))}
               </div>

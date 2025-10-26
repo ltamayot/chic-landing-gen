@@ -79,7 +79,7 @@ const Navigation = () => {
                 isScrolled ? '' : 'brightness-0 invert'
               }`}
             />
-            <span className={`text-2xl font-serif font-semibold tracking-wide transition-colors duration-300 ${
+            <span className={`hidden md:block text-2xl font-serif font-semibold tracking-wide transition-colors duration-300 ${
               isScrolled ? 'text-primary' : 'text-primary-foreground'
             }`}>
               SAORI
@@ -107,7 +107,7 @@ const Navigation = () => {
           <Button
             variant="cta"
             size="sm"
-            className="lg:hidden"
+            className="lg:hidden bg-gradient-to-l from-[#DD6D5F]/60 to-[#DD6D5F]/50 text-white hover:from-[#DD6D5F]/70 hover:to-[#DD6D5F]/60"
             onClick={() => window.open('https://wa.me/573107539221', '_blank')}
           >
             AGENDAR

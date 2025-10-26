@@ -43,6 +43,7 @@ const ConsultationSection = () => {
                 src={consultaImage} 
                 alt="Consulta médica profesional"
                 className="w-full h-96 object-cover rounded-2xl"
+                loading="lazy"
               />
             </div>
           </div>

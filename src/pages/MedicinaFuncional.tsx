@@ -52,7 +52,7 @@ const MedicinaFuncional = () => {
                   </div>
                   <div className="flex justify-center">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img src={mfEcosistema1} alt="Análisis Funcional" className="w-full h-full object-cover" />
+                      <img src={mfEcosistema1} alt="Análisis Funcional" className="w-full h-full object-cover" loading="lazy" />
                     </div>
                   </div>
                 </div>
@@ -63,7 +63,7 @@ const MedicinaFuncional = () => {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div className="flex justify-center md:order-1">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img src={mfEcosistema2} alt="Nutrición terapéutica" className="w-full h-full object-cover" />
+                      <img src={mfEcosistema2} alt="Nutrición terapéutica" className="w-full h-full object-cover" loading="lazy" />
                     </div>
                   </div>
                   <div className="md:order-2">
@@ -94,6 +94,7 @@ const MedicinaFuncional = () => {
                         src={mfEcosistema4}
                         alt="Intervenciones personalizadas"
                         className="w-full h-full object-cover"
+                        loading="lazy"
                       />
                     </div>
                   </div>

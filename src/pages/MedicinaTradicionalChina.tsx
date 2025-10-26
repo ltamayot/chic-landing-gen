@@ -54,7 +54,7 @@ const MedicinaTradicionalChina = () => {
                   </div>
                   <div className="flex justify-center">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img src={acupunctureTreatmentImg} alt="Acupuntura" className="w-full h-full object-cover" />
+                      <img src={acupunctureTreatmentImg} alt="Acupuntura" className="w-full h-full object-cover" loading="lazy" />
                     </div>
                   </div>
                 </div>
@@ -65,7 +65,7 @@ const MedicinaTradicionalChina = () => {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div className="flex justify-center md:order-1">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img src={acupuncturaImagen} alt="Acupuntura Estética" className="w-full h-full object-cover" />
+                      <img src={acupuncturaImagen} alt="Acupuntura Estética" className="w-full h-full object-cover" loading="lazy" />
                     </div>
                   </div>
                   <div className="md:order-2">
@@ -92,7 +92,7 @@ const MedicinaTradicionalChina = () => {
                   </div>
                   <div className="flex justify-center">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img src={ventosasImg} alt="Terapia de Ventosas" className="w-full h-full object-cover" />
+                      <img src={ventosasImg} alt="Terapia de Ventosas" className="w-full h-full object-cover" loading="lazy" />
                     </div>
                   </div>
                 </div>
@@ -103,7 +103,7 @@ const MedicinaTradicionalChina = () => {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div className="flex justify-center md:order-1">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img src={moxibustionImg} alt="Moxibustión" className="w-full h-full object-cover" />
+                      <img src={moxibustionImg} alt="Moxibustión" className="w-full h-full object-cover" loading="lazy" />
                     </div>
                   </div>
                   <div className="md:order-2">
@@ -129,7 +129,7 @@ const MedicinaTradicionalChina = () => {
                   </div>
                   <div className="flex justify-center">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img src={diagnosisImg} alt="Diagnóstico Tradicional" className="w-full h-full object-cover" />
+                      <img src={diagnosisImg} alt="Diagnóstico Tradicional" className="w-full h-full object-cover" loading="lazy" />
                     </div>
                   </div>
                 </div>
