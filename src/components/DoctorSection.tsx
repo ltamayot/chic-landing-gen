@@ -52,7 +52,7 @@ const DoctorSection = () => {
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-6 text-foreground">Dra. Sara Tamayo</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Especialista en Medicina Funcional y Medicina tradicional China
+            Especialista en Medicina Funcional y Medicina Tradicional China
           </p>
         </div>
 
@@ -88,8 +88,8 @@ const DoctorSection = () => {
               <h3 className="text-2xl font-serif mb-4 text-foreground">Metodología Integrativa</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Mediante su enfoque integrativo, ofrece a sus pacientes una visión completa y personalizada para
-                restaurar la salud y el equilibrio. Con especial atención en: Salud intestinal, Desequilibrios del
-                sistema nervioso, Salud mental, Salud de la mujer, Manejo del dolor, Inflamación crónica, Enfermedades
+                restaurar la salud y el equilibrio. Con especial atención en: Salud intestinal, sesequilibrios del
+                sistema nervioso, salud mental, salud de la mujer, manejo del dolor, inflamación crónica, enfermedades
                 autoinmunes.
               </p>
             </div>
