@@ -187,9 +187,9 @@ const MedicinaTradicionalChina = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-16 pb-16">
                 {/* Top Left */}
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Activa la sanación </h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Activa la Sanación </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Estimula la respuesta del cuerpo para restaurar su equilibrio interno.
+                    Estimula la respuesta del cuerpo para restaurar su equilibrio interno
                   </p>
                 </div>
 
@@ -197,7 +197,7 @@ const MedicinaTradicionalChina = () => {
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
                   <h3 className="text-xl font-semibold mb-4 text-foreground">Libera Bloqueos</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Facilita el flujo del Qi y la sangre, mejorando la función de órganos y tejidos.
+                    Facilita el flujo del Qi y la sangre, mejorando la función de órganos y tejidos
                   </p>
                 </div>
 
@@ -205,7 +205,7 @@ const MedicinaTradicionalChina = () => {
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
                   <h3 className="text-xl font-semibold mb-4 text-foreground">Alivia el Dolor</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Actúa como un analgésico natural al modular las señales del sistema nervioso.
+                    Actúa como un analgésico natural al modular las señales del sistema nervioso
                   </p>
                 </div>
 
@@ -213,7 +213,7 @@ const MedicinaTradicionalChina = () => {
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
                   <h3 className="text-xl font-semibold mb-4 text-foreground">Reduce la Inflamación</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Favorece la circulación y disminuye procesos inflamatorios en el cuerpo.
+                    Favorece la circulación y disminuye procesos inflamatorios en el cuerpo
                   </p>
                 </div>
               </div>
