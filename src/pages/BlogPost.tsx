@@ -392,14 +392,14 @@ const BlogPost = () => {
 
       {/* Hero Section */}
       <section className="relative bg-sage pt-28 pb-16">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="flex justify-between">
             {/* Left spacer - aligns with logo */}
-            <div className="w-[calc(32px+8px+theme(spacing.6))]"></div>
+            <div className="hidden md:block w-[calc(32px+8px+theme(spacing.6))]"></div>
 
             {/* Title and author container */}
             <div className="flex-1 text-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-8 leading-[1.1] tracking-tight">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light text-foreground mb-8 leading-[1.1] tracking-tight px-2">
                 {currentPost.title}
               </h1>
 
@@ -417,15 +417,15 @@ const BlogPost = () => {
             </div>
 
             {/* Right spacer - aligns with social icons */}
-            <div className="w-[calc(theme(spacing.4)+theme(spacing.5)+theme(spacing.2)+theme(spacing.4)+theme(spacing.5)+theme(spacing.2))]"></div>
+            <div className="hidden md:block w-[calc(theme(spacing.4)+theme(spacing.5)+theme(spacing.2)+theme(spacing.4)+theme(spacing.5)+theme(spacing.2))]"></div>
           </div>
         </div>
 
         {/* Featured Image */}
-        <div className="container mx-auto px-6 mt-12">
+        <div className="container mx-auto px-4 md:px-6 mt-12">
           <div className="flex justify-between">
             {/* Left spacer - aligns with logo */}
-            <div className="w-[calc(32px+8px+theme(spacing.6))]"></div>
+            <div className="hidden md:block w-[calc(32px+8px+theme(spacing.6))]"></div>
 
             {/* Image container */}
             <div className="flex-1">
@@ -437,22 +437,22 @@ const BlogPost = () => {
             </div>
 
             {/* Right spacer - aligns with social icons */}
-            <div className="w-[calc(theme(spacing.4)+theme(spacing.5)+theme(spacing.2)+theme(spacing.4)+theme(spacing.5)+theme(spacing.2))]"></div>
+            <div className="hidden md:block w-[calc(theme(spacing.4)+theme(spacing.5)+theme(spacing.2)+theme(spacing.4)+theme(spacing.5)+theme(spacing.2))]"></div>
           </div>
         </div>
       </section>
 
       {/* Content Section */}
       <section className="py-16 bg-sage">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="flex justify-between">
             {/* Left spacer - aligns with logo */}
-            <div className="w-[calc(32px+8px+theme(spacing.6))]"></div>
+            <div className="hidden md:block w-[calc(32px+8px+theme(spacing.6))]"></div>
 
             {/* Content */}
             <div className="flex-1 max-w-none">
               <div
-                className="text-justify"
+                className="text-left md:text-justify"
                 style={{
                   fontFamily: 'Georgia, "Times New Roman", serif',
                   fontSize: "17px",
@@ -480,7 +480,7 @@ const BlogPost = () => {
             </div>
 
             {/* Right spacer - aligns with social icons */}
-            <div className="w-[calc(theme(spacing.4)+theme(spacing.5)+theme(spacing.2)+theme(spacing.4)+theme(spacing.5)+theme(spacing.2))]"></div>
+            <div className="hidden md:block w-[calc(theme(spacing.4)+theme(spacing.5)+theme(spacing.2)+theme(spacing.4)+theme(spacing.5)+theme(spacing.2))]"></div>
           </div>
         </div>
       </section>
