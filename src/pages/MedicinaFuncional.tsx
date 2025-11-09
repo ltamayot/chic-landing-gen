@@ -46,13 +46,18 @@ const MedicinaFuncional = () => {
                   <div>
                     <h3 className="text-2xl md:text-3xl font-serif mb-4 text-foreground">Análisis Funcional</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Historia clínica detallada, Exámenes de microbioma, marcadores de inflamación, hormonas,
+                      Historia clínica detallada, exámenes de microbioma, marcadores de inflamación, hormonas,
                       metabolismo y deficiencias nutricionales.
                     </p>
                   </div>
                   <div className="flex justify-center">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img src={mfEcosistema1} alt="Análisis Funcional" className="w-full h-full object-cover" loading="lazy" />
+                      <img
+                        src={mfEcosistema1}
+                        alt="Análisis Funcional"
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
                     </div>
                   </div>
                 </div>
@@ -63,11 +68,16 @@ const MedicinaFuncional = () => {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div className="flex justify-center md:order-1">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img src={mfEcosistema2} alt="Nutrición terapéutica" className="w-full h-full object-cover" loading="lazy" />
+                      <img
+                        src={mfEcosistema2}
+                        alt="Nutrición terapéutica"
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
                     </div>
                   </div>
                   <div className="md:order-2">
-                    <h3 className="text-2xl md:text-3xl font-serif mb-4 text-foreground">Nutrición terapéutica</h3>
+                    <h3 className="text-2xl md:text-3xl font-serif mb-4 text-foreground">Nutrición Terapéutica</h3>
                     <p className="text-muted-foreground leading-relaxed">
                       Planes alimenticios personalizados enfocados en restaurar la función digestiva, modular la
                       inflamación y balancear el metabolismo.
@@ -81,7 +91,7 @@ const MedicinaFuncional = () => {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div>
                     <h3 className="text-2xl md:text-3xl font-serif mb-4 text-foreground">
-                      Intervenciones personalizadas
+                      Intervenciones Personalizadas
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
                       Combinamos suplementación y fitoterapia basadas en evidencia con intervenciones mente-cuerpo y
@@ -114,7 +124,7 @@ const MedicinaFuncional = () => {
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-16">
                 Como un árbol que necesita raíces fuertes para crecer saludable, la medicina funcional busca las causas
                 fundamentales de tus síntomas para restaurar tu salud desde la base. Explora algunas de las formas en
-                que funciona la medicina funcional a continuación:
+                que funciona la Medicina Funcional a continuación:
               </p>
             </div>
 
@@ -155,7 +165,7 @@ const MedicinaFuncional = () => {
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
                   <h3 className="text-xl font-semibold mb-4 text-foreground">Funciona al máximo, cada día</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Identificando y liberando áreas de disfunción que estimulan y promueven la salud integral.
+                    Identificando y liberando áreas de disfunción que estimulan y promueven la salud integral
                   </p>
                 </div>
 
@@ -163,7 +173,7 @@ const MedicinaFuncional = () => {
                 <div className="bg-background rounded-3xl p-8 shadow-lg text-center">
                   <h3 className="text-xl font-semibold mb-4 text-foreground">Restaura el equilibrio de tu cuerpo</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Recupera la energía y vitalidad para que cada sistema funcione en armonía.
+                    Recupera la energía y vitalidad para que cada sistema funcione en armonía
                   </p>
                 </div>
               </div>
@@ -179,7 +189,7 @@ const MedicinaFuncional = () => {
                 La ciencia detrás de la medicina funcional
               </h2>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-16">
-                Más allá de tratar síntomas, descubrimos lo que tu cuerpo realmente necesita para sanar.
+                Más allá de tratar síntomas, descubrimos lo que tu cuerpo realmente necesita para sanar
               </p>
             </div>
 
@@ -194,7 +204,7 @@ const MedicinaFuncional = () => {
                   />
                 </div>
                 <h3 className="text-lg mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
-                  Exámenes que revelan lo que los chequeos de rutina no muestran.
+                  Exámenes que revelan lo que los chequeos de rutina no muestran
                 </h3>
               </div>
 
@@ -207,7 +217,7 @@ const MedicinaFuncional = () => {
                   />
                 </div>
                 <h3 className="text-lg mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
-                  Tratamientos guiados por tu genética, tu entorno y tu estilo de vida.
+                  Tratamientos guiados por tu genética, tu entorno y tu estilo de vida
                 </h3>
               </div>
 
@@ -220,7 +230,7 @@ const MedicinaFuncional = () => {
                   />
                 </div>
                 <h3 className="text-lg mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
-                  Cada recomendación respaldada por evidencia científica sólida.
+                  Cada recomendación respaldada por evidencia científica sólida
                 </h3>
               </div>
 
@@ -233,7 +243,7 @@ const MedicinaFuncional = () => {
                   />
                 </div>
                 <h3 className="text-lg mb-4 text-foreground group-hover:text-primary transition-all duration-300 group-hover:scale-105">
-                  Prevención de enfermedades crónicas y equilibrio cuerpo-mente.
+                  Prevención de enfermedades crónicas y equilibrio cuerpo-mente
                 </h3>
               </div>
             </div>
