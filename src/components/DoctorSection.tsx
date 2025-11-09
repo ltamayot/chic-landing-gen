@@ -7,27 +7,27 @@ const DoctorSection = () => {
   const certifications = [
     {
       icon: GraduationCap,
-      text: "Médica y cirujana- Pontificia Universidad Javeriana",
+      text: "Médica y Cirujana- Pontificia Universidad Javeriana - Bogotá, Colombia",
       color: "text-accent",
     },
     {
       icon: Sparkles,
-      text: "Medicina tradicional china y acupuntura- China Medical University – Taichung Taiwan",
+      text: "Medicina Tradicional China y Acupuntura- China Medical University – Taichung,Taiwan",
       color: "text-accent",
     },
     {
       icon: Heart,
-      text: "Medicina Funcional Certificación IFMCP - Institute for Functional Medicine EEUU",
+      text: "Medicina Funcional Certificación IFMCP - Institute for Functional Medicine EEUU - Washington, USA",
       color: "text-accent",
     },
     {
       icon: User,
-      text: "Formación en Medicina Clásica Jingfang – Escuela Jingfang.",
+      text: "Formación en Medicina Clásica Jingfang – Escuela Jingfang - Lisboa, Portugal",
       color: "text-primary",
     },
     {
       icon: Heart,
-      text: "Sanación pránica y yoga Iyengar en India Himalayan Yoga Center",
+      text: "Sanación pránica y yoga Iyengar - India Himalayan Yoga Center - Dharamsala, India",
       color: "text-red-500",
     },
   ];
