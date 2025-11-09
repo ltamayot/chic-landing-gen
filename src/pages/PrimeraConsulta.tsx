@@ -206,13 +206,11 @@ const ServicesSection = () => {
   const services = [
     {
       title: "ACUPUNTURA",
-      description:
-        "Sanación y equilibrio: la acupuntura estimula la inteligencia natural de tu cuerpo para devolverlo a la homeostasis. Conoce más sobre nuestro enfoque de acupuntura.",
+      description: "La acupuntura estimula la inteligencia natural de tu cuerpo para devolverlo a su equilibio.",
     },
     {
       title: "MEDICINA FUNCIONAL",
-      description:
-        "Un enfoque personalizado a través de pruebas avanzadas, nutrición y suplementación, diseñamos un plan claro para recuperar tu energía, equilibrio y bienestar",
+      description: "Un enfoque personalizado a través de pruebas avanzadas, nutrición y suplementación.",
     },
   ];
 
