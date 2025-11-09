@@ -54,7 +54,12 @@ const MedicinaTradicionalChina = () => {
                   </div>
                   <div className="flex justify-center">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img src={acupunctureTreatmentImg} alt="Acupuntura" className="w-full h-full object-cover" loading="lazy" />
+                      <img
+                        src={acupunctureTreatmentImg}
+                        alt="Acupuntura"
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
                     </div>
                   </div>
                 </div>
@@ -65,7 +70,12 @@ const MedicinaTradicionalChina = () => {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div className="flex justify-center md:order-1">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img src={acupuncturaImagen} alt="Acupuntura Estética" className="w-full h-full object-cover" loading="lazy" />
+                      <img
+                        src={acupuncturaImagen}
+                        alt="Acupuntura Estética"
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
                     </div>
                   </div>
                   <div className="md:order-2">
@@ -92,7 +102,12 @@ const MedicinaTradicionalChina = () => {
                   </div>
                   <div className="flex justify-center">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img src={ventosasImg} alt="Terapia de Ventosas" className="w-full h-full object-cover" loading="lazy" />
+                      <img
+                        src={ventosasImg}
+                        alt="Terapia de Ventosas"
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
                     </div>
                   </div>
                 </div>
@@ -103,7 +118,12 @@ const MedicinaTradicionalChina = () => {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div className="flex justify-center md:order-1">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img src={moxibustionImg} alt="Moxibustión" className="w-full h-full object-cover" loading="lazy" />
+                      <img
+                        src={moxibustionImg}
+                        alt="Moxibustión"
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
                     </div>
                   </div>
                   <div className="md:order-2">
@@ -124,12 +144,17 @@ const MedicinaTradicionalChina = () => {
                     <h3 className="text-2xl md:text-3xl font-serif mb-4 text-foreground">Diagnóstico Tradicional</h3>
                     <p className="text-muted-foreground leading-relaxed">
                       Evaluación integral mediante observación de la lengua, palpación del pulso y análisis
-                      constitucional para identificar patrones de desequilibrio según la medicina tradicional china.
+                      constitucional para identificar patrones de desequilibrio según la Medicina Tradicional China.
                     </p>
                   </div>
                   <div className="flex justify-center">
                     <div className="w-48 h-32 rounded-2xl overflow-hidden shadow-lg">
-                      <img src={diagnosisImg} alt="Diagnóstico Tradicional" className="w-full h-full object-cover" loading="lazy" />
+                      <img
+                        src={diagnosisImg}
+                        alt="Diagnóstico Tradicional"
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
                     </div>
                   </div>
                 </div>
