@@ -157,7 +157,7 @@ const MedicinaFuncional = () => {
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     Un plan que combina alimentación, suplementación y prácticas mente-cuerpo para restablecer la
-                    armonía interna.
+                    armonía interna
                   </p>
                 </div>
 
