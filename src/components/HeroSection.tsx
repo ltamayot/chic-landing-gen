@@ -15,18 +15,18 @@ const HeroSection = ({
   label = "NUESTRO MÉTODO",
   title = "Bienvenidos a Saori",
   titleHighlight = "Integral",
-  subtitle = "Centro de Medicina Funcional Y Medicina tradicional china",
+  subtitle = "Centro de Medicina Funcional Y Medicina Tradicional China",
   description = "Reconecta con tu bienestar desde la naturaleza y la ciencia",
   primaryButtonText = "AGENDAR CITA",
   secondaryButtonText = "NUESTROS SERVICIOS",
-  backgroundImage
+  backgroundImage,
 }: HeroSectionProps) => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
       });
     }
   };
@@ -36,7 +36,7 @@ const HeroSection = ({
       {/* Background with overlay */}
       {backgroundImage ? (
         <>
-          <div 
+          <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${backgroundImage})` }}
           ></div>
@@ -48,11 +48,11 @@ const HeroSection = ({
           <div className="absolute inset-0 bg-black/20"></div>
         </>
       )}
-      
+
       {/* Animated background elements */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-primary-lighter/10 rounded-full blur-xl animate-pulse"></div>
       <div className="absolute bottom-20 right-10 w-40 h-40 bg-secondary/10 rounded-full blur-xl animate-pulse delay-1000"></div>
-      
+
       <div className="container mx-auto text-center text-primary-foreground relative z-10">
         {/* Etiqueta superior */}
         {label && (
@@ -90,26 +90,26 @@ const HeroSection = ({
 
         {/* Botones de acción */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in delay-800">
-          <Button 
-            variant="hero" 
-            size="lg" 
+          <Button
+            variant="hero"
+            size="lg"
             className="min-w-48 hover:scale-105 transform transition-all duration-300"
-            onClick={() => window.open('https://wa.me/573107539221', '_blank')}
+            onClick={() => window.open("https://wa.me/573107539221", "_blank")}
           >
             {primaryButtonText}
           </Button>
-          <Button 
-            variant="outline" 
-            size="lg" 
+          <Button
+            variant="outline"
+            size="lg"
             className="min-w-48 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary hover:scale-105 transform transition-all duration-300"
             onClick={() => {
               // Check if we're on a non-home page
-              if (window.location.pathname !== '/') {
+              if (window.location.pathname !== "/") {
                 // Navigate to home first
-                window.location.href = '/#servicios';
+                window.location.href = "/#servicios";
               } else {
                 // Already on home, just scroll
-                scrollToSection('servicios');
+                scrollToSection("servicios");
               }
             }}
           >
