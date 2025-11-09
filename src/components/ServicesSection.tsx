@@ -10,23 +10,26 @@ const ServicesSection = () => {
   const services = [
     {
       title: "SALUD\nDE LA\nMUJER",
-      description: "Síndrome premenstrual, Ciclos irregulares o dolorosos, Endometriosis y Sindrome de ovarios poliquiticos, Apoyo en fertilidad, Menopausia, entre otros.",
-      backgroundImage: saludMujerImg
+      description:
+        "Síndrome premenstrual, ciclos irregulares o dolorosos, endometriosis y síndrome de ovarios poliquísticos, apoyo en fertilidad, menopausia, entre otros.",
+      backgroundImage: saludMujerImg,
     },
     {
       title: "MEDICINA\nINTERNA",
-      description: "Trastornos digestivos, Problemas metabólicos, Fatiga crónica, Enfermedades autoinmunes, Entre otros.",
-      backgroundImage: medicinaInternaImg
+      description:
+        "Trastornos digestivos, problemas metabólicos, fatiga crónica, enfermedades autoinmunes, entre otros.",
+      backgroundImage: medicinaInternaImg,
     },
     {
       title: "SALUD\nMENTAL",
-      description: "Ansiedad, estrés crónico, Depresión, Insomnio, Apoyo en regulación emocional, entre otros.",
-      backgroundImage: saludMentalImg
+      description: "Ansiedad, estrés crónico, depresión, insomnio, apoyo en regulación emocional, entre otros.",
+      backgroundImage: saludMentalImg,
     },
     {
       title: "DOLOR",
-      description: "Dolor crónico (espalda, cuello, articulaciones), Migrañas y cefaleas, Dolor musculoesquelético, fibromialgia, entre otros.",
-      backgroundImage: dolorIconoImg
+      description:
+        "Dolor crónico (espalda, cuello, articulaciones), migrañas y cefaleas, dolor musculoesquelético, fibromialgia, entre otros.",
+      backgroundImage: dolorIconoImg,
     },
   ];
 
@@ -35,12 +38,8 @@ const ServicesSection = () => {
       <div className="container mx-auto px-6">
         {/* Título de sección */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-4 text-foreground">
-            Nuestros Servicios
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Descubre nuestro enfoque personalizado
-          </p>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-4 text-foreground">Nuestros Servicios</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Descubre nuestro enfoque personalizado</p>
         </div>
 
         {/* Grid de servicios con flip cards */}
@@ -52,16 +51,24 @@ const ServicesSection = () => {
               onMouseEnter={() => setHoveredCard(index)}
               onMouseLeave={() => setHoveredCard(null)}
             >
-              <div className={`relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer ${
-                hoveredCard === index ? 'rotate-y-180' : ''
-              }`}>
+              <div
+                className={`relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer ${
+                  hoveredCard === index ? "rotate-y-180" : ""
+                }`}
+              >
                 {/* Lado frontal */}
-                <div className={`absolute inset-0 w-full h-full backface-hidden rounded-3xl p-8 flex flex-col items-center justify-center text-center shadow-xl ${
-                  service.backgroundImage ? 'bg-cover bg-center' : 'bg-gradient-to-br from-primary to-primary-light'
-                }`} 
-                style={service.backgroundImage ? { 
-                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${service.backgroundImage})` 
-                } : {}}>
+                <div
+                  className={`absolute inset-0 w-full h-full backface-hidden rounded-3xl p-8 flex flex-col items-center justify-center text-center shadow-xl ${
+                    service.backgroundImage ? "bg-cover bg-center" : "bg-gradient-to-br from-primary to-primary-light"
+                  }`}
+                  style={
+                    service.backgroundImage
+                      ? {
+                          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${service.backgroundImage})`,
+                        }
+                      : {}
+                  }
+                >
                   <h3 className="text-primary-foreground text-lg font-semibold leading-relaxed whitespace-pre-line">
                     {service.title}
                   </h3>
@@ -73,11 +80,9 @@ const ServicesSection = () => {
                 {/* Lado posterior */}
                 <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-3xl bg-background border-2 border-primary/20 p-6 flex flex-col justify-center text-center shadow-xl">
                   <h3 className="text-primary text-lg font-semibold mb-4 whitespace-pre-line">
-                    {service.title.replace(/\n/g, ' ')}
+                    {service.title.replace(/\n/g, " ")}
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {service.description}
-                  </p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
                 </div>
               </div>
             </div>
@@ -86,9 +91,7 @@ const ServicesSection = () => {
 
         {/* Mobile hint */}
         <div className="text-center mt-8 lg:hidden">
-          <p className="text-sm text-muted-foreground">
-            Toca las tarjetas para ver más información
-          </p>
+          <p className="text-sm text-muted-foreground">Toca las tarjetas para ver más información</p>
         </div>
       </div>
     </section>
