@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.saori.com.co/</loc>
+    <lastmod>2024-11-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Main Service Pages -->
+  <url>
+    <loc>https://www.saori.com.co/medicina-tradicional-china</loc>
+    <lastmod>2024-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.saori.com.co/medicina-funcional</loc>
+    <lastmod>2024-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.saori.com.co/primera-consulta</loc>
+    <lastmod>2024-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Index -->
+  <url>
+    <loc>https://www.saori.com.co/blog</loc>
+    <lastmod>2024-11-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://www.saori.com.co/blog/cuidado-madre-postnatal-medicina-china-funcional</loc>
+    <lastmod>2024-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>SAORI Blog</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2024-11-05</news:publication_date>
+      <news:title>El arte de cuidar a la madre: sabiduría postnatal desde la Medicina China y la Medicina Funcional</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.saori.com.co/blog/vitamina-d-hormona-sol-energia-vital</loc>
+    <lastmod>2024-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>SAORI Blog</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2024-10-30</news:publication_date>
+      <news:title>Vitamina D: la hormona del sol y su papel en la energía vital</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.saori.com.co/blog/emociones-medicina-china-cuerpo-alma</loc>
+    <lastmod>2024-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>SAORI Blog</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2024-10-25</news:publication_date>
+      <news:title>Las Emociones desde la Medicina China: Cuando el Cuerpo Habla lo que el Alma Siente</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.saori.com.co/blog/fatiga-cronica-tratamiento-medicina-funcional-china</loc>
+    <lastmod>2024-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>SAORI Blog</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2024-10-20</news:publication_date>
+      <news:title>Fatiga Crónica: Causas, Tratamiento y Abordaje Integrativo desde la Medicina Funcional y la Medicina China</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.saori.com.co/blog/acne-medicina-tradicional-china-mirada-integral</loc>
+    <lastmod>2024-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>SAORI Blog</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2024-10-15</news:publication_date>
+      <news:title>Acné y Medicina Tradicional China: Una Mirada Integral para Sanar la Piel</news:title>
+    </news:news>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://www.saori.com.co/terminos-condiciones</loc>
+    <lastmod>2024-11-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

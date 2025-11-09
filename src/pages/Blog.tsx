@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Calendar, User, ChevronRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 import blogHeroImage from "@/assets/blog-hero.jpg";
 import blogTcmImage from "@/assets/blog-tcm.jpg";
@@ -98,6 +99,29 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Blog de Medicina Integrativa | Artículos de Salud y Bienestar | SAORI"
+        description="Explora artículos sobre Medicina Tradicional China, Medicina Funcional, acupuntura, fertilidad y tratamientos integrales. Consejos de salud por la Dra. Sara Tamayo en Bogotá."
+        keywords={[
+          "blog medicina integrativa",
+          "artículos medicina tradicional china",
+          "blog medicina funcional",
+          "acupuntura blog",
+          "salud integrativa bogotá",
+          "medicina natural artículos",
+          "blog salud holística",
+          "consejos medicina china",
+          "tratamientos naturales colombia"
+        ]}
+        url="/blog"
+        type="website"
+        schemas={{
+          breadcrumb: [
+            { name: "Inicio", url: "/" },
+            { name: "Blog", url: "/blog" }
+          ]
+        }}
+      />
       <Navigation />
       
       {/* Hero Section with Featured Article */}
@@ -185,9 +209,11 @@ const Blog = () => {
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <img 
                     src={post.image} 
-                    alt={post.title}
+                    alt={`${post.title} - Artículo de ${post.category} por ${post.author}`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
+                    width="400"
+                    height="300"
                   />
                 </div>
                 

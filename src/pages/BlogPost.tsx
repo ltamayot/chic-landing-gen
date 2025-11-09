@@ -2,8 +2,10 @@ import { useParams, Navigate, useNavigate } from "react-router-dom";
 import BookingSection from "@/components/BookingSection";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
+import SEOHead from "@/components/SEOHead";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, User } from "lucide-react";
+import { blogPostsSEO } from "@/lib/blogPostsSEO";
 
 import blogHeroImage from "@/assets/blog-hero.jpg";
 import blogTcmImage from "@/assets/blog-tcm.jpg";
@@ -386,8 +388,38 @@ const BlogPost = () => {
     return colors[category as keyof typeof colors] || "bg-primary text-primary-foreground";
   };
 
+  // Get SEO data for current post
+  const seoData = slug ? blogPostsSEO[slug] : null;
+  const currentUrl = `/blog/${slug}`;
+
   return (
     <div className="min-h-screen bg-sage">
+      {/* SEO Meta Tags and Schema */}
+      {seoData && (
+        <SEOHead
+          title={seoData.title}
+          description={seoData.metaDescription}
+          keywords={seoData.keywords}
+          author={seoData.author}
+          publishDate={seoData.publishDate}
+          modifiedDate={seoData.modifiedDate}
+          image={`https://www.saori.com.co${currentPost.image}`}
+          url={currentUrl}
+          type="article"
+          category={seoData.category}
+          readingTime={seoData.readingTime}
+          schemas={{
+            blogPost: true,
+            faq: seoData.faqs,
+            breadcrumb: [
+              { name: "Inicio", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: currentPost.title, url: currentUrl }
+            ]
+          }}
+        />
+      )}
+      
       <Navigation />
 
       {/* Hero Section */}
@@ -430,7 +462,12 @@ const BlogPost = () => {
             {/* Image container */}
             <div className="flex-1">
               <div className="relative aspect-video overflow-hidden rounded-lg">
-                <img src={currentPost.image} alt={currentPost.title} className="w-full h-full object-cover" />
+                <img 
+                  src={currentPost.image} 
+                  alt={currentPost.title} 
+                  className="w-full h-full object-cover"
+                  loading="eager"
+                />
               </div>
               {/* Divider line below image */}
               <div className="w-full h-1 bg-gray-400 mt-8"></div>

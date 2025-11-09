@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import BookingSection from "@/components/BookingSection";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import moxaImagen from "@/assets/moxa-imagen.png";
 import acupuncturaImagen from "@/assets/acupunctura-imagen.png";
 import diagnosisImg from "@/assets/diagnosis.jpg";
@@ -17,6 +18,35 @@ import group11Icon from "@/assets/group-1-1-icon.svg";
 const MedicinaTradicionalChina = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Medicina Tradicional China y Acupuntura en Bogotá | SAORI"
+        description="Acupuntura, moxibustión, ventosas y medicina herbal china en Bogotá. Tratamiento integrativo con la Dra. Sara Tamayo para dolor, fertilidad, estrés y condiciones crónicas."
+        keywords={[
+          "acupuntura bogotá",
+          "medicina tradicional china bogotá",
+          "medicina china colombia",
+          "moxibustión bogotá",
+          "ventosas terapia",
+          "acupuntura fertilidad",
+          "medicina herbal china",
+          "acupuntura dolor crónico",
+          "medicina china estrés ansiedad",
+          "dra sara tamayo acupuntura"
+        ]}
+        url="/medicina-tradicional-china"
+        type="website"
+        schemas={{
+          medicalBusiness: {
+            name: "SAORI - Medicina Tradicional China",
+            description: "Centro especializado en Medicina Tradicional China, acupuntura y tratamientos integrales para condiciones crónicas, dolor, fertilidad y bienestar integral.",
+            specialty: "Traditional Chinese Medicine"
+          },
+          breadcrumb: [
+            { name: "Inicio", url: "/" },
+            { name: "Medicina Tradicional China", url: "/medicina-tradicional-china" }
+          ]
+        }}
+      />
       <Navigation />
       <main>
         <HeroSection

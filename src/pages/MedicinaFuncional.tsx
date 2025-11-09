@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import BookingSection from "@/components/BookingSection";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import mfEcosistema1 from "@/assets/mf-ecosistema-1.jpg";
 import mfEcosistema2 from "@/assets/mf-ecosistema-2.jpg";
 import mfEcosistema4 from "@/assets/mf-ecosistema-4.jpg";
@@ -15,6 +16,35 @@ import vector2Icon from "@/assets/vector-2-icon.svg";
 const MedicinaFuncional = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Medicina Funcional en Bogotá | Tratamiento de Causa Raíz | SAORI"
+        description="Medicina funcional personalizada en Bogotá. Análisis profundo, suplementación guiada, tratamiento de fatiga crónica, hormonal y digestivo. Dra. Sara Tamayo."
+        keywords={[
+          "medicina funcional bogotá",
+          "medicina funcional colombia",
+          "tratamiento funcional",
+          "fatiga crónica medicina funcional",
+          "medicina integrativa funcional",
+          "análisis funcional salud",
+          "exámenes funcionales bogotá",
+          "suplementación guiada médico",
+          "tratamiento hormonal natural",
+          "medicina preventiva bogotá"
+        ]}
+        url="/medicina-funcional"
+        type="website"
+        schemas={{
+          medicalBusiness: {
+            name: "SAORI - Medicina Funcional",
+            description: "Centro de medicina funcional que aborda la causa raíz de enfermedades crónicas mediante análisis profundos, nutrición personalizada y suplementación guiada.",
+            specialty: "Functional Medicine"
+          },
+          breadcrumb: [
+            { name: "Inicio", url: "/" },
+            { name: "Medicina Funcional", url: "/medicina-funcional" }
+          ]
+        }}
+      />
       <Navigation />
       <main>
         <HeroSection

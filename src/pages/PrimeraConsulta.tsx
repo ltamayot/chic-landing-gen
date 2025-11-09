@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import BookingSection from "@/components/BookingSection";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Heart, Shield, Users, Stethoscope, BookOpen, Activity } from "lucide-react";
 import heroPrimeraConsulta from "@/assets/hero-primera-consulta.jpg";
@@ -243,6 +244,47 @@ const ServicesSection = () => {
 const PrimeraConsulta = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Primera Consulta de Medicina Integrativa en Bogotá | SAORI"
+        description="Agenda tu primera consulta de medicina integrativa. Evaluación completa con Medicina China y Funcional. Tratamiento personalizado con la Dra. Sara Tamayo en Bogotá."
+        keywords={[
+          "primera consulta medicina integrativa",
+          "consulta medicina tradicional china bogotá",
+          "consulta medicina funcional",
+          "evaluación integrativa salud",
+          "primera cita acupuntura",
+          "dra sara tamayo consulta",
+          "medicina holística primera vez",
+          "consulta personalizada bogotá",
+          "evaluación funcional integral"
+        ]}
+        url="/primera-consulta"
+        type="website"
+        schemas={{
+          breadcrumb: [
+            { name: "Inicio", url: "/" },
+            { name: "Primera Consulta", url: "/primera-consulta" }
+          ],
+          faq: [
+            {
+              question: "¿Cuánto dura la primera consulta?",
+              answer: "La primera consulta tiene una duración aproximada de 60 minutos. En este tiempo realizamos una historia clínica completa, evaluación de síntomas, revisión de exámenes previos y diseñamos tu plan de tratamiento personalizado."
+            },
+            {
+              question: "¿La primera consulta puede ser virtual?",
+              answer: "Sí, ofrecemos primera consulta tanto presencial como virtual. La consulta virtual es igual de completa y nos permite evaluar tu caso en detalle desde cualquier lugar."
+            },
+            {
+              question: "¿Qué debo llevar a mi primera consulta?",
+              answer: "Te recomendamos traer exámenes médicos previos (idealmente de los últimos 6 meses), lista de medicamentos o suplementos actuales, y cualquier documento médico relevante de tu historia clínica."
+            },
+            {
+              question: "¿Cuándo veré resultados del tratamiento?",
+              answer: "Los tiempos varían según la condición y su cronicidad. En condiciones agudas pueden verse mejorías en 2-4 semanas. Para condiciones crónicas, el proceso puede tomar de 2 a 6 meses con tratamiento constante."
+            }
+          ]
+        }}
+      />
       <Navigation />
       <main>
         <HeroSection
