@@ -17,14 +17,14 @@ const TestimonialsSection = () => {
       name: "Valentina Ruiz",
       location: "Pereira, Colombia",
       initials: "VR",
-      text: "Mi experiencia en el Saori con la Dra. Sara fué transformadora. Su enfoque personalizado combinando la medicina funcional y oriental me permitieron comprender mi cuerpo profundamente y regular mi sistema Hormonal. Recomiendo Saori a quienes buscan una atención médica personalizada y holística.",
+      text: "Mi experiencia en el Saori con la Dra. Sara fué transformadora. Su enfoque personalizado combinando la Medicina Funcional y Oriental me permitieron comprender mi cuerpo profundamente y regular mi sistema hormonal. Recomiendo Saori a quienes buscan una atención médica personalizada y holística.",
       rating: 5,
     },
     {
       name: "David Diaz",
       location: "Manizales, Colombia",
       initials: "DD",
-      text: "Nunca había probado un enfoque de medicina china y medicina funcional antes, siento que me ha ayudado mucho a ser más consciente de mi alimentación, y lo más importante, el proceso en Saori me ha ayudado mucho mejorar mi calidad de sueño y ansiedad.",
+      text: "Nunca había probado un enfoque de Medicina China y Medicina Funcional antes, siento que me ha ayudado mucho a ser más consciente de mi alimentación, y lo más importante, el proceso en Saori me ha ayudado mucho mejorar mi calidad de sueño y ansiedad.",
       rating: 5,
     },
     {
@@ -38,7 +38,7 @@ const TestimonialsSection = () => {
       name: "Maria Paula Pinilla",
       location: "Cali, Colombia",
       initials: "MP",
-      text: "La Dra. Sara se tomó el tiempo de escucharme y personalizar mi tratamiento. Mis síntomas han mejorado y he aprendido a conocer mi cuerpo y a nutrirme mejor..",
+      text: "La Dra. Sara se tomó el tiempo de escucharme y personalizar mi tratamiento. Mis síntomas han mejorado y he aprendido a conocer mi cuerpo y a nutrirme mejor.",
       rating: 5,
     },
     {
@@ -71,10 +71,8 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-6">
         {/* Título */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif mb-4 text-foreground">Lo que dicen nuestros pacientes</h2>
-          <p className="text-lg text-muted-foreground">
-            Cada historia es una semilla que florece en Saori
-          </p>
+          <h2 className="text-4xl md:text-5xl font-serif mb-4 text-foreground">Lo que Dicen Nuestros Pacientes</h2>
+          <p className="text-lg text-muted-foreground">Cada historia es una semilla que florece en Saori</p>
         </div>
 
         {/* Testimoniales */}
@@ -89,9 +87,7 @@ const TestimonialsSection = () => {
                 >
                   {/* Badge con color único */}
                   <div className="flex justify-end mb-4">
-                    <div
-                      className="w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold bg-[#DD6D5F]/60"
-                    >
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold bg-[#DD6D5F]/60">
                       {testimonial.initials}
                     </div>
                   </div>
