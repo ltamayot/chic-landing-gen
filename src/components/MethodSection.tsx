@@ -25,12 +25,12 @@ const MethodSection = () => {
     },
     {
       icon: Brain,
-      title: "Holistico",
-      description: "Abordamos cada dimensión de tu bienestar: física, mental y emocional",
+      title: "Holístico",
+      description: "Abordamos cada dimensión de tu bienestar: físico, mental y emocional",
     },
     {
       icon: Leaf,
-      title: "Respaldado por ciencia",
+      title: "Respaldado por la Ciencia",
       description:
         "Cada plan de tratamiento se fundamenta en investigación científica y en los exámenes necesarios para lograr el máximo bienestar",
     },
@@ -93,7 +93,7 @@ const MethodSection = () => {
             <div className="relative z-10">
               <h3 className="text-3xl font-serif mb-8">Medicina Tradicional China</h3>
               <p className="text-primary-foreground/90 mb-8 leading-relaxed text-lg">
-                Recupera tu balance con prácticas ancestrales que identifican y tratan la causa raiz de tus
+                Recupera tu balance con prácticas ancestrales que identifican y tratan desde el origen los
                 desequilibrios
               </p>
               <Button
@@ -120,7 +120,7 @@ const MethodSection = () => {
             <div className="relative z-10">
               <h3 className="text-3xl font-serif mb-8">Medicina Funcional</h3>
               <p className="text-primary-foreground/90 mb-8 leading-relaxed text-lg">
-                de un enfoque integrativo, personalizado y basado en la evidencia
+                Un enfoque integrativo, personalizado y basado en la evidencia
               </p>
               <Button
                 variant="secondary"
